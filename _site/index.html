@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ja.Code</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="Ja.Code" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Ja.Code</a>
+        <small>猿修地，时光机</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a class="active" href="/">
+                        
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <img src="https://jacobpan3g.github.io/img/jacob.png" style="width:100px;float:left;margin-right:20px;">
+        <h1>Welcome to Ja.Code</h1>
+        <small>Follow Excellence. Success will chase you.</small>
+        <div>@ Jacob Pan</div>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/29/tmux-basic/">tmux使用技巧</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-29
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#cmd" title="Category: cmd" rel="category">cmd</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#tmux" title="Tag: tmux" rel="tag">tmux</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#新建会话" id="markdown-toc-新建会话">新建会话</a></li>
+  <li><a href="#切换会话" id="markdown-toc-切换会话">切换会话</a></li>
+  <li><a href="#重命名" id="markdown-toc-重命名">重命名</a></li>
+</ul>
+
+<p>tmux是一个强大的终端分屏工具</p>
+
+<h2 id="新建会话">新建会话</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tmux new <span class="nt">-s</span> &lt;session name&gt;
+</code></pre></div></div>
+<p>建议给每一个会会话命名，这样日后切换会话时更加方便。</p>
+
+<h2 id="切换会话">切换会话</h2>
+
+<p>当建立了多个会话后，可以实时切换到不同的tmux会话中，每个会话的命令执行记录都会被保存下来</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tmux <span class="nb">ls
+</span>tmux a <span class="nt">-t</span> &lt;name&gt;    <span class="c"># attach</span>
+</code></pre></div></div>
+<p>上述方法是在shell命令行里切换，若原先在一个tmux会话中，可以先使用<code class="highlighter-rouge">&lt;tmux_prefix + d&gt;</code>与原会话分离(detach)</p>
+
+<p>还有一个方法，可以从一个tmux会话中直接切换到另一个会话中</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tmux_prefix + s&gt;   # 列出会话列表后直接通过方向键选择
+</code></pre></div></div>
+
+<p>ps: <code class="highlighter-rouge">&lt;tmux_prefix&gt;</code>是在tmux会话中要执行指令时的前缀，默认是<code class="highlighter-rouge">&lt;ctrl b&gt;</code>，同时按下ctrl和b按键</p>
+
+<h2 id="重命名">重命名</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tmux_profix&gt;$      # 重命名session
+&lt;tmux_profix&gt;,      # 重命名plane
+</code></pre></div></div>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/29/tmux-basic/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/26/useful-tips-in-windows/">Windows一些使用技巧</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#windows" title="Category: windows" rel="category">windows</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#tips" title="Tag: tips" rel="tag">tips</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#securecrt中文乱码解决方法" id="markdown-toc-securecrt中文乱码解决方法">SecureCRT中文乱码解决方法</a></li>
+</ul>
+
+<h2 id="securecrt中文乱码解决方法">SecureCRT中文乱码解决方法</h2>
+
+<p><code class="highlighter-rouge">会话选项</code>-<code class="highlighter-rouge">外观</code>，把<code class="highlighter-rouge">字符编码</code>改成<code class="highlighter-rouge">UTF-8</code>，确认即可。</p>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/26/useful-tips-in-windows/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/26/useful-tips-in-ubuntu/">Ubuntu下的一些使用技巧</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#tips" title="Tag: tips" rel="tag">tips</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#把home中文目录名改成英文" id="markdown-toc-把home中文目录名改成英文">把Home中文目录名改成英文</a></li>
+  <li><a href="#开启sshd" id="markdown-toc-开启sshd">开启sshd</a></li>
+</ul>
+
+<h2 id="把home中文目录名改成英文">把Home中文目录名改成英文</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US
+xdg-user-dirs-gtk-update
+</code></pre></div></div>
+<p>弹出对话框勾选<code class="highlighter-rouge">不再提醒</code>，点<code class="highlighter-rouge">确定</code></p>
+
+<h2 id="开启sshd">开启sshd</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install openssh-server
+</code></pre></div></div>
+<p>安装了即可</p>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/26/useful-tips-in-ubuntu/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/26/install-ubuntu-by-hd-in-xp/">Windows xp下硬盘安装ubuntu</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#install" title="Tag: install" rel="tag">install</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#1-准备好ubuntu-iso镜像" id="markdown-toc-1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</a></li>
+  <li><a href="#2-使用grub4dos引导ubuntu镜像" id="markdown-toc-2-使用grub4dos引导ubuntu镜像">2. 使用grub4dos引导ubuntu镜像</a>    <ul>
+      <li><a href="#编辑bootini" id="markdown-toc-编辑bootini">编辑boot.ini</a></li>
+      <li><a href="#编辑menulst" id="markdown-toc-编辑menulst">编辑menu.lst</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-重启电脑引导镜像" id="markdown-toc-3-重启电脑引导镜像">3. 重启电脑，引导镜像</a></li>
+</ul>
+
+<p>之前写过一篇文章阐述如何在win7下硬盘安装ubuntu，而不需要安装U盘或光盘。接下来，介绍一下在xp下如何硬盘安装ubuntu，在操作上面，有一点点小差别</p>
+
+<h2 id="1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</h2>
+
+<p>并把镜像<code class="highlighter-rouge">casper/</code>里的<code class="highlighter-rouge">initrd.lz</code>和<code class="highlighter-rouge">vmlinz</code>提取出来，连同iso镜像放在某一磁盘的根目录下，为简单起见，这里都放在c盘下</p>
+
+<h2 id="2-使用grub4dos引导ubuntu镜像">2. 使用grub4dos引导ubuntu镜像</h2>
+
+<p>这里就是和win7下操作的不同之处，win7用的是easyBSD。</p>
+
+<p>下载grub4dos，解压后把<code class="highlighter-rouge">grldr</code>和<code class="highlighter-rouge">menu.lst</code>拷贝到C盘根目录，此时，包括第一步，一共有以下几个文件放到了c盘根目录:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install.lz
+vmlinz
+ubuntu-xx.04-destop-i386.iso
+grldr
+menu.lst
+</code></pre></div></div>
+
+<h3 id="编辑bootini">编辑boot.ini</h3>
+
+<p>编辑<code class="highlighter-rouge">C:\boot.ini</code>，在文件结尾添加</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c:\grldr="start grub4dos"
+</code></pre></div></div>
+<p>ps: 若在C盘根目录下找不到该文件，可以通过<code class="highlighter-rouge">文件夹选项</code>-<code class="highlighter-rouge">查看</code>-<code class="highlighter-rouge">高级设置</code>中，把<code class="highlighter-rouge">隐藏受保护的操作系统文件(推荐)</code>不勾选，然后选择<code class="highlighter-rouge">显示所有文件和文件夹</code>，就可以把系统隐藏文件显示出来，从而找到<code class="highlighter-rouge">boot.ini</code></p>
+
+<h3 id="编辑menulst">编辑menu.lst</h3>
+
+<p>接下来编辑<code class="highlighter-rouge">menu.lst</code>，以添加引导项。添加下面内容到文件结尾</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title Install Ubuntu
+root (hd0,0)
+kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-xx.04-desktop-i386.iso
+initrd (hd0,0)/initrd.lz
+</code></pre></div></div>
+
+<p>其中</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">(hd0,0)</code> 一般情况下代表的是C盘，这里的<code class="highlighter-rouge">hd0</code>代表第一块硬盘，<code class="highlighter-rouge">0</code>代表第一个分区。若到时重启系统选择新增的引导项提示找不到文件时，可以重复修改该文件，直到找到正确的数字编号为止。</p>
+
+    <p>若第一步的iso镜像等三个文件放在了其他磁盘根目录下，同理，也可通过上述方法找到正取的编号</p>
+  </li>
+  <li>
+    <p>若需要安装中文版本的，可在第二行结尾添加<code class="highlighter-rouge"> locale=zh_CN.UTF-8</code>，这样子安装界面就会是中文，安装的系统也是中文环境的。</p>
+  </li>
+</ul>
+
+<h2 id="3-重启电脑引导镜像">3. 重启电脑，引导镜像</h2>
+
+<p>重启电脑，开机页面会多了一项<code class="highlighter-rouge">start grub4dos</code>，点击后，选择<code class="highlighter-rouge">Install Ubuntu</code>，细心的读者会发现，这两项都是我们上面第2步填写过的title内容。iso镜像路径没有错的话，就可以成功引导镜像了。</p>
+
+<p>镜像引导成功后的第一步，记得要先卸载isodevice分区</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo umount -l /isodevice
+</code></pre></div></div>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/26/install-ubuntu-by-hd-in-xp/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/26/makefile-basic/">Makefile基本</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#linux" title="Category: linux" rel="category">linux</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#makefile" title="Tag: makefile" rel="tag">makefile</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#基本" id="markdown-toc-基本">基本</a></li>
+  <li><a href="#targets-" id="markdown-toc-targets-">targets: %:</a></li>
+  <li><a href="#自动变量" id="markdown-toc-自动变量">自动变量</a></li>
+  <li><a href="#参数" id="markdown-toc-参数">参数</a></li>
+  <li><a href="#ifeq-ifdef" id="markdown-toc-ifeq-ifdef">ifeq, ifdef</a></li>
+  <li><a href="#常用函数" id="markdown-toc-常用函数">常用函数</a>    <ul>
+      <li><a href="#subst" id="markdown-toc-subst">subst</a></li>
+      <li><a href="#addsuffix-addprefix" id="markdown-toc-addsuffix-addprefix">addsuffix, addprefix</a></li>
+    </ul>
+  </li>
+  <li><a href="#引用其他makefile" id="markdown-toc-引用其他makefile">引用其他makefile</a></li>
+</ul>
+
+<p>Makefile主要用来make的输入，命令<code class="highlighter-rouge">make filename</code>的意思就是要把filename生成。</p>
+
+<h2 id="基本">基本</h2>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">target</span><span class="o">:</span> <span class="nf">dependences</span>
+	shell cmd
+</code></pre></div></div>
+<p>以上是Makefile的基本格式。</p>
+
+<h2 id="targets-">targets: %:</h2>
+
+<p>通过<code class="highlighter-rouge">%</code>可以对target进行模式拓展</p>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">targets</span> <span class="o">=</span> aa bb
+
+<span class="nl">targets</span><span class="o">:</span> <span class="nf">%: %.c</span>
+	gcc <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
+</code></pre></div></div>
+
+<p>这里会自动拓展成</p>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">aa</span><span class="o">:</span> <span class="nf">aa.c</span>
+	gcc <span class="nt">-o</span> aa aa.c
+
+<span class="nl">bb</span><span class="o">:</span> <span class="nf">bb.c</span>
+	gcc <span class="nt">-o</span> bb bb.c
+</code></pre></div></div>
+
+<h2 id="自动变量">自动变量</h2>
+
+<p>如上面的例子，<code class="highlighter-rouge">$@</code>代表target，<code class="highlighter-rouge">$^</code>代表全部的依赖文件，还有以下自动变量:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">$&lt;</code> 依赖文件中的第一个文件</li>
+</ul>
+
+<h2 id="参数">参数</h2>
+
+<p>通过make可以传递参数，在Makefile里可以获取到</p>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">aa</span><span class="o">:</span> <span class="nf">aa.c</span>
+	gcc <span class="nv">$(CFLAG)</span> <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
+</code></pre></div></div>
+<p>通过<code class="highlighter-rouge">make CFLAG=-g</code>，就可以把参数传入到makefile中，变成<code class="highlighter-rouge">gcc -g -o aa aa.c</code></p>
+
+<h2 id="ifeq-ifdef">ifeq, ifdef</h2>
+
+<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">ifdef</span> <span class="err">VAR</span>
+<span class="nv">target</span> <span class="o">=</span> aa
+<span class="err">else</span>
+<span class="nv">target</span> <span class="o">=</span> bb
+<span class="err">endif</span>
+
+<span class="err">ifeq</span> <span class="err">($(VAR),</span> <span class="err">1)</span>
+<span class="nv">CFLAG</span> <span class="o">=</span> <span class="nt">-g</span>
+<span class="err">endif</span>
+
+<span class="nl">target</span><span class="o">:</span>
+	gcc <span class="nv">$(CFLAG)</span> <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
+</code></pre></div></div>
+<p>上述例子描述了<code class="highlighter-rouge">ifdef</code>和<code class="highlighter-rouge">ifeq</code>的用法，请注意<code class="highlighter-rouge">ifdef</code>后面跟的变量名加<code class="highlighter-rouge">$()</code>，此外，还有<code class="highlighter-rouge">ifndef</code>和<code class="highlighter-rouge">ifneq</code>。</p>
+
+<p>这里的makefile可以通过<code class="highlighter-rouge">make VAR=1</code>传入参数，使makefile针对不同情况执行不同的命令。</p>
+
+<h2 id="常用函数">常用函数</h2>
+
+<h3 id="subst">subst</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(subst &lt;from&gt;,&lt;to&gt;,&lt;text&gt;)
+</code></pre></div></div>
+
+<h3 id="addsuffix-addprefix">addsuffix, addprefix</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(addsuffix &lt;suffix&gt;,&lt;names...&gt;)
+$(addprefix &lt;suffix&gt;,&lt;names...&gt;)
+</code></pre></div></div>
+
+<p>更多makefile函数可见<a href="http://blog.csdn.net/yangxuan0261/article/details/52060582">makefile中常用函数</a></p>
+
+<h2 id="引用其他makefile">引用其他makefile</h2>
+
+<p>如果当前目录下有一个<code class="highlighter-rouge">makefile.in</code>，可以通过下面语句来引入</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include makefile.in
+</code></pre></div></div>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/26/makefile-basic/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/12/26/install-centos-by-hd-in-xp/">Windows xp下硬盘安装centos6.4</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-12-26
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#linux" title="Category: linux" rel="category">linux</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#install" title="Tag: install" rel="tag">install</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#提取iso中的文件不同" id="markdown-toc-提取iso中的文件不同">提取iso中的文件不同</a></li>
+  <li><a href="#menulst内容不同" id="markdown-toc-menulst内容不同">menu.lst内容不同</a></li>
+</ul>
+
+<p>我曾经写过两篇windows xp和win7下硬盘安装ubuntu的文章，至于如何在xp下硬盘安装centos6.4，大体方法和xp下安装ubuntu一样，具体步骤可以参看博客里的相应文章，差异主要如下：</p>
+
+<h2 id="提取iso中的文件不同">提取iso中的文件不同</h2>
+
+<p>centos镜像提取出来的是<code class="highlighter-rouge">vmlinuz</code>和<code class="highlighter-rouge">initrd.img</code></p>
+
+<h2 id="menulst内容不同">menu.lst内容不同</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root (hd0,0)
+kernel /vmlinuz
+initrd /initrd.img
+</code></pre></div></div>
+
+<p>网上有帖子说，解压grub4dos把<code class="highlighter-rouge">grldr</code>和<code class="highlighter-rouge">menu.lst</code>放到C盘根目录，并编辑<code class="highlighter-rouge">boot.ini</code>后，直接重启系统，点击新增加的引导项进入grub命令行，可以通过下面命令找到vmlinuz所在的分区编号：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find /vmlinuz   # 返回 (hd0,0)
+reboot          # 重启
+</code></pre></div></div>
+
+<p>也可以直接在命令行敲入第二第三行，使用<code class="highlighter-rouge">boot</code>命令直接引导镜像。</p>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/26/install-centos-by-hd-in-xp/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
+          
+          <span class="page_number ">1/6</span>
+          
+            <a href="/page2" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page6" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/2017/12/29/tmux-basic/">tmux使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-tips-in-windows/">Windows一些使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-tips-in-ubuntu/">Ubuntu下的一些使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/install-ubuntu-by-hd-in-xp/">Windows xp下硬盘安装ubuntu</a></li>
+                    
+                        <li><a href="/2017/12/26/makefile-basic/">Makefile基本</a></li>
+                    
+                        <li><a href="/2017/12/26/install-centos-by-hd-in-xp/">Windows xp下硬盘安装centos6.4</a></li>
+                    
+                        <li><a href="/2017/12/26/disk-partition-while-mutli-systems/">安装多系统分区技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-cmd/">一些有用的命令</a></li>
+                    
+                        <li><a href="/2017/12/26/git-in-linux/">Linux下使用git</a></li>
+                    
+                        <li><a href="/2017/12/22/an-error-in-windows-8.1/">Windows8.1下"缺失api-ms-win-crt-heap-l1-1-0.dll"问题的解决方法</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#weibo" class="categories-list-item" cate="weibo">
+                            <span class="name">
+                                weibo
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#blog" class="categories-list-item" cate="blog">
+                            <span class="name">
+                                blog
+                            </span>
+                            <span class="badge">2</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#ubuntu" class="categories-list-item" cate="ubuntu">
+                            <span class="name">
+                                ubuntu
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#mac" class="categories-list-item" cate="mac">
+                            <span class="name">
+                                mac
+                            </span>
+                            <span class="badge">2</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#cmd" class="categories-list-item" cate="cmd">
+                            <span class="name">
+                                cmd
+                            </span>
+                            <span class="badge">7</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#linux" class="categories-list-item" cate="linux">
+                            <span class="name">
+                                linux
+                            </span>
+                            <span class="badge">7</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#windows" class="categories-list-item" cate="windows">
+                            <span class="name">
+                                windows
+                            </span>
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#c" class="categories-list-item" cate="c">
+                            <span class="name">
+                                c
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#oauth2" style="font-size: 9pt; color: #999;">oauth2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#jekyll" style="font-size: 10.5pt; color: #777;">jekyll</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#gitment" style="font-size: 9pt; color: #999;">gitment</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#config" style="font-size: 18pt; color: #000;">config</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#install" style="font-size: 13.5pt; color: #444;">install</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#xcode" style="font-size: 9pt; color: #999;">xcode</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#kernel" style="font-size: 9pt; color: #999;">kernel</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#shell" style="font-size: 13.5pt; color: #444;">shell</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#dylib" style="font-size: 9pt; color: #999;">dylib</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#wireless" style="font-size: 9pt; color: #999;">wireless</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#svn" style="font-size: 9pt; color: #999;">svn</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#log" style="font-size: 10.5pt; color: #777;">log</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#qt" style="font-size: 9pt; color: #999;">qt</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#debug" style="font-size: 9pt; color: #999;">debug</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#solution" style="font-size: 9pt; color: #999;">solution</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#git" style="font-size: 9pt; color: #999;">git</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#makefile" style="font-size: 9pt; color: #999;">makefile</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#tips" style="font-size: 10.5pt; color: #777;">tips</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#tmux" style="font-size: 9pt; color: #999;">tmux</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             时光沉淀于此！ 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JacobPan3g" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:jacob.pan@foxmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <!--
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+            <span>
+                Blogs written by <a href="https://jacobpan3g.github.io">Jacob Pan</a>.
+            </span>
+        </p>
+    </div>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?75177901590fba02b71851d2acaee595";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</footer>
+<!--
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+-->
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/js/main.js" charset="utf-8"></script>
+    <script src="/js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ja.Code</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/page5/">
+    <link rel="alternate" type="application/rss+xml" title="Ja.Code" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Ja.Code</a>
+        <small>猿修地，时光机</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" index>
+    <div class="left">
+        <img src="https://jacobpan3g.github.io/img/jacob.png" style="width:100px;float:left;margin-right:20px;">
+        <h1>Welcome to Ja.Code</h1>
+        <small>Follow Excellence. Success will chase you.</small>
+        <div>@ Jacob Pan</div>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/09/01/convert-muti-files-from-gbk-to-utf8-in-a-time/">用find同时把多个GBK文件转成UTF-8</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-09-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#cmd" title="Category: cmd" rel="category">cmd</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#shell" title="Tag: shell" rel="tag">shell</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>通过一下命令，可以一次性把<code class="highlighter-rouge">dir/</code>下多个gbk文件转成utf-8文件，并放在指定目录下：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ find &lt;dir&gt; -type d -exec mkdir -p &lt;utf dir&gt;/{} \;
+$ find &lt;dir&gt; -type f -exec bash -c "iconv -f GBK -t UTF-8 {} -o &lt;utf dir&gt;/{}" \;
+</code></pre></div></div>
+
+<p>其中</p>
+<ol>
+  <li>第一行命令是用来模拟<code class="highlighter-rouge">dir/</code>的目录结构创建一个目录树，这里创建的只有目录, 里面时没有文件的, 后半段命令的<code class="highlighter-rouge">{}</code>代表的是前半段<code class="highlighter-rouge">find</code>输出的每一行</li>
+  <li>第二行命令的核心是后半段，原型是<code class="highlighter-rouge">iconv -f GBK -t UTF-8 &lt;file&gt; -o &lt;out dir&gt;</code>, 把<code class="highlighter-rouge">&lt;file&gt;</code>转成utf-8并放在<code class="highlighter-rouge">&lt;out dir&gt;</code>里</li>
+</ol>
+
+<hr />
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/09/01/convert-muti-files-from-gbk-to-utf8-in-a-time/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/09/01/solve-kernel2.6.36-build-error-in-ubuntu16.04/">Ubuntu16.04下编译Linux2.6.36的kernel出现timeconst.h错误的解决方法</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-09-01
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#kernel" title="Tag: kernel" rel="tag">kernel</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>最近发现在Ubuntu16.04下编译Linux 2.6.36的内核会出现一下错误</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Can't use 'defined(@array)' (Maybe you should just omit the defined()?) at kernel/timeconst.pl line 373.
+/linux-2.6.36/kernel/Makefile:137: recipe for target 'kernel/timeconst.h' failed
+make[3]: *** [kernel/timeconst.h] Error 255
+/tmp/GmGWZPad:953: recipe for target 'kernel' failed
+</code></pre></div></div>
+
+<p>根据上述提示，直接把内核源码中<code class="highlighter-rouge">./kernel/timeconst.pl</code>第373行的if条件中的<code class="highlighter-rouge">defined(@val)</code>改成<code class="highlighter-rouge">@val</code>，再次编译就可通过了.</p>
+
+<hr />
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/09/01/solve-kernel2.6.36-build-error-in-ubuntu16.04/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/09/01/use-pinyin-input-method-in-ubuntu/">在Ubuntu下使用拼音输入法</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-09-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#config" title="Tag: config" rel="tag">config</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#1-安装中文语言" id="markdown-toc-1-安装中文语言">1. 安装中文语言</a></li>
+  <li><a href="#2-配置拼音输入法" id="markdown-toc-2-配置拼音输入法">2. 配置拼音输入法</a></li>
+  <li><a href="#3-sogou输入法安装" id="markdown-toc-3-sogou输入法安装">3. sogou输入法安装</a></li>
+</ul>
+
+<p>安装ubuntu时，如果不是安装中文版，是默认没有中文输入法的，因为安装中文版的话，home下的各个目录都是中文的，这样用起来比较别扭，我还是比较偏向于安装英文版，然后再把中文输入法手动安装就可以了.</p>
+
+<h2 id="1-安装中文语言">1. 安装中文语言</h2>
+
+<p>“Setting” – “Language Support”, 此时会提示“语言支持没有完整安装”, 这个可以不用管，可以直接点”Remind Me Later”, 接着在对话框中间点击”Install/Remove Languages…”, 在弹出对话框中找到”Chinese(simplified)”并勾选，点击”Apply”，等待安装完成，logout当前用户。</p>
+
+<h2 id="2-配置拼音输入法">2. 配置拼音输入法</h2>
+
+<p>重新登录后打开“Setting” – “Language Support”，在<code class="highlighter-rouge">Keyboard input method system</code>中选择<code class="highlighter-rouge">fcitx</code>, 然后再logout当前用户</p>
+
+<p>重新登录系统后，桌面右上角的小键盘的就会变成一个小企鹅，代表fcitx启动成功了。点击小企鹅，选择“ConfigureFcitx”，在“Input Method”标签中点击右下角的“+”, 找到“Pinyin”或者“Sunpinyin”，点击”OK”按钮，这样子你就可以通过右上角的小键盘处选择拼音输入法了，亦可以通过<code class="highlighter-rouge">&lt;ctrl&gt;+&lt;space&gt;</code>或<code class="highlighter-rouge">&lt;shift&gt;</code>进行中英文的切换, enjoy it!</p>
+
+<h2 id="3-sogou输入法安装">3. sogou输入法安装</h2>
+
+<p>现在在ubuntu也可以安装sogou输入法了，sogou官网有提供deb安装包，直接下载下来使用<code class="highlighter-rouge"># dpkg -i sogou.deb</code>就可以安装了.</p>
+
+<p>由于sogou输入法依赖于fcitx，如果安装过程报错可以先安装fcitx, 通过命令<code class="highlighter-rouge"># apt-get install fcitx</code>即可。可以通过<code class="highlighter-rouge">$ dpkg -l | grep fcitx</code>查看系统是否已安装fcitx。</p>
+
+<p>我觉得ubuntu内置的中文输入法也够用了，这里大家可以根据自己的喜好自行选择哈。</p>
+
+<hr />
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/09/01/use-pinyin-input-method-in-ubuntu/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/09/01/change-default-xcode/">Mac下修改系统默认Xcode</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-09-01
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#mac" title="Category: mac" rel="category">mac</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#xcode" title="Tag: xcode" rel="tag">xcode</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>查看当前系统默认xcode</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ xcode-select -p
+</code></pre></div></div>
+
+<p>切换系统默认xcode</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># xcode-select -switch /Applications/Xcode.app
+</code></pre></div></div>
+
+<p>当在mac下同时安装多个xcode时，第二个xcode会以<code class="highlighter-rouge">xcode 2</code>来命名，系统会自动把新安装的xcode 2作为默认xcode，由于名字存在空格，在编译一些软件时会存在一些问题。</p>
+
+<p>例如我之前编译<code class="highlighter-rouge">libnet</code>时，根据项目的<code class="highlighter-rouge">BUILD-FROM-GIT.txt</code>开始编译过程, 由于我的默认xcode的名字时<code class="highlighter-rouge">xcode 2</code>, 从而引发了一下错误:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/sh: /Applications/Xcode: No such file or directory
+</code></pre></div></div>
+
+<p>后来我用上述命令把”系统默认xcode”切换成xcode(名字不含<code class="highlighter-rouge"> 2</code>的)，才能通过编译.</p>
+
+<hr />
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/09/01/change-default-xcode/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/08/31/install-ubuntu-by-hd-in-windows/">Windows7下如何硬盘安装Ubuntu</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-08-31
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#install" title="Tag: install" rel="tag">install</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#1-准备好ubuntu-iso镜像" id="markdown-toc-1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</a></li>
+  <li><a href="#2-使用easybcd引导ubuntu镜像" id="markdown-toc-2-使用easybcd引导ubuntu镜像">2. 使用EasyBCD引导ubuntu镜像</a></li>
+  <li><a href="#3-重启电脑引导镜像" id="markdown-toc-3-重启电脑引导镜像">3. 重启电脑，引导镜像</a></li>
+</ul>
+
+<p>一般来说，折腾双系统是每一位程序猿都有过的经历，如何在windows7下安装双系统ubuntu呢？今天来给大家介绍一下如何直接在windows7硬盘安装ubuntu，而不需要使用U盘或者光盘，或外置硬盘。</p>
+
+<h2 id="1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</h2>
+
+<p>可以直接在官网上找，下载后在windows下使用解压软件找到iso里的<code class="highlighter-rouge">initrd.lz</code>和<code class="highlighter-rouge">vmlinuz.efi</code>(ps:若是安装32位的ubuntu，第二个文件是<code class="highlighter-rouge">vmlinuz</code>，而没有后缀<code class="highlighter-rouge">.efi</code>), 一般会在iso根目录下的<code class="highlighter-rouge">casper</code>里。</p>
+
+<p>把上诉两个文件和镜像本身放在windows任意一个磁盘的根目录下，我这里以f盘为例。</p>
+
+<h2 id="2-使用easybcd引导ubuntu镜像">2. 使用EasyBCD引导ubuntu镜像</h2>
+
+<p>在windows下安装EasyBCD，我现在用的是2.2版本的。完成后打开EasyBCD，在左边选择<code class="highlighter-rouge">添加新条目</code>, 然后选择<code class="highlighter-rouge">NeoGrub</code>标签，点击<code class="highlighter-rouge">安装</code>，此时EasyBCD会自己创建一个引导，很快，不用几秒钟。接着点击旁边的<code class="highlighter-rouge">配置</code>, 在弹出的编辑器中加入一下指令：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title Install Ubuntu
+root (hd0,7)
+kernel (hd0,7)/vmlinuz.eft boot=casper iso-scan/filename=/ubuntu.iso ro quiet splash locale=zh_CN.UTF-8
+initrd (hd0,7)/initrd.lz
+</code></pre></div></div>
+
+<p>其中，有几个地方需要注意一下：</p>
+<ol>
+  <li>第2，3，4行都出现了的<code class="highlighter-rouge">(hd0,7)</code>是代表第一步准备的镜像和文件所在的磁盘, 在windows下, c盘是<code class="highlighter-rouge">(hd0,1)</code>, d盘是<code class="highlighter-rouge">(hd0,5)</code>, e盘是<code class="highlighter-rouge">(hd0,6)</code>, f盘是<code class="highlighter-rouge">(hd0,7)</code>, 依此类推，第一步中我把镜像以及相关文件都放在了f盘，因此我这里是<code class="highlighter-rouge">(hd0,7)</code>, 大家可根据自己第一步选择的磁盘修改，再次重申一下，无论放在哪个盘，都要放在该磁盘的根目录下</li>
+  <li>第3行开头处有一个<code class="highlighter-rouge">vmlinuz.eft</code>, 这个就是我们第一步所准备的其中一个文件的名字，如果安装的是32位ubuntu，这个文件名字是<code class="highlighter-rouge">vmlinuz</code>, 这里也要做相应的修改</li>
+  <li>第3行中间处的<code class="highlighter-rouge">filename=/ubuntu.iso</code>, 斜杠后面的是ubuntu镜像的名字,这里也可以根据自己要安装镜像的名字来自定义。</li>
+</ol>
+
+<p>好了，添加上述指令后，保存，关闭。</p>
+
+<h2 id="3-重启电脑引导镜像">3. 重启电脑，引导镜像</h2>
+
+<p>重启电脑，留意开机界面，会发现多了一个<code class="highlighter-rouge">NeoGrub</code>选项，选中它，就可以进入ubuntu的安装镜像了. (ps: 如果本来已经双系统，开机时选择启动windows,然后在windows启动页面再选择<code class="highlighter-rouge">NeoGrub</code>引导ubuntu镜像)。</p>
+
+<p>在开始安装之前，还有最后一步十分重要的别忘了做 —— “卸载<code class="highlighter-rouge">isodevice</code>分区”</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># umount -l /isodevice
+</code></pre></div></div>
+<p>若没有卸载iso分区，安装过程会报错的，这一步也是硬盘安装所独有的，大家一定别忘了这一步。这个分区的名字可以通过<code class="highlighter-rouge">$ mount | grep isodevice</code>来查看。</p>
+
+<hr />
+
+<p>以上步骤我曾经成功在windows 8下安装Ubuntu 12.04和16.04，也尝试过用来安装Centos 6.4, 故理论上上述步骤可以用来windows下硬盘安装一般的linux系统。</p>
+
+<p>后面就可以根据自己的喜好分区，安装ubuntu了，Enjoy yourself！</p>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/08/31/install-ubuntu-by-hd-in-windows/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/08/31/config-ip-forward-in-ubuntu/">Ubuntu下如何映射端口</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-08-31
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#config" title="Tag: config" rel="tag">config</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>若PC上有两张网卡，需要把网卡A的网络共享到网卡B的局域网中，类似路由器wan口到lan口的映射。在windows下十分简单，直接在<code class="highlighter-rouge">网络中心</code>中打开网卡A的共享功能就行，而若在<code class="highlighter-rouge">Ubuntu</code>中，需要一下命令：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># sysctl net.ipv4.ip_forward=1
+# iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+</code></pre></div></div>
+<p>其中，eth1是网卡A的ifname</p>
+
+<p>以上是在<code class="highlighter-rouge">Ubuntu 16.04</code>的做法，在<code class="highlighter-rouge">Ubuntu 12.04</code>，可以直接</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+</code></pre></div></div>
+
+<hr />
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/08/31/config-ip-forward-in-ubuntu/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="/page4" class="previous"><i class="fa fa-angle-left"></i></a>
+          
+          <span class="page_number ">5/6</span>
+          
+            <a href="/page6" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="/page6" class="next"><i class="fa fa-angle-double-right"></i></a>
+          
+        </div>
+    </div>
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/2017/12/29/tmux-basic/">tmux使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-tips-in-windows/">Windows一些使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-tips-in-ubuntu/">Ubuntu下的一些使用技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/install-ubuntu-by-hd-in-xp/">Windows xp下硬盘安装ubuntu</a></li>
+                    
+                        <li><a href="/2017/12/26/makefile-basic/">Makefile基本</a></li>
+                    
+                        <li><a href="/2017/12/26/install-centos-by-hd-in-xp/">Windows xp下硬盘安装centos6.4</a></li>
+                    
+                        <li><a href="/2017/12/26/disk-partition-while-mutli-systems/">安装多系统分区技巧</a></li>
+                    
+                        <li><a href="/2017/12/26/useful-cmd/">一些有用的命令</a></li>
+                    
+                        <li><a href="/2017/12/26/git-in-linux/">Linux下使用git</a></li>
+                    
+                        <li><a href="/2017/12/22/an-error-in-windows-8.1/">Windows8.1下"缺失api-ms-win-crt-heap-l1-1-0.dll"问题的解决方法</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#weibo" class="categories-list-item" cate="weibo">
+                            <span class="name">
+                                weibo
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#blog" class="categories-list-item" cate="blog">
+                            <span class="name">
+                                blog
+                            </span>
+                            <span class="badge">2</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#ubuntu" class="categories-list-item" cate="ubuntu">
+                            <span class="name">
+                                ubuntu
+                            </span>
+                            <span class="badge">9</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#mac" class="categories-list-item" cate="mac">
+                            <span class="name">
+                                mac
+                            </span>
+                            <span class="badge">2</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#cmd" class="categories-list-item" cate="cmd">
+                            <span class="name">
+                                cmd
+                            </span>
+                            <span class="badge">7</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#linux" class="categories-list-item" cate="linux">
+                            <span class="name">
+                                linux
+                            </span>
+                            <span class="badge">7</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#windows" class="categories-list-item" cate="windows">
+                            <span class="name">
+                                windows
+                            </span>
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#c" class="categories-list-item" cate="c">
+                            <span class="name">
+                                c
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#oauth2" style="font-size: 9pt; color: #999;">oauth2</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#jekyll" style="font-size: 10.5pt; color: #777;">jekyll</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#gitment" style="font-size: 9pt; color: #999;">gitment</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#config" style="font-size: 18pt; color: #000;">config</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#install" style="font-size: 13.5pt; color: #444;">install</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#xcode" style="font-size: 9pt; color: #999;">xcode</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#kernel" style="font-size: 9pt; color: #999;">kernel</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#shell" style="font-size: 13.5pt; color: #444;">shell</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#dylib" style="font-size: 9pt; color: #999;">dylib</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#wireless" style="font-size: 9pt; color: #999;">wireless</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#svn" style="font-size: 9pt; color: #999;">svn</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#log" style="font-size: 10.5pt; color: #777;">log</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#qt" style="font-size: 9pt; color: #999;">qt</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#debug" style="font-size: 9pt; color: #999;">debug</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#solution" style="font-size: 9pt; color: #999;">solution</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#git" style="font-size: 9pt; color: #999;">git</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#makefile" style="font-size: 9pt; color: #999;">makefile</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#tips" style="font-size: 10.5pt; color: #777;">tips</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#tmux" style="font-size: 9pt; color: #999;">tmux</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             时光沉淀于此！ 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/JacobPan3g" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:jacob.pan@foxmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <!--
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+            <span>
+                Blogs written by <a href="https://jacobpan3g.github.io">Jacob Pan</a>.
+            </span>
+        </p>
+    </div>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?75177901590fba02b71851d2acaee595";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</footer>
+<!--
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+-->
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/js/main.js" charset="utf-8"></script>
+    <script src="/js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+  </body>
+
+</html>
