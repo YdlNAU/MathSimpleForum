@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ja.Code</title>
+    <title>The Simple forum</title>
     <meta name="description" content="">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
     <link rel="canonical" href="http://localhost:4000/">
-    <link rel="alternate" type="application/rss+xml" title="Ja.Code" href="http://localhost:4000/feed.xml ">
+    <link rel="alternate" type="application/rss+xml" title="The Simple forum" href="http://localhost:4000/feed.xml ">
 
 
 
@@ -28,8 +28,8 @@
 
     <header id="top">
     <div class="wrapper">
-        <a href="/" class="brand">Ja.Code</a>
-        <small>猿修地，时光机</small>
+        <a href="/" class="brand">The Simple forum</a>
+        <small>Learn something deep, than you can see somethinf different!</small>
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
         <nav id="headerNav">
             <ul>
@@ -78,16 +78,6 @@
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
             </ul>
         </nav>
     </div>
@@ -96,23 +86,23 @@
 
         <div class="page clearfix" index>
     <div class="left">
-        <img src="https://jacobpan3g.github.io/img/jacob.png" style="width:100px;float:left;margin-right:20px;">
-        <h1>Welcome to Ja.Code</h1>
+        <img src= http://localhost:4000/assets/logo.png style="width:100px;float:left;margin-right:20px;">
+        <h1>Welcome to here for exchange your ideas!</h1>
         <small>Follow Excellence. Success will chase you.</small>
-        <div>@ Jacob Pan</div>
+        <div>@Carsios descart</div>
         <hr>
         <ul>
             
               <li>
                 <h2>
-                  <a class="post-link" href="/2017/12/29/tmux-basic/">tmux使用技巧</a>
+                  <a class="post-link" href="/2018/01/13/appeal-for-the-forum/">贡献论坛的呼吁</a>
                 </h2>
                 <div class="label">
                     <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-29
+                        <i class="fa fa-calendar"></i>2018-01-13
                     </div>
                     <div class="label-card">
-                        <i class="fa fa-user"></i>Jacob Pan
+                        <i class="fa fa-user"></i>Yu dalang
                         
                     </div>
                     <div class="label-card">
@@ -128,7 +118,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#cmd" title="Category: cmd" rel="category">cmd</a>
+        <a href="/category/#forum" title="Category: forum" rel="category">forum</a>
     
   
 
@@ -145,7 +135,7 @@
   <i class="fa fa-tags"></i>
   
     
-        <a href="/tag/#tmux" title="Tag: tmux" rel="tag">tmux</a>
+        <a href="/tag/#management" title="Tag: management" rel="tag">management</a>
     
   
 
@@ -155,344 +145,78 @@
                 </div>
                 <div class="excerpt">
                     <ul id="markdown-toc">
-  <li><a href="#新建会话" id="markdown-toc-新建会话">新建会话</a></li>
-  <li><a href="#切换会话" id="markdown-toc-切换会话">切换会话</a></li>
-  <li><a href="#重命名" id="markdown-toc-重命名">重命名</a></li>
+  <li><a href="#1-你打开的这个网站是什么" id="markdown-toc-1-你打开的这个网站是什么">1. 你打开的这个网站是什么？</a></li>
+  <li><a href="#2-为什么要建设这网站" id="markdown-toc-2-为什么要建设这网站">2. 为什么要建设这网站？</a></li>
+  <li><a href="#3-我能得到什么我能做什么" id="markdown-toc-3-我能得到什么我能做什么">3. 我能得到什么？我能做什么？</a></li>
 </ul>
-
-<p>tmux是一个强大的终端分屏工具</p>
-
-<h2 id="新建会话">新建会话</h2>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tmux new <span class="nt">-s</span> &lt;session name&gt;
-</code></pre></div></div>
-<p>建议给每一个会会话命名，这样日后切换会话时更加方便。</p>
-
-<h2 id="切换会话">切换会话</h2>
-
-<p>当建立了多个会话后，可以实时切换到不同的tmux会话中，每个会话的命令执行记录都会被保存下来</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tmux <span class="nb">ls
-</span>tmux a <span class="nt">-t</span> &lt;name&gt;    <span class="c"># attach</span>
-</code></pre></div></div>
-<p>上述方法是在shell命令行里切换，若原先在一个tmux会话中，可以先使用<code class="highlighter-rouge">&lt;tmux_prefix + d&gt;</code>与原会话分离(detach)</p>
-
-<p>还有一个方法，可以从一个tmux会话中直接切换到另一个会话中</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tmux_prefix + s&gt;   # 列出会话列表后直接通过方向键选择
-</code></pre></div></div>
-
-<p>ps: <code class="highlighter-rouge">&lt;tmux_prefix&gt;</code>是在tmux会话中要执行指令时的前缀，默认是<code class="highlighter-rouge">&lt;ctrl b&gt;</code>，同时按下ctrl和b按键</p>
-
-<h2 id="重命名">重命名</h2>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tmux_profix&gt;$      # 重命名session
-&lt;tmux_profix&gt;,      # 重命名plane
-</code></pre></div></div>
 
 <blockquote>
-  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+  <p>你有一个苹果，我有一个苹果，彼此交换一下，我们仍然是各有一个苹果；但你有一种思想，我有一种思想，彼此交换，我们就都有了两种思想，甚至更多。
+——萧伯纳</p>
 </blockquote>
 
+<h2 id="1-你打开的这个网站是什么">1. 你打开的这个网站是什么？</h2>
 
-                </div>
-                <div class="read-all">
-                    <a  href="/2017/12/29/tmux-basic/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
-              <li>
-                <h2>
-                  <a class="post-link" href="/2017/12/26/useful-tips-in-windows/">Windows一些使用技巧</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-26
-                    </div>
-                    <div class="label-card">
-                        <i class="fa fa-user"></i>Jacob Pan
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
+<p>这个网站是作者建立在<code class="highlighter-rouge">github</code>上的一个拥有一定评论的静态网页系统，作者想将其视作一个简单的小论坛。因为建立真正的论坛需要购买域名，租借服务器以及一个维护论坛的工作人员，作者作为一个学生不可能去做这么复杂的事情，所有这里借助<code class="highlighter-rouge">github</code>提供的免费服务建立了这个网站。</p>
 
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#windows" title="Category: windows" rel="category">windows</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#tips" title="Tag: tips" rel="tag">tips</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    <ul id="markdown-toc">
-  <li><a href="#securecrt中文乱码解决方法" id="markdown-toc-securecrt中文乱码解决方法">SecureCRT中文乱码解决方法</a></li>
-</ul>
-
-<h2 id="securecrt中文乱码解决方法">SecureCRT中文乱码解决方法</h2>
-
-<p><code class="highlighter-rouge">会话选项</code>-<code class="highlighter-rouge">外观</code>，把<code class="highlighter-rouge">字符编码</code>改成<code class="highlighter-rouge">UTF-8</code>，确认即可。</p>
-
-<blockquote>
-  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
-</blockquote>
-
-
-                </div>
-                <div class="read-all">
-                    <a  href="/2017/12/26/useful-tips-in-windows/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
-              <li>
-                <h2>
-                  <a class="post-link" href="/2017/12/26/useful-tips-in-ubuntu/">Ubuntu下的一些使用技巧</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-26
-                    </div>
-                    <div class="label-card">
-                        <i class="fa fa-user"></i>Jacob Pan
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#tips" title="Tag: tips" rel="tag">tips</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    <ul id="markdown-toc">
-  <li><a href="#把home中文目录名改成英文" id="markdown-toc-把home中文目录名改成英文">把Home中文目录名改成英文</a></li>
-  <li><a href="#开启sshd" id="markdown-toc-开启sshd">开启sshd</a></li>
-</ul>
-
-<h2 id="把home中文目录名改成英文">把Home中文目录名改成英文</h2>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US
-xdg-user-dirs-gtk-update
-</code></pre></div></div>
-<p>弹出对话框勾选<code class="highlighter-rouge">不再提醒</code>，点<code class="highlighter-rouge">确定</code></p>
-
-<h2 id="开启sshd">开启sshd</h2>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install openssh-server
-</code></pre></div></div>
-<p>安装了即可</p>
-
-<blockquote>
-  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
-</blockquote>
-
-
-                </div>
-                <div class="read-all">
-                    <a  href="/2017/12/26/useful-tips-in-ubuntu/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
-              <li>
-                <h2>
-                  <a class="post-link" href="/2017/12/26/install-ubuntu-by-hd-in-xp/">Windows xp下硬盘安装ubuntu</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-26
-                    </div>
-                    <div class="label-card">
-                        <i class="fa fa-user"></i>Jacob Pan
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#ubuntu" title="Category: ubuntu" rel="category">ubuntu</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#install" title="Tag: install" rel="tag">install</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    <ul id="markdown-toc">
-  <li><a href="#1-准备好ubuntu-iso镜像" id="markdown-toc-1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</a></li>
-  <li><a href="#2-使用grub4dos引导ubuntu镜像" id="markdown-toc-2-使用grub4dos引导ubuntu镜像">2. 使用grub4dos引导ubuntu镜像</a>    <ul>
-      <li><a href="#编辑bootini" id="markdown-toc-编辑bootini">编辑boot.ini</a></li>
-      <li><a href="#编辑menulst" id="markdown-toc-编辑menulst">编辑menu.lst</a></li>
-    </ul>
-  </li>
-  <li><a href="#3-重启电脑引导镜像" id="markdown-toc-3-重启电脑引导镜像">3. 重启电脑，引导镜像</a></li>
-</ul>
-
-<p>之前写过一篇文章阐述如何在win7下硬盘安装ubuntu，而不需要安装U盘或光盘。接下来，介绍一下在xp下如何硬盘安装ubuntu，在操作上面，有一点点小差别</p>
-
-<h2 id="1-准备好ubuntu-iso镜像">1. 准备好ubuntu iso镜像</h2>
-
-<p>并把镜像<code class="highlighter-rouge">casper/</code>里的<code class="highlighter-rouge">initrd.lz</code>和<code class="highlighter-rouge">vmlinz</code>提取出来，连同iso镜像放在某一磁盘的根目录下，为简单起见，这里都放在c盘下</p>
-
-<h2 id="2-使用grub4dos引导ubuntu镜像">2. 使用grub4dos引导ubuntu镜像</h2>
-
-<p>这里就是和win7下操作的不同之处，win7用的是easyBSD。</p>
-
-<p>下载grub4dos，解压后把<code class="highlighter-rouge">grldr</code>和<code class="highlighter-rouge">menu.lst</code>拷贝到C盘根目录，此时，包括第一步，一共有以下几个文件放到了c盘根目录:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install.lz
-vmlinz
-ubuntu-xx.04-destop-i386.iso
-grldr
-menu.lst
-</code></pre></div></div>
-
-<h3 id="编辑bootini">编辑boot.ini</h3>
-
-<p>编辑<code class="highlighter-rouge">C:\boot.ini</code>，在文件结尾添加</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c:\grldr="start grub4dos"
-</code></pre></div></div>
-<p>ps: 若在C盘根目录下找不到该文件，可以通过<code class="highlighter-rouge">文件夹选项</code>-<code class="highlighter-rouge">查看</code>-<code class="highlighter-rouge">高级设置</code>中，把<code class="highlighter-rouge">隐藏受保护的操作系统文件(推荐)</code>不勾选，然后选择<code class="highlighter-rouge">显示所有文件和文件夹</code>，就可以把系统隐藏文件显示出来，从而找到<code class="highlighter-rouge">boot.ini</code></p>
-
-<h3 id="编辑menulst">编辑menu.lst</h3>
-
-<p>接下来编辑<code class="highlighter-rouge">menu.lst</code>，以添加引导项。添加下面内容到文件结尾</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title Install Ubuntu
-root (hd0,0)
-kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-xx.04-desktop-i386.iso
-initrd (hd0,0)/initrd.lz
-</code></pre></div></div>
-
-<p>其中</p>
+<p>我已经在文章上放了一些文章。</p>
 
 <ul>
-  <li>
-    <p><code class="highlighter-rouge">(hd0,0)</code> 一般情况下代表的是C盘，这里的<code class="highlighter-rouge">hd0</code>代表第一块硬盘，<code class="highlighter-rouge">0</code>代表第一个分区。若到时重启系统选择新增的引导项提示找不到文件时，可以重复修改该文件，直到找到正确的数字编号为止。</p>
-
-    <p>若第一步的iso镜像等三个文件放在了其他磁盘根目录下，同理，也可通过上述方法找到正取的编号</p>
-  </li>
-  <li>
-    <p>若需要安装中文版本的，可在第二行结尾添加<code class="highlighter-rouge"> locale=zh_CN.UTF-8</code>，这样子安装界面就会是中文，安装的系统也是中文环境的。</p>
-  </li>
+  <li>你可以在上面浏览自己感兴趣的文章，有感想的话可以在评论系统上发表评论！</li>
+  <li>你也可以贡献你的一份力量，你可以将你写的文章发给我。</li>
 </ul>
 
-<h2 id="3-重启电脑引导镜像">3. 重启电脑，引导镜像</h2>
+<p>关于你发给我的文章的格式，你可以用任何编辑器(例如office word, WPS word, vim ，甚至是 latex 排版系统)，任何格式的文件(doc,docx,txt,html,markdown)去写你想写的文章。我推荐你用 markdown的编辑器去写markdown文件。</p>
 
-<p>重启电脑，开机页面会多了一项<code class="highlighter-rouge">start grub4dos</code>，点击后，选择<code class="highlighter-rouge">Install Ubuntu</code>，细心的读者会发现，这两项都是我们上面第2步填写过的title内容。iso镜像路径没有错的话，就可以成功引导镜像了。</p>
+<h2 id="2-为什么要建设这网站">2. 为什么要建设这网站？</h2>
 
-<p>镜像引导成功后的第一步，记得要先卸载isodevice分区</p>
+<p>正如萧伯纳所说，我们可以通过这个平台，凝聚大家的思想，交流出智慧的火花。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo umount -l /isodevice
-</code></pre></div></div>
+<p><strong>作者有一个构想：</strong>
+因为2017届的第二个学习将会是最后一个学期大家有机会系统地学习一门课程。</p>
 
-<blockquote>
-  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
-</blockquote>
+<p>还有，下学期有非常重要的统计课，同时还可以选修系统论，系统论里面有常微分方程。我们可以借助于这个网站，配合这些课程的学习。对于一些做方法的实验室，他们一般对数理要求略高，也可以趁此机会把统计，微分方程，基础数学模型等基础打好！</p>
+
+<p>我曾听说过学习的三重境界：</p>
+
+<ol>
+  <li>你认真地去上课,做一定作业，最后进行期末复习。</li>
+  <li>你认真地完成作业并参与一定的项目，然后和别人进行讨论。</li>
+  <li>你撰写一定主题的文章，自己提出问题，自己解答，融汇贯通。</li>
+</ol>
+
+<p>所以我的构想是：借助于评论系统，大家就是论事讨论，同时大家也可以加微信群在群里也可以讨论。作者会将重要结论展示在文章上！</p>
+
+<p>大家也可以进行投稿，向大家展示你的风采！</p>
+
+<h2 id="3-我能得到什么我能做什么">3. 我能得到什么？我能做什么？</h2>
+
+<p>抽象地讲：你能得到一定的思想，你能交流具体的知识。你可以提升你学习的深度！
+实际地讲：你能得到一些具体问题的答案，这些问题比如是课后习题，老师布置的题目已经期末复习题！</p>
+
+<p>你可以来浏览，来评论，来加群，来投稿！</p>
+
+<hr />
+
+<p>以上就是我想说的，我非常地希望大家可以互相借鉴，相互学习，共同进步！！</p>
+
+<p><strong>作为本项目的贡献者和维护者，为了培养一个开放和热情的社区，我们承诺尊重所有通过报告问题，发布功能请求，更新文档，提交请求等</strong></p>
 
 
                 </div>
                 <div class="read-all">
-                    <a  href="/2017/12/26/install-ubuntu-by-hd-in-xp/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    <a  href="/2018/01/13/appeal-for-the-forum/"><i class="fa fa-newspaper-o"></i>Read All</a>
                 </div>
                 <hr>
               </li>
             
               <li>
                 <h2>
-                  <a class="post-link" href="/2017/12/26/makefile-basic/">Makefile基本</a>
+                  <a class="post-link" href="/2017/12/10/jekyll-basic/">jekyll基本</a>
                 </h2>
                 <div class="label">
                     <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-26
+                        <i class="fa fa-calendar"></i>2017-12-10
                     </div>
                     <div class="label-card">
                         <i class="fa fa-user"></i>Jacob Pan
@@ -511,7 +235,7 @@ initrd (hd0,0)/initrd.lz
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#linux" title="Category: linux" rel="category">linux</a>
+        <a href="/category/#blog" title="Category: blog" rel="category">blog</a>
     
   
 
@@ -528,7 +252,7 @@ initrd (hd0,0)/initrd.lz
   <i class="fa fa-tags"></i>
   
     
-        <a href="/tag/#makefile" title="Tag: makefile" rel="tag">makefile</a>
+        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>
     
   
 
@@ -538,104 +262,204 @@ initrd (hd0,0)/initrd.lz
                 </div>
                 <div class="excerpt">
                     <ul id="markdown-toc">
-  <li><a href="#基本" id="markdown-toc-基本">基本</a></li>
-  <li><a href="#targets-" id="markdown-toc-targets-">targets: %:</a></li>
-  <li><a href="#自动变量" id="markdown-toc-自动变量">自动变量</a></li>
-  <li><a href="#参数" id="markdown-toc-参数">参数</a></li>
-  <li><a href="#ifeq-ifdef" id="markdown-toc-ifeq-ifdef">ifeq, ifdef</a></li>
-  <li><a href="#常用函数" id="markdown-toc-常用函数">常用函数</a>    <ul>
-      <li><a href="#subst" id="markdown-toc-subst">subst</a></li>
-      <li><a href="#addsuffix-addprefix" id="markdown-toc-addsuffix-addprefix">addsuffix, addprefix</a></li>
-    </ul>
-  </li>
-  <li><a href="#引用其他makefile" id="markdown-toc-引用其他makefile">引用其他makefile</a></li>
+  <li><a href="#get-started" id="markdown-toc-get-started">get started</a></li>
+  <li><a href="#为文章添加图片" id="markdown-toc-为文章添加图片">为文章添加图片</a></li>
+  <li><a href="#局域网访问" id="markdown-toc-局域网访问">局域网访问</a></li>
 </ul>
 
-<p>Makefile主要用来make的输入，命令<code class="highlighter-rouge">make filename</code>的意思就是要把filename生成。</p>
+<h2 id="get-started">get started</h2>
 
-<h2 id="基本">基本</h2>
+<p>使用jekyll创建blog，建议在ubuntu下面搭建，因为十分方便，直接使用</p>
 
-<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">target</span><span class="o">:</span> <span class="nf">dependences</span>
-	shell cmd
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># apt-get install jekyll
 </code></pre></div></div>
-<p>以上是Makefile的基本格式。</p>
+<p>就可以安装好了，而不用想在其他平台下，先安装ruby，然后才能安装jekyll这么繁琐。</p>
 
-<h2 id="targets-">targets: %:</h2>
+<p>然后直接在github上或者jekyll官网上下载一个自己喜欢的blog模块，在根目录执行</p>
 
-<p>通过<code class="highlighter-rouge">%</code>可以对target进行模式拓展</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll serve
+</code></pre></div></div>
+<p>就可以在浏览器通过<code class="highlighter-rouge">127.0.0.1:4000</code>访问本地的blog了</p>
 
-<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">targets</span> <span class="o">=</span> aa bb
+<h2 id="为文章添加图片">为文章添加图片</h2>
 
-<span class="nl">targets</span><span class="o">:</span> <span class="nf">%: %.c</span>
-	gcc <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
+<p>可以在blog根目录下创建一个img文件，把图片放在里面，然后在文章中使用路径<code class="highlighter-rouge">/img/xxx.png</code>就可以访问到该图片的。</p>
+
+<h2 id="局域网访问">局域网访问</h2>
+
+<p>若使用<code class="highlighter-rouge">jekyll serve</code>启动，只能在本机浏览器访问blog，而局域网内其他PC访问不了</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve -H 0.0.0.0
+</code></pre></div></div>
+<p>通过上述命令启动，就可以在局域网内其他PC通过当前IP地址来访问访问blog了；若需要改变端口，可使用-P选项。</p>
+
+<blockquote>
+  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
+</blockquote>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2017/12/10/jekyll-basic/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2017/07/17/gitment-in-jekyll/">在Jekyll博客添加评论系统：gitment篇</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2017-07-17
+                    </div>
+                    <div class="label-card">
+                        <i class="fa fa-user"></i>Jacob Pan
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#blog" title="Category: blog" rel="category">blog</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>&nbsp;
+    
+        <a href="/tag/#gitment" title="Tag: gitment" rel="tag">gitment</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#1-申请一个github-oauth-application" id="markdown-toc-1-申请一个github-oauth-application">1. 申请一个Github OAuth Application</a></li>
+  <li><a href="#2-在jekyll博客调用gitment" id="markdown-toc-2-在jekyll博客调用gitment">2. 在jekyll博客调用gitment</a></li>
+  <li><a href="#3-为每篇博文初始化评论系统" id="markdown-toc-3-为每篇博文初始化评论系统">3. 为每篇博文初始化评论系统</a></li>
+  <li><a href="#4-一些问题" id="markdown-toc-4-一些问题">4. 一些问题</a></li>
+</ul>
+
+<p>最近在Github Pages上使用Jekyll搭建了个人博客<a href="https://jacobpan3g.github.io/cn" title="我的博客主页">( jacobpan3g.github.io/cn )</a>,当需要添加评论系统时，找了一下国内的几个第三方评论系统，如“多说”，“畅言”，“友言”，“新浪云跟贴”：</p>
+
+<ol>
+  <li>多说，曾经较火的评论系统，网上介绍文章比较多，但已关闭，无法再用了</li>
+  <li>畅言，sohu旗下的，但是需要个人博客备案后才能使用，但github pages个人博客感觉备案比较难</li>
+  <li>友言，jiaThis旗下的，由于时http请求，github pages现在都是https了， 在https站点无法调用http请求，故也无法使用</li>
+  <li>网易云跟贴，曾被当作“多说”的替代品，可惜官方通报说也将在2017.08.01关闭了</li>
+</ol>
+
+<p>再看看disqus，国外比较火的评论系统，但在国内墙了，故也不考虑。</p>
+
+<p>综上，国内几个比较主流的评论系统目前都无法在Github Pages上的个人博客使用， 后面我发现了gitment，一款由国内大神imsun开发的基于github issues的评论系统, 具体介绍请看项目主页<a href="https://github.com/imsun/gitment">( github.com/imsun/gitment )</a>。</p>
+
+<p>目前我已经成功把gitment应用到了自己的Github pages个人博客里，过程中碰了一些壁, 同时发现网上关于gitment的介绍并不多，故写一篇总结，希望可以帮助到大家。</p>
+
+<h2 id="1-申请一个github-oauth-application">1. 申请一个Github OAuth Application</h2>
+
+<p>Github头像下拉菜单 &gt; Settings &gt; 左边Developer settings下的OAuth Application &gt; Register a new application，填写相关信息：</p>
+
+<ol>
+  <li><code class="highlighter-rouge">Application name</code>, <code class="highlighter-rouge">Homepage URL</code>, <code class="highlighter-rouge">Application description</code> 都可以随意填写</li>
+  <li><code class="highlighter-rouge">Authorization callback URL</code> 一定要写自己Github Pages的URL
+(ps: 之前我自己就是在这里碰壁了，调试半天才发现)</li>
+  <li>填写完上述信息后按<code class="highlighter-rouge">Register application</code>按钮，得到<code class="highlighter-rouge">Client ID</code>和<code class="highlighter-rouge">Client Secret</code></li>
+</ol>
+
+<h2 id="2-在jekyll博客调用gitment">2. 在jekyll博客调用gitment</h2>
+
+<p>如gitment项目页Readme所示，在你需要添加评论系统的地方，一般是<code class="highlighter-rouge">_layout/</code>目录下的 <code class="highlighter-rouge">post.html</code>, 添加一下代码</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"gitmentContainer"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://imsun.github.io/gitment/style/default.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://imsun.github.io/gitment/dist/gitment.browser.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">gitment</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Gitment</span><span class="p">({</span>
+    <span class="na">owner</span><span class="p">:</span> <span class="s1">'Your GitHub username'</span><span class="p">,</span>
+    <span class="na">repo</span><span class="p">:</span> <span class="s1">'The repo to store comments'</span><span class="p">,</span>
+    <span class="na">oauth</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">client_id</span><span class="p">:</span> <span class="s1">'Your client ID'</span><span class="p">,</span>
+        <span class="na">client_secret</span><span class="p">:</span> <span class="s1">'Your client secret'</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">});</span>
+<span class="nx">gitment</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">'gitmentContainer'</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
-<p>这里会自动拓展成</p>
+<p>需要修改的有4个地方</p>
 
-<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">aa</span><span class="o">:</span> <span class="nf">aa.c</span>
-	gcc <span class="nt">-o</span> aa aa.c
+<ol>
+  <li>Your GitHub username：填写你的Github Pages博客所在的github账户名</li>
+  <li>The repo to store comments：填写用来存放评论的github仓库，由于评论是 通过issues来存放的，个人建议这里可以直接填Github Pages个人博客所在的仓库</li>
+  <li>Your client ID：第1步所申请到的应用的Client ID</li>
+  <li>Your client secret：第1步所申请到的应用的Client Secret</li>
+</ol>
 
-<span class="nl">bb</span><span class="o">:</span> <span class="nf">bb.c</span>
-	gcc <span class="nt">-o</span> bb bb.c
-</code></pre></div></div>
+<p>填写完这4项把代码保存上传到github就可以了。</p>
 
-<h2 id="自动变量">自动变量</h2>
+<h2 id="3-为每篇博文初始化评论系统">3. 为每篇博文初始化评论系统</h2>
 
-<p>如上面的例子，<code class="highlighter-rouge">$@</code>代表target，<code class="highlighter-rouge">$^</code>代表全部的依赖文件，还有以下自动变量:</p>
+<p>由于gitment的原理是为每一遍博文以其URL作为标识创建一个github issue， 对该篇博客的评论就是对这个issue的评论。因此，我们需要为每篇博文初始化一下评论系统， 初始化后，你可以在你的github上会创建相对应的issue。</p>
+
+<p>接下来，介绍一下如何初始化评论系统</p>
+
+<ol>
+  <li>
+    <p>上面第2步代码添加成功并上传后，你就可以在你的博文页下面看到一个评论框，还 有看到以下错误<code class="highlighter-rouge">Error: Comments Not Initialized</code>，提示该篇博文的评论系统还没初始化</p>
+  </li>
+  <li>
+    <p>点击<code class="highlighter-rouge">Login with GitHub</code>后，使用自己的github账号登录后，就可以在上面错误信息 处看到一个<code class="highlighter-rouge">Initialize Comments</code>的按钮
+(ps: 由于要求回调URL和当前地址一样，故第2步不能在本地调试， 需把代码先上传再调试)</p>
+  </li>
+  <li>
+    <p>点击<code class="highlighter-rouge">Initialize Comments</code>按钮后，就可以开始对该篇博文开始评论了， 同时也可以在对应的github仓库看到相应的issue</p>
+  </li>
+</ol>
+
+<p><img src="https://jacobpan3g.github.io/img/gitment-in-jekyll.png" alt="InitBtn" /></p>
+
+<h2 id="4-一些问题">4. 一些问题</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">$&lt;</code> 依赖文件中的第一个文件</li>
+  <li>安全问题</li>
 </ul>
 
-<h2 id="参数">参数</h2>
+<p>有些读者担心github oauth application的client secret这样明文写在页面上会不会有安全 隐患，我也考虑到这个问题，目前我能想到比较好的解决方法是：注册一个github小号， 在小号里注册oauth application，使用小号app的client secret</p>
 
-<p>通过make可以传递参数，在Makefile里可以获取到</p>
+<ul>
+  <li>回调URL</li>
+</ul>
 
-<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">aa</span><span class="o">:</span> <span class="nf">aa.c</span>
-	gcc <span class="nv">$(CFLAG)</span> <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
-</code></pre></div></div>
-<p>通过<code class="highlighter-rouge">make CFLAG=-g</code>，就可以把参数传入到makefile中，变成<code class="highlighter-rouge">gcc -g -o aa aa.c</code></p>
+<p>有些读者反映登录不成功，请大家一定要确认<strong>github oauth application里的回调URL一定要 填写要使用gitment的博客的URL</strong>，这一点十分重要</p>
 
-<h2 id="ifeq-ifdef">ifeq, ifdef</h2>
+<hr />
 
-<div class="language-makefile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">ifdef</span> <span class="err">VAR</span>
-<span class="nv">target</span> <span class="o">=</span> aa
-<span class="err">else</span>
-<span class="nv">target</span> <span class="o">=</span> bb
-<span class="err">endif</span>
-
-<span class="err">ifeq</span> <span class="err">($(VAR),</span> <span class="err">1)</span>
-<span class="nv">CFLAG</span> <span class="o">=</span> <span class="nt">-g</span>
-<span class="err">endif</span>
-
-<span class="nl">target</span><span class="o">:</span>
-	gcc <span class="nv">$(CFLAG)</span> <span class="nt">-o</span> <span class="nv">$@</span> <span class="nv">$^</span>
-</code></pre></div></div>
-<p>上述例子描述了<code class="highlighter-rouge">ifdef</code>和<code class="highlighter-rouge">ifeq</code>的用法，请注意<code class="highlighter-rouge">ifdef</code>后面跟的变量名加<code class="highlighter-rouge">$()</code>，此外，还有<code class="highlighter-rouge">ifndef</code>和<code class="highlighter-rouge">ifneq</code>。</p>
-
-<p>这里的makefile可以通过<code class="highlighter-rouge">make VAR=1</code>传入参数，使makefile针对不同情况执行不同的命令。</p>
-
-<h2 id="常用函数">常用函数</h2>
-
-<h3 id="subst">subst</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(subst &lt;from&gt;,&lt;to&gt;,&lt;text&gt;)
-</code></pre></div></div>
-
-<h3 id="addsuffix-addprefix">addsuffix, addprefix</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(addsuffix &lt;suffix&gt;,&lt;names...&gt;)
-$(addprefix &lt;suffix&gt;,&lt;names...&gt;)
-</code></pre></div></div>
-
-<p>更多makefile函数可见<a href="http://blog.csdn.net/yangxuan0261/article/details/52060582">makefile中常用函数</a></p>
-
-<h2 id="引用其他makefile">引用其他makefile</h2>
-
-<p>如果当前目录下有一个<code class="highlighter-rouge">makefile.in</code>，可以通过下面语句来引入</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include makefile.in
-</code></pre></div></div>
+<p>好了，gitment使用介绍到这里，大家若遇到什么问题尽管在下面留言，或者在我的个人博客 <a href="https://jacobpan3g.github.io/cn/2017/07/17/gitment-in-jekyll" title="我的博文">( jacobpan3g.github.io/cn )</a>留言，上面使用的评论系统就是gitment，我会抽空 一一作出回答。</p>
 
 <blockquote>
   <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
@@ -644,96 +468,7 @@ $(addprefix &lt;suffix&gt;,&lt;names...&gt;)
 
                 </div>
                 <div class="read-all">
-                    <a  href="/2017/12/26/makefile-basic/"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
-                <hr>
-              </li>
-            
-              <li>
-                <h2>
-                  <a class="post-link" href="/2017/12/26/install-centos-by-hd-in-xp/">Windows xp下硬盘安装centos6.4</a>
-                </h2>
-                <div class="label">
-                    <div class="label-card">
-                        <i class="fa fa-calendar"></i>2017-12-26
-                    </div>
-                    <div class="label-card">
-                        <i class="fa fa-user"></i>Jacob Pan
-                        
-                    </div>
-                    <div class="label-card">
-                        
-                    </div>
-
-                    <div class="label-card">
-                    
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#linux" title="Category: linux" rel="category">linux</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                    </div>
-
-                    <div class="label-card">
-                    
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#install" title="Tag: install" rel="tag">install</a>
-    
-  
-
-</span>
-
-                    </div>
-                </div>
-                <div class="excerpt">
-                    <ul id="markdown-toc">
-  <li><a href="#提取iso中的文件不同" id="markdown-toc-提取iso中的文件不同">提取iso中的文件不同</a></li>
-  <li><a href="#menulst内容不同" id="markdown-toc-menulst内容不同">menu.lst内容不同</a></li>
-</ul>
-
-<p>我曾经写过两篇windows xp和win7下硬盘安装ubuntu的文章，至于如何在xp下硬盘安装centos6.4，大体方法和xp下安装ubuntu一样，具体步骤可以参看博客里的相应文章，差异主要如下：</p>
-
-<h2 id="提取iso中的文件不同">提取iso中的文件不同</h2>
-
-<p>centos镜像提取出来的是<code class="highlighter-rouge">vmlinuz</code>和<code class="highlighter-rouge">initrd.img</code></p>
-
-<h2 id="menulst内容不同">menu.lst内容不同</h2>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root (hd0,0)
-kernel /vmlinuz
-initrd /initrd.img
-</code></pre></div></div>
-
-<p>网上有帖子说，解压grub4dos把<code class="highlighter-rouge">grldr</code>和<code class="highlighter-rouge">menu.lst</code>放到C盘根目录，并编辑<code class="highlighter-rouge">boot.ini</code>后，直接重启系统，点击新增加的引导项进入grub命令行，可以通过下面命令找到vmlinuz所在的分区编号：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find /vmlinuz   # 返回 (hd0,0)
-reboot          # 重启
-</code></pre></div></div>
-
-<p>也可以直接在命令行敲入第二第三行，使用<code class="highlighter-rouge">boot</code>命令直接引导镜像。</p>
-
-<blockquote>
-  <p>Jacob Pan <a href="http://jacobpan3g.github.io/cn">( jacobpan3g.github.io/cn )</a></p>
-</blockquote>
-
-
-                </div>
-                <div class="read-all">
-                    <a  href="/2017/12/26/install-centos-by-hd-in-xp/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                    <a  href="/2017/07/17/gitment-in-jekyll/"><i class="fa fa-newspaper-o"></i>Read All</a>
                 </div>
                 <hr>
               </li>
@@ -748,10 +483,10 @@ reboot          # 重启
             <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
             <span class="previous disable"><i class="fa fa-angle-left"></i></span>
           
-          <span class="page_number ">1/6</span>
+          <span class="page_number ">1/1</span>
           
-            <a href="/page2" class="next"><i class="fa fa-angle-right"></i></a>
-            <a href="/page6" class="next"><i class="fa fa-angle-double-right"></i></a>
+            <span class="next disable"><i class="fa fa-angle-right"></i></span>
+            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
           
         </div>
     </div>
@@ -765,25 +500,11 @@ reboot          # 重启
                 </div>
                 <ul class="content-ul" recent>
                     
-                        <li><a href="/2017/12/29/tmux-basic/">tmux使用技巧</a></li>
+                        <li><a href="/2018/01/13/appeal-for-the-forum/">贡献论坛的呼吁</a></li>
                     
-                        <li><a href="/2017/12/26/useful-tips-in-windows/">Windows一些使用技巧</a></li>
+                        <li><a href="/2017/12/10/jekyll-basic/">jekyll基本</a></li>
                     
-                        <li><a href="/2017/12/26/useful-tips-in-ubuntu/">Ubuntu下的一些使用技巧</a></li>
-                    
-                        <li><a href="/2017/12/26/install-ubuntu-by-hd-in-xp/">Windows xp下硬盘安装ubuntu</a></li>
-                    
-                        <li><a href="/2017/12/26/makefile-basic/">Makefile基本</a></li>
-                    
-                        <li><a href="/2017/12/26/install-centos-by-hd-in-xp/">Windows xp下硬盘安装centos6.4</a></li>
-                    
-                        <li><a href="/2017/12/26/disk-partition-while-mutli-systems/">安装多系统分区技巧</a></li>
-                    
-                        <li><a href="/2017/12/26/useful-cmd/">一些有用的命令</a></li>
-                    
-                        <li><a href="/2017/12/26/git-in-linux/">Linux下使用git</a></li>
-                    
-                        <li><a href="/2017/12/22/an-error-in-windows-8.1/">Windows8.1下"缺失api-ms-win-crt-heap-l1-1-0.dll"问题的解决方法</a></li>
+                        <li><a href="/2017/07/17/gitment-in-jekyll/">在Jekyll博客添加评论系统：gitment篇</a></li>
                     
                 </ul>
             </div>
@@ -797,15 +518,6 @@ reboot          # 重启
                 <ul class="content-ul" cate>
                     
                     <li>
-                        <a href="/category/#weibo" class="categories-list-item" cate="weibo">
-                            <span class="name">
-                                weibo
-                            </span>
-                            <span class="badge">1</span>
-                        </a>
-                    </li>
-                    
-                    <li>
                         <a href="/category/#blog" class="categories-list-item" cate="blog">
                             <span class="name">
                                 blog
@@ -815,54 +527,9 @@ reboot          # 重启
                     </li>
                     
                     <li>
-                        <a href="/category/#ubuntu" class="categories-list-item" cate="ubuntu">
+                        <a href="/category/#forum" class="categories-list-item" cate="forum">
                             <span class="name">
-                                ubuntu
-                            </span>
-                            <span class="badge">9</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/category/#mac" class="categories-list-item" cate="mac">
-                            <span class="name">
-                                mac
-                            </span>
-                            <span class="badge">2</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/category/#cmd" class="categories-list-item" cate="cmd">
-                            <span class="name">
-                                cmd
-                            </span>
-                            <span class="badge">7</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/category/#linux" class="categories-list-item" cate="linux">
-                            <span class="name">
-                                linux
-                            </span>
-                            <span class="badge">7</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/category/#windows" class="categories-list-item" cate="windows">
-                            <span class="name">
-                                windows
-                            </span>
-                            <span class="badge">3</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="/category/#c" class="categories-list-item" cate="c">
-                            <span class="name">
-                                c
+                                forum
                             </span>
                             <span class="badge">1</span>
                         </a>
@@ -890,14 +557,7 @@ reboot          # 重启
                       
                       
                       
-                      <a href="/tag/#oauth2" style="font-size: 9pt; color: #999;">oauth2</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#jekyll" style="font-size: 10.5pt; color: #777;">jekyll</a>
+                      <a href="/tag/#jekyll" style="font-size: 18pt; color: #000;">jekyll</a>
                     
                       
                       
@@ -911,112 +571,7 @@ reboot          # 重启
                       
                       
                       
-                      <a href="/tag/#config" style="font-size: 18pt; color: #000;">config</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#install" style="font-size: 13.5pt; color: #444;">install</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#xcode" style="font-size: 9pt; color: #999;">xcode</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#kernel" style="font-size: 9pt; color: #999;">kernel</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#shell" style="font-size: 13.5pt; color: #444;">shell</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#dylib" style="font-size: 9pt; color: #999;">dylib</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#wireless" style="font-size: 9pt; color: #999;">wireless</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#svn" style="font-size: 9pt; color: #999;">svn</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#log" style="font-size: 10.5pt; color: #777;">log</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#qt" style="font-size: 9pt; color: #999;">qt</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#debug" style="font-size: 9pt; color: #999;">debug</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#solution" style="font-size: 9pt; color: #999;">solution</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#git" style="font-size: 9pt; color: #999;">git</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#makefile" style="font-size: 9pt; color: #999;">makefile</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#tips" style="font-size: 10.5pt; color: #777;">tips</a>
-                    
-                      
-                      
-                      
-                      
-                      
-                      <a href="/tag/#tmux" style="font-size: 9pt; color: #999;">tmux</a>
+                      <a href="/tag/#management" style="font-size: 9pt; color: #999;">management</a>
                     
                 </div>
             </div>
@@ -1043,12 +598,12 @@ reboot          # 重启
     <div class="wrapper">
 
         <p class="description">
-             时光沉淀于此！ 
+             Let's work together 
         </p>
         <p class="contact">
             Contact me at: 
-            <a href="https://github.com/JacobPan3g" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
-            <a href="mailto:jacob.pan@foxmail.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+            <a href="https://github.com/ydlNAU" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:yudalang2017@sibs.ac.cn" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
         </p>
         <!--
         <p>

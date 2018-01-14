@@ -1,596 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ja.Code</title>
+    <title>The Simple forum</title>
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jan 2018 07:18:22 -0500</pubDate>
-    <lastBuildDate>Sun, 07 Jan 2018 07:18:22 -0500</lastBuildDate>
+    <pubDate>Sat, 13 Jan 2018 22:41:58 -0500</pubDate>
+    <lastBuildDate>Sat, 13 Jan 2018 22:41:58 -0500</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
     
       <item>
-        <title>tmux使用技巧</title>
+        <title>贡献论坛的呼吁</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#新建会话&quot; id=&quot;markdown-toc-新建会话&quot;&gt;新建会话&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#切换会话&quot; id=&quot;markdown-toc-切换会话&quot;&gt;切换会话&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#重命名&quot; id=&quot;markdown-toc-重命名&quot;&gt;重命名&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-你打开的这个网站是什么&quot; id=&quot;markdown-toc-1-你打开的这个网站是什么&quot;&gt;1. 你打开的这个网站是什么？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-为什么要建设这网站&quot; id=&quot;markdown-toc-2-为什么要建设这网站&quot;&gt;2. 为什么要建设这网站？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3-我能得到什么我能做什么&quot; id=&quot;markdown-toc-3-我能得到什么我能做什么&quot;&gt;3. 我能得到什么？我能做什么？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-tmux是一个强大的终端分屏工具
-
-&lt;h2 id=&quot;新建会话&quot;&gt;新建会话&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;session name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-建议给每一个会会话命名，这样日后切换会话时更加方便。
-
-&lt;h2 id=&quot;切换会话&quot;&gt;切换会话&lt;/h2&gt;
-
-当建立了多个会话后，可以实时切换到不同的tmux会话中，每个会话的命令执行记录都会被保存下来
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux &lt;span class=&quot;nb&quot;&gt;ls
-&lt;/span&gt;tmux a &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;name&amp;gt;    &lt;span class=&quot;c&quot;&gt;# attach&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-上述方法是在shell命令行里切换，若原先在一个tmux会话中，可以先使用&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;tmux_prefix + d&amp;gt;&lt;/code&gt;与原会话分离(detach)
-
-还有一个方法，可以从一个tmux会话中直接切换到另一个会话中
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;tmux_prefix + s&amp;gt;   # 列出会话列表后直接通过方向键选择
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-ps: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;tmux_prefix&amp;gt;&lt;/code&gt;是在tmux会话中要执行指令时的前缀，默认是&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ctrl b&amp;gt;&lt;/code&gt;，同时按下ctrl和b按键
-
-&lt;h2 id=&quot;重命名&quot;&gt;重命名&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;tmux_profix&amp;gt;$      # 重命名session
-&amp;lt;tmux_profix&amp;gt;,      # 重命名plane
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
+  你有一个苹果，我有一个苹果，彼此交换一下，我们仍然是各有一个苹果；但你有一种思想，我有一种思想，彼此交换，我们就都有了两种思想，甚至更多。
+——萧伯纳
 &lt;/blockquote&gt;
 
-</description>
-        <pubDate>Fri, 29 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/29/tmux-basic/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/29/tmux-basic/</guid>
-        
-        <category>tmux</category>
-        
-        
-        <category>cmd</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows一些使用技巧</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#securecrt中文乱码解决方法&quot; id=&quot;markdown-toc-securecrt中文乱码解决方法&quot;&gt;SecureCRT中文乱码解决方法&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;1-你打开的这个网站是什么&quot;&gt;1. 你打开的这个网站是什么？&lt;/h2&gt;
 
-&lt;h2 id=&quot;securecrt中文乱码解决方法&quot;&gt;SecureCRT中文乱码解决方法&lt;/h2&gt;
+这个网站是作者建立在&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt;上的一个拥有一定评论的静态网页系统，作者想将其视作一个简单的小论坛。因为建立真正的论坛需要购买域名，租借服务器以及一个维护论坛的工作人员，作者作为一个学生不可能去做这么复杂的事情，所有这里借助&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt;提供的免费服务建立了这个网站。
 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;会话选项&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;外观&lt;/code&gt;，把&lt;code class=&quot;highlighter-rouge&quot;&gt;字符编码&lt;/code&gt;改成&lt;code class=&quot;highlighter-rouge&quot;&gt;UTF-8&lt;/code&gt;，确认即可。
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/useful-tips-in-windows/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/useful-tips-in-windows/</guid>
-        
-        <category>tips</category>
-        
-        
-        <category>windows</category>
-        
-      </item>
-    
-      <item>
-        <title>Ubuntu下的一些使用技巧</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#把home中文目录名改成英文&quot; id=&quot;markdown-toc-把home中文目录名改成英文&quot;&gt;把Home中文目录名改成英文&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#开启sshd&quot; id=&quot;markdown-toc-开启sshd&quot;&gt;开启sshd&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;把home中文目录名改成英文&quot;&gt;把Home中文目录名改成英文&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;LANG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;en_US
-xdg-user-dirs-gtk-update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-弹出对话框勾选&lt;code class=&quot;highlighter-rouge&quot;&gt;不再提醒&lt;/code&gt;，点&lt;code class=&quot;highlighter-rouge&quot;&gt;确定&lt;/code&gt;
-
-&lt;h2 id=&quot;开启sshd&quot;&gt;开启sshd&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install openssh-server
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-安装了即可
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/useful-tips-in-ubuntu/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/useful-tips-in-ubuntu/</guid>
-        
-        <category>tips</category>
-        
-        
-        <category>ubuntu</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows xp下硬盘安装ubuntu</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-准备好ubuntu-iso镜像&quot; id=&quot;markdown-toc-1-准备好ubuntu-iso镜像&quot;&gt;1. 准备好ubuntu iso镜像&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-使用grub4dos引导ubuntu镜像&quot; id=&quot;markdown-toc-2-使用grub4dos引导ubuntu镜像&quot;&gt;2. 使用grub4dos引导ubuntu镜像&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#编辑bootini&quot; id=&quot;markdown-toc-编辑bootini&quot;&gt;编辑boot.ini&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#编辑menulst&quot; id=&quot;markdown-toc-编辑menulst&quot;&gt;编辑menu.lst&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-重启电脑引导镜像&quot; id=&quot;markdown-toc-3-重启电脑引导镜像&quot;&gt;3. 重启电脑，引导镜像&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-之前写过一篇文章阐述如何在win7下硬盘安装ubuntu，而不需要安装U盘或光盘。接下来，介绍一下在xp下如何硬盘安装ubuntu，在操作上面，有一点点小差别
-
-&lt;h2 id=&quot;1-准备好ubuntu-iso镜像&quot;&gt;1. 准备好ubuntu iso镜像&lt;/h2&gt;
-
-并把镜像&lt;code class=&quot;highlighter-rouge&quot;&gt;casper/&lt;/code&gt;里的&lt;code class=&quot;highlighter-rouge&quot;&gt;initrd.lz&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;vmlinz&lt;/code&gt;提取出来，连同iso镜像放在某一磁盘的根目录下，为简单起见，这里都放在c盘下
-
-&lt;h2 id=&quot;2-使用grub4dos引导ubuntu镜像&quot;&gt;2. 使用grub4dos引导ubuntu镜像&lt;/h2&gt;
-
-这里就是和win7下操作的不同之处，win7用的是easyBSD。
-
-下载grub4dos，解压后把&lt;code class=&quot;highlighter-rouge&quot;&gt;grldr&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;menu.lst&lt;/code&gt;拷贝到C盘根目录，此时，包括第一步，一共有以下几个文件放到了c盘根目录:
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install.lz
-vmlinz
-ubuntu-xx.04-destop-i386.iso
-grldr
-menu.lst
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;编辑bootini&quot;&gt;编辑boot.ini&lt;/h3&gt;
-
-编辑&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\boot.ini&lt;/code&gt;，在文件结尾添加
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;c:\grldr=&quot;start grub4dos&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-ps: 若在C盘根目录下找不到该文件，可以通过&lt;code class=&quot;highlighter-rouge&quot;&gt;文件夹选项&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;查看&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;高级设置&lt;/code&gt;中，把&lt;code class=&quot;highlighter-rouge&quot;&gt;隐藏受保护的操作系统文件(推荐)&lt;/code&gt;不勾选，然后选择&lt;code class=&quot;highlighter-rouge&quot;&gt;显示所有文件和文件夹&lt;/code&gt;，就可以把系统隐藏文件显示出来，从而找到&lt;code class=&quot;highlighter-rouge&quot;&gt;boot.ini&lt;/code&gt;
-
-&lt;h3 id=&quot;编辑menulst&quot;&gt;编辑menu.lst&lt;/h3&gt;
-
-接下来编辑&lt;code class=&quot;highlighter-rouge&quot;&gt;menu.lst&lt;/code&gt;，以添加引导项。添加下面内容到文件结尾
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title Install Ubuntu
-root (hd0,0)
-kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-xx.04-desktop-i386.iso
-initrd (hd0,0)/initrd.lz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-其中
+我已经在文章上放了一些文章。
 
 &lt;ul&gt;
+  &lt;li&gt;你可以在上面浏览自己感兴趣的文章，有感想的话可以在评论系统上发表评论！&lt;/li&gt;
+  &lt;li&gt;你也可以贡献你的一份力量，你可以将你写的文章发给我。&lt;/li&gt;
+&lt;/ul&gt;
+
+关于你发给我的文章的格式，你可以用任何编辑器(例如office word, WPS word, vim ，甚至是 latex 排版系统)，任何格式的文件(doc,docx,txt,html,markdown)去写你想写的文章。我推荐你用 markdown的编辑器去写markdown文件。
+
+&lt;h2 id=&quot;2-为什么要建设这网站&quot;&gt;2. 为什么要建设这网站？&lt;/h2&gt;
+
+正如萧伯纳所说，我们可以通过这个平台，凝聚大家的思想，交流出智慧的火花。
+
+&lt;strong&gt;作者有一个构想：&lt;/strong&gt;
+因为2017届的第二个学习将会是最后一个学期大家有机会系统地学习一门课程。
+
+还有，下学期有非常重要的统计课，同时还可以选修系统论，系统论里面有常微分方程。我们可以借助于这个网站，配合这些课程的学习。对于一些做方法的实验室，他们一般对数理要求略高，也可以趁此机会把统计，微分方程，基础数学模型等基础打好！
+
+我曾听说过学习的三重境界：
+
+&lt;ol&gt;
+  &lt;li&gt;你认真地去上课,做一定作业，最后进行期末复习。&lt;/li&gt;
+  &lt;li&gt;你认真地完成作业并参与一定的项目，然后和别人进行讨论。&lt;/li&gt;
+  &lt;li&gt;你撰写一定主题的文章，自己提出问题，自己解答，融汇贯通。&lt;/li&gt;
+&lt;/ol&gt;
+
+所以我的构想是：借助于评论系统，大家就是论事讨论，同时大家也可以加微信群在群里也可以讨论。作者会将重要结论展示在文章上！
+
+大家也可以进行投稿，向大家展示你的风采！
+
+&lt;h2 id=&quot;3-我能得到什么我能做什么&quot;&gt;3. 我能得到什么？我能做什么？&lt;/h2&gt;
+
+抽象地讲：你能得到一定的思想，你能交流具体的知识。你可以提升你学习的深度！
+实际地讲：你能得到一些具体问题的答案，这些问题比如是课后习题，老师布置的题目已经期末复习题！
+
+你可以来浏览，来评论，来加群，来投稿！
+
+&lt;hr /&gt;
+
+以上就是我想说的，我非常地希望大家可以互相借鉴，相互学习，共同进步！！
+
+&lt;strong&gt;作为本项目的贡献者和维护者，为了培养一个开放和热情的社区，我们承诺尊重所有通过报告问题，发布功能请求，更新文档，提交请求等&lt;/strong&gt;
+
+</description>
+        <pubDate>Sat, 13 Jan 2018 02:31:01 -0500</pubDate>
+        <link>http://localhost:4000/2018/01/13/appeal-for-the-forum/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/13/appeal-for-the-forum/</guid>
+        
+        <category>management</category>
+        
+        
+        <category>forum</category>
+        
+      </item>
+    
+      <item>
+        <title>jekyll基本</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#get-started&quot; id=&quot;markdown-toc-get-started&quot;&gt;get started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#为文章添加图片&quot; id=&quot;markdown-toc-为文章添加图片&quot;&gt;为文章添加图片&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#局域网访问&quot; id=&quot;markdown-toc-局域网访问&quot;&gt;局域网访问&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;get-started&quot;&gt;get started&lt;/h2&gt;
+
+使用jekyll创建blog，建议在ubuntu下面搭建，因为十分方便，直接使用
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt-get install jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+就可以安装好了，而不用想在其他平台下，先安装ruby，然后才能安装jekyll这么繁琐。
+
+然后直接在github上或者jekyll官网上下载一个自己喜欢的blog模块，在根目录执行
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+就可以在浏览器通过&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1:4000&lt;/code&gt;访问本地的blog了
+
+&lt;h2 id=&quot;为文章添加图片&quot;&gt;为文章添加图片&lt;/h2&gt;
+
+可以在blog根目录下创建一个img文件，把图片放在里面，然后在文章中使用路径&lt;code class=&quot;highlighter-rouge&quot;&gt;/img/xxx.png&lt;/code&gt;就可以访问到该图片的。
+
+&lt;h2 id=&quot;局域网访问&quot;&gt;局域网访问&lt;/h2&gt;
+
+若使用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;启动，只能在本机浏览器访问blog，而局域网内其他PC访问不了
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve -H 0.0.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+通过上述命令启动，就可以在局域网内其他PC通过当前IP地址来访问访问blog了；若需要改变端口，可使用-P选项。
+
+&lt;blockquote&gt;
+  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sun, 10 Dec 2017 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2017/12/10/jekyll-basic/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/10/jekyll-basic/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>在Jekyll博客添加评论系统：gitment篇</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-申请一个github-oauth-application&quot; id=&quot;markdown-toc-1-申请一个github-oauth-application&quot;&gt;1. 申请一个Github OAuth Application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-在jekyll博客调用gitment&quot; id=&quot;markdown-toc-2-在jekyll博客调用gitment&quot;&gt;2. 在jekyll博客调用gitment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3-为每篇博文初始化评论系统&quot; id=&quot;markdown-toc-3-为每篇博文初始化评论系统&quot;&gt;3. 为每篇博文初始化评论系统&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#4-一些问题&quot; id=&quot;markdown-toc-4-一些问题&quot;&gt;4. 一些问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+最近在Github Pages上使用Jekyll搭建了个人博客&lt;a href=&quot;https://jacobpan3g.github.io/cn&quot; title=&quot;我的博客主页&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;,当需要添加评论系统时，找了一下国内的几个第三方评论系统，如“多说”，“畅言”，“友言”，“新浪云跟贴”：
+
+&lt;ol&gt;
+  &lt;li&gt;多说，曾经较火的评论系统，网上介绍文章比较多，但已关闭，无法再用了&lt;/li&gt;
+  &lt;li&gt;畅言，sohu旗下的，但是需要个人博客备案后才能使用，但github pages个人博客感觉备案比较难&lt;/li&gt;
+  &lt;li&gt;友言，jiaThis旗下的，由于时http请求，github pages现在都是https了， 在https站点无法调用http请求，故也无法使用&lt;/li&gt;
+  &lt;li&gt;网易云跟贴，曾被当作“多说”的替代品，可惜官方通报说也将在2017.08.01关闭了&lt;/li&gt;
+&lt;/ol&gt;
+
+再看看disqus，国外比较火的评论系统，但在国内墙了，故也不考虑。
+
+综上，国内几个比较主流的评论系统目前都无法在Github Pages上的个人博客使用， 后面我发现了gitment，一款由国内大神imsun开发的基于github issues的评论系统, 具体介绍请看项目主页&lt;a href=&quot;https://github.com/imsun/gitment&quot;&gt;( github.com/imsun/gitment )&lt;/a&gt;。
+
+目前我已经成功把gitment应用到了自己的Github pages个人博客里，过程中碰了一些壁, 同时发现网上关于gitment的介绍并不多，故写一篇总结，希望可以帮助到大家。
+
+&lt;h2 id=&quot;1-申请一个github-oauth-application&quot;&gt;1. 申请一个Github OAuth Application&lt;/h2&gt;
+
+Github头像下拉菜单 &amp;gt; Settings &amp;gt; 左边Developer settings下的OAuth Application &amp;gt; Register a new application，填写相关信息：
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Application name&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Homepage URL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Application description&lt;/code&gt; 都可以随意填写&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authorization callback URL&lt;/code&gt; 一定要写自己Github Pages的URL
+(ps: 之前我自己就是在这里碰壁了，调试半天才发现)&lt;/li&gt;
+  &lt;li&gt;填写完上述信息后按&lt;code class=&quot;highlighter-rouge&quot;&gt;Register application&lt;/code&gt;按钮，得到&lt;code class=&quot;highlighter-rouge&quot;&gt;Client ID&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Client Secret&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;2-在jekyll博客调用gitment&quot;&gt;2. 在jekyll博客调用gitment&lt;/h2&gt;
+
+如gitment项目页Readme所示，在你需要添加评论系统的地方，一般是&lt;code class=&quot;highlighter-rouge&quot;&gt;_layout/&lt;/code&gt;目录下的 &lt;code class=&quot;highlighter-rouge&quot;&gt;post.html&lt;/code&gt;, 添加一下代码
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gitmentContainer&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://imsun.github.io/gitment/style/default.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gitment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Gitment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your GitHub username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'The repo to store comments'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;oauth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;client_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your client ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;client_secret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your client secret'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gitment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gitmentContainer'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+需要修改的有4个地方
+
+&lt;ol&gt;
+  &lt;li&gt;Your GitHub username：填写你的Github Pages博客所在的github账户名&lt;/li&gt;
+  &lt;li&gt;The repo to store comments：填写用来存放评论的github仓库，由于评论是 通过issues来存放的，个人建议这里可以直接填Github Pages个人博客所在的仓库&lt;/li&gt;
+  &lt;li&gt;Your client ID：第1步所申请到的应用的Client ID&lt;/li&gt;
+  &lt;li&gt;Your client secret：第1步所申请到的应用的Client Secret&lt;/li&gt;
+&lt;/ol&gt;
+
+填写完这4项把代码保存上传到github就可以了。
+
+&lt;h2 id=&quot;3-为每篇博文初始化评论系统&quot;&gt;3. 为每篇博文初始化评论系统&lt;/h2&gt;
+
+由于gitment的原理是为每一遍博文以其URL作为标识创建一个github issue， 对该篇博客的评论就是对这个issue的评论。因此，我们需要为每篇博文初始化一下评论系统， 初始化后，你可以在你的github上会创建相对应的issue。
+
+接下来，介绍一下如何初始化评论系统
+
+&lt;ol&gt;
   &lt;li&gt;
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;(hd0,0)&lt;/code&gt; 一般情况下代表的是C盘，这里的&lt;code class=&quot;highlighter-rouge&quot;&gt;hd0&lt;/code&gt;代表第一块硬盘，&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;代表第一个分区。若到时重启系统选择新增的引导项提示找不到文件时，可以重复修改该文件，直到找到正确的数字编号为止。
-
-    若第一步的iso镜像等三个文件放在了其他磁盘根目录下，同理，也可通过上述方法找到正取的编号
+    上面第2步代码添加成功并上传后，你就可以在你的博文页下面看到一个评论框，还 有看到以下错误&lt;code class=&quot;highlighter-rouge&quot;&gt;Error: Comments Not Initialized&lt;/code&gt;，提示该篇博文的评论系统还没初始化
   &lt;/li&gt;
   &lt;li&gt;
-    若需要安装中文版本的，可在第二行结尾添加&lt;code class=&quot;highlighter-rouge&quot;&gt; locale=zh_CN.UTF-8&lt;/code&gt;，这样子安装界面就会是中文，安装的系统也是中文环境的。
+    点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Login with GitHub&lt;/code&gt;后，使用自己的github账号登录后，就可以在上面错误信息 处看到一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize Comments&lt;/code&gt;的按钮
+(ps: 由于要求回调URL和当前地址一样，故第2步不能在本地调试， 需把代码先上传再调试)
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-重启电脑引导镜像&quot;&gt;3. 重启电脑，引导镜像&lt;/h2&gt;
-
-重启电脑，开机页面会多了一项&lt;code class=&quot;highlighter-rouge&quot;&gt;start grub4dos&lt;/code&gt;，点击后，选择&lt;code class=&quot;highlighter-rouge&quot;&gt;Install Ubuntu&lt;/code&gt;，细心的读者会发现，这两项都是我们上面第2步填写过的title内容。iso镜像路径没有错的话，就可以成功引导镜像了。
-
-镜像引导成功后的第一步，记得要先卸载isodevice分区
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo umount -l /isodevice
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/install-ubuntu-by-hd-in-xp/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/install-ubuntu-by-hd-in-xp/</guid>
-        
-        <category>install</category>
-        
-        
-        <category>ubuntu</category>
-        
-      </item>
-    
-      <item>
-        <title>Makefile基本</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#基本&quot; id=&quot;markdown-toc-基本&quot;&gt;基本&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#targets-&quot; id=&quot;markdown-toc-targets-&quot;&gt;targets: %:&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#自动变量&quot; id=&quot;markdown-toc-自动变量&quot;&gt;自动变量&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#参数&quot; id=&quot;markdown-toc-参数&quot;&gt;参数&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ifeq-ifdef&quot; id=&quot;markdown-toc-ifeq-ifdef&quot;&gt;ifeq, ifdef&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#常用函数&quot; id=&quot;markdown-toc-常用函数&quot;&gt;常用函数&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#subst&quot; id=&quot;markdown-toc-subst&quot;&gt;subst&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#addsuffix-addprefix&quot; id=&quot;markdown-toc-addsuffix-addprefix&quot;&gt;addsuffix, addprefix&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;li&gt;
+    点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize Comments&lt;/code&gt;按钮后，就可以开始对该篇博文开始评论了， 同时也可以在对应的github仓库看到相应的issue
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#引用其他makefile&quot; id=&quot;markdown-toc-引用其他makefile&quot;&gt;引用其他makefile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 
-Makefile主要用来make的输入，命令&lt;code class=&quot;highlighter-rouge&quot;&gt;make filename&lt;/code&gt;的意思就是要把filename生成。
+&lt;img src=&quot;https://jacobpan3g.github.io/img/gitment-in-jekyll.png&quot; alt=&quot;InitBtn&quot; /&gt;
 
-&lt;h2 id=&quot;基本&quot;&gt;基本&lt;/h2&gt;
-
-&lt;div class=&quot;language-makefile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dependences&lt;/span&gt;
-	shell cmd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-以上是Makefile的基本格式。
-
-&lt;h2 id=&quot;targets-&quot;&gt;targets: %:&lt;/h2&gt;
-
-通过&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt;可以对target进行模式拓展
-
-&lt;div class=&quot;language-makefile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;targets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; aa bb
-
-&lt;span class=&quot;nl&quot;&gt;targets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;%: %.c&lt;/span&gt;
-	gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$@&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$^&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-这里会自动拓展成
-
-&lt;div class=&quot;language-makefile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;aa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;aa.c&lt;/span&gt;
-	gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; aa aa.c
-
-&lt;span class=&quot;nl&quot;&gt;bb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bb.c&lt;/span&gt;
-	gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; bb bb.c
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;自动变量&quot;&gt;自动变量&lt;/h2&gt;
-
-如上面的例子，&lt;code class=&quot;highlighter-rouge&quot;&gt;$@&lt;/code&gt;代表target，&lt;code class=&quot;highlighter-rouge&quot;&gt;$^&lt;/code&gt;代表全部的依赖文件，还有以下自动变量:
+&lt;h2 id=&quot;4-一些问题&quot;&gt;4. 一些问题&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$&amp;lt;&lt;/code&gt; 依赖文件中的第一个文件&lt;/li&gt;
+  &lt;li&gt;安全问题&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;参数&quot;&gt;参数&lt;/h2&gt;
-
-通过make可以传递参数，在Makefile里可以获取到
-
-&lt;div class=&quot;language-makefile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;aa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;aa.c&lt;/span&gt;
-	gcc &lt;span class=&quot;nv&quot;&gt;$(CFLAG)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$@&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$^&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-通过&lt;code class=&quot;highlighter-rouge&quot;&gt;make CFLAG=-g&lt;/code&gt;，就可以把参数传入到makefile中，变成&lt;code class=&quot;highlighter-rouge&quot;&gt;gcc -g -o aa aa.c&lt;/code&gt;
-
-&lt;h2 id=&quot;ifeq-ifdef&quot;&gt;ifeq, ifdef&lt;/h2&gt;
-
-&lt;div class=&quot;language-makefile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;ifdef&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;VAR&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; aa
-&lt;span class=&quot;err&quot;&gt;else&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; bb
-&lt;span class=&quot;err&quot;&gt;endif&lt;/span&gt;
-
-&lt;span class=&quot;err&quot;&gt;ifeq&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;($(VAR),&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;1)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;CFLAG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;endif&lt;/span&gt;
-
-&lt;span class=&quot;nl&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-	gcc &lt;span class=&quot;nv&quot;&gt;$(CFLAG)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$@&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$^&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-上述例子描述了&lt;code class=&quot;highlighter-rouge&quot;&gt;ifdef&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;ifeq&lt;/code&gt;的用法，请注意&lt;code class=&quot;highlighter-rouge&quot;&gt;ifdef&lt;/code&gt;后面跟的变量名加&lt;code class=&quot;highlighter-rouge&quot;&gt;$()&lt;/code&gt;，此外，还有&lt;code class=&quot;highlighter-rouge&quot;&gt;ifndef&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;ifneq&lt;/code&gt;。
-
-这里的makefile可以通过&lt;code class=&quot;highlighter-rouge&quot;&gt;make VAR=1&lt;/code&gt;传入参数，使makefile针对不同情况执行不同的命令。
-
-&lt;h2 id=&quot;常用函数&quot;&gt;常用函数&lt;/h2&gt;
-
-&lt;h3 id=&quot;subst&quot;&gt;subst&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(subst &amp;lt;from&amp;gt;,&amp;lt;to&amp;gt;,&amp;lt;text&amp;gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;addsuffix-addprefix&quot;&gt;addsuffix, addprefix&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(addsuffix &amp;lt;suffix&amp;gt;,&amp;lt;names...&amp;gt;)
-$(addprefix &amp;lt;suffix&amp;gt;,&amp;lt;names...&amp;gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-更多makefile函数可见&lt;a href=&quot;http://blog.csdn.net/yangxuan0261/article/details/52060582&quot;&gt;makefile中常用函数&lt;/a&gt;
-
-&lt;h2 id=&quot;引用其他makefile&quot;&gt;引用其他makefile&lt;/h2&gt;
-
-如果当前目录下有一个&lt;code class=&quot;highlighter-rouge&quot;&gt;makefile.in&lt;/code&gt;，可以通过下面语句来引入
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;include makefile.in
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/makefile-basic/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/makefile-basic/</guid>
-        
-        <category>makefile</category>
-        
-        
-        <category>linux</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows xp下硬盘安装centos6.4</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#提取iso中的文件不同&quot; id=&quot;markdown-toc-提取iso中的文件不同&quot;&gt;提取iso中的文件不同&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#menulst内容不同&quot; id=&quot;markdown-toc-menulst内容不同&quot;&gt;menu.lst内容不同&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-我曾经写过两篇windows xp和win7下硬盘安装ubuntu的文章，至于如何在xp下硬盘安装centos6.4，大体方法和xp下安装ubuntu一样，具体步骤可以参看博客里的相应文章，差异主要如下：
-
-&lt;h2 id=&quot;提取iso中的文件不同&quot;&gt;提取iso中的文件不同&lt;/h2&gt;
-
-centos镜像提取出来的是&lt;code class=&quot;highlighter-rouge&quot;&gt;vmlinuz&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;initrd.img&lt;/code&gt;
-
-&lt;h2 id=&quot;menulst内容不同&quot;&gt;menu.lst内容不同&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root (hd0,0)
-kernel /vmlinuz
-initrd /initrd.img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-网上有帖子说，解压grub4dos把&lt;code class=&quot;highlighter-rouge&quot;&gt;grldr&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;menu.lst&lt;/code&gt;放到C盘根目录，并编辑&lt;code class=&quot;highlighter-rouge&quot;&gt;boot.ini&lt;/code&gt;后，直接重启系统，点击新增加的引导项进入grub命令行，可以通过下面命令找到vmlinuz所在的分区编号：
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /vmlinuz   # 返回 (hd0,0)
-reboot          # 重启
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-也可以直接在命令行敲入第二第三行，使用&lt;code class=&quot;highlighter-rouge&quot;&gt;boot&lt;/code&gt;命令直接引导镜像。
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/install-centos-by-hd-in-xp/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/install-centos-by-hd-in-xp/</guid>
-        
-        <category>install</category>
-        
-        
-        <category>linux</category>
-        
-      </item>
-    
-      <item>
-        <title>安装多系统分区技巧</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#磁盘分区方案&quot; id=&quot;markdown-toc-磁盘分区方案&quot;&gt;磁盘分区方案&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#win系统分区&quot; id=&quot;markdown-toc-win系统分区&quot;&gt;win系统分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#win文件分区&quot; id=&quot;markdown-toc-win文件分区&quot;&gt;win文件分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ext4代码分区&quot; id=&quot;markdown-toc-ext4代码分区&quot;&gt;ext4代码分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ext4文本分区&quot; id=&quot;markdown-toc-ext4文本分区&quot;&gt;ext4文本分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#linux系统分区&quot; id=&quot;markdown-toc-linux系统分区&quot;&gt;linux系统分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#reserved分区&quot; id=&quot;markdown-toc-reserved分区&quot;&gt;reserved分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#boot分区&quot; id=&quot;markdown-toc-boot分区&quot;&gt;boot分区&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#swap分区&quot; id=&quot;markdown-toc-swap分区&quot;&gt;swap分区&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-根据笔者多年折腾双系统的经验，发现在linux系统工作时，有时候会因为系统太久而缺少某些库，通过&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;yum&lt;/code&gt;都无法安装，或者一些其他问题导致项目代码在自己的系统就是编译不过，此时，或许需要考虑更换linux系统。
-
-基于上述考虑，我们的系统使用了一段时间后需要重新安装新版本的系统，因此，我的分区原则是一个词&lt;code class=&quot;highlighter-rouge&quot;&gt;降偶&lt;/code&gt;——降低代码与系统之间的耦合性，降低系统与磁盘分区的耦合性，同时还要保持一个到两个reserved分区
-
-&lt;h2 id=&quot;磁盘分区方案&quot;&gt;磁盘分区方案&lt;/h2&gt;
-
-我一般不会采取安装引导里的推荐分区方案，一般都是选取&lt;code class=&quot;highlighter-rouge&quot;&gt;其他&lt;/code&gt;，一些是我们具体分区方案：
-
-&lt;h3 id=&quot;win系统分区&quot;&gt;win系统分区&lt;/h3&gt;
-
-我的电脑一般会保留windows系统，方便切换使用；还有，当我需要跟换linux系统时，我可以通过熟悉的方法，windows下硬盘安装linux
-
-&lt;h3 id=&quot;win文件分区&quot;&gt;win文件分区&lt;/h3&gt;
-
-有了windows系统，windows的ntfs文件分区也是需要的，这里可以根据需要分配，100G~200G足够了
-
-&lt;h3 id=&quot;ext4代码分区&quot;&gt;ext4代码分区&lt;/h3&gt;
-
-这个分区专门放代码的，日后若还了linux系统，我这个分区里的代码还是可以使用的，只需通过简单的硬盘挂载，最多需要通过&lt;code class=&quot;highlighter-rouge&quot;&gt;chown -R&lt;/code&gt;来更改一下所有者。这个分区我一般建议是100~200G，具体可根据自己需要和硬盘总大小决定
-
-&lt;h3 id=&quot;ext4文本分区&quot;&gt;ext4文本分区&lt;/h3&gt;
-
-主要在linux存在工程代码意外的东西，笔记，文档，自己的小项目代码等等，这个分区根据自己喜好分配大小，我一般分配20~40G
-
-&lt;h3 id=&quot;linux系统分区&quot;&gt;linux系统分区&lt;/h3&gt;
-
-这个分区用来安装linux系统，我一般分配20G，安装系统直接挂载&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;根目录即可
-
-&lt;h3 id=&quot;reserved分区&quot;&gt;reserved分区&lt;/h3&gt;
-
-这个分区是冗余分区，大小20G，我一般会选择留2个reserved分区，主要作用是用于当我需要安装新linux系统时，但旧系统的资料又还没空整理，不能立马覆盖原系统分区，这时这些reserved分区就起作用了，直接把系统安装在reserved分区中，这样PC就同时存在3个系统，不用担心boot，新安装linux系统时boot会自动把所有系统都找到
-
-&lt;h3 id=&quot;boot分区&quot;&gt;boot分区&lt;/h3&gt;
-
-该分区主要用来存放boot引导程序，分配256M~512M，一般都够用。之前有过boot分区满了的经历，当时是因为每次系统提示软件升级都同意了，不知为何，boot分区渐渐就满了，这个也是有方法清除的。现在我一般不按照系统提示的软件升级了，感觉没必要
-
-&lt;h3 id=&quot;swap分区&quot;&gt;swap分区&lt;/h3&gt;
-
-之前听过一个理论，swap分区需要时内存的两倍，所以这个分区需按照PC的内存而确定，4G内存就8G，我感觉4G~8G足够了。
-
-ps: boot分区和swap分区是可以多个linux共用的，安装linux时也不需要主动挂载，系统会自己探测到的，安装时只把挂载根目录就可以了。
-
-以上就是我的多系统分区的经验了，按照上面分区，做好了各方面解耦和存冗，只要再把一些工具的配置备份好，就完全不需惧怕频繁更换linux系统
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/disk-partition-while-mutli-systems/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/disk-partition-while-mutli-systems/</guid>
-        
-        <category>install</category>
-        
-        
-        <category>linux</category>
-        
-      </item>
-    
-      <item>
-        <title>一些有用的命令</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#查看当前目录下各个文件的大小&quot; id=&quot;markdown-toc-查看当前目录下各个文件的大小&quot;&gt;查看当前目录下各个文件的大小&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;查看当前目录下各个文件的大小&quot;&gt;查看当前目录下各个文件的大小&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ah&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--max-depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; 所有文件&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-h&lt;/code&gt; 人类能读懂的方式，会把数字转化成KB, MB等单位&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--max-depth=1&lt;/code&gt; 只显示1层&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/useful-cmd/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/useful-cmd/</guid>
-        
-        <category>shell</category>
-        
-        
-        <category>cmd</category>
-        
-      </item>
-    
-      <item>
-        <title>Linux下使用git</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#常用命令&quot; id=&quot;markdown-toc-常用命令&quot;&gt;常用命令&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#配置&quot; id=&quot;markdown-toc-配置&quot;&gt;配置&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#git命令自动补全&quot; id=&quot;markdown-toc-git命令自动补全&quot;&gt;git命令自动补全&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#创建本地bare仓库&quot; id=&quot;markdown-toc-创建本地bare仓库&quot;&gt;创建本地bare仓库&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-Git是一款分布式版本控制软件，相比Svn，我更喜欢git分布式的特性。
-
-&lt;h2 id=&quot;常用命令&quot;&gt;常用命令&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
-git add
-git commit
-git pull
-git push
-git remote
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;配置&quot;&gt;配置&lt;/h2&gt;
-
-通过配置可以让git更加个性化，而且更加好用，git的配置文件在&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt;, 以下是我的配置
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[core]
-    editor = vim
-    excludesfile = /home/jacob/.gitconf/gitignore
-[color]
-    ui = true
-[merge]
-    tool = vimdiff
-[user]
-    name = YOUR_NAME
-    email = EMAIL@email.com
-[push]
-    default = matching
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+有些读者担心github oauth application的client secret这样明文写在页面上会不会有安全 隐患，我也考虑到这个问题，目前我能想到比较好的解决方法是：注册一个github小号， 在小号里注册oauth application，使用小号app的client secret
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;core.editor&lt;/code&gt; 设置commit时的编辑器&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;core.excludesfile&lt;/code&gt; 设置全局gitignore文件&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;color.ui&lt;/code&gt; 使&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt;时的输出结果有颜色&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;merge.tool&lt;/code&gt; merge时使用的工具&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;user.name&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;user.email&lt;/code&gt; 用户名字和邮箱，commit时需要记录用户信息，email用来区分由该次提交的作者&lt;/li&gt;
+  &lt;li&gt;回调URL&lt;/li&gt;
 &lt;/ul&gt;
 
-以上可以通过编辑配置文件配置，也可以通过命令，如若配置&lt;code class=&quot;highlighter-rouge&quot;&gt;user.email&lt;/code&gt;
+有些读者反映登录不成功，请大家一定要确认&lt;strong&gt;github oauth application里的回调URL一定要 填写要使用gitment的博客的URL&lt;/strong&gt;，这一点十分重要
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.email &quot;you@example.com&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-运行改命令后就会在&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.gitconfig&lt;/code&gt;中生成相应的项。其中的&lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt;代表配置级别：
+&lt;hr /&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--system&lt;/code&gt; 更加高级的配置，这个是PC下所有用户都生效的配置，配置时需要管理员权限&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt; 用户Home的全局配置，只对当前用户生效，这种级别使用得最多&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--local&lt;/code&gt; 项目相关的配置，配置文件放在项目根目录下的&lt;code class=&quot;highlighter-rouge&quot;&gt;.git/config&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;git命令自动补全&quot;&gt;git命令自动补全&lt;/h2&gt;
-
-一些老版本git没有命令自动补全，可以在git源码(ps: 可以在github上找到)找到&lt;code class=&quot;highlighter-rouge&quot;&gt;git-completion.bash&lt;/code&gt;，在每次开机时&lt;code class=&quot;highlighter-rouge&quot;&gt;source git-completion.bash&lt;/code&gt;即可。
-
-&lt;h2 id=&quot;创建本地bare仓库&quot;&gt;创建本地bare仓库&lt;/h2&gt;
-
-git里的bare仓库相当于svn中的服务器，可用于提交。其实，bare仓库就是我们项目中的&lt;code class=&quot;highlighter-rouge&quot;&gt;.git/&lt;/code&gt;，事实上，每一个git仓库抽取出来的&lt;code class=&quot;highlighter-rouge&quot;&gt;.git/&lt;/code&gt;都可以成为用于提交的bare仓库
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init --bare xxx.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-以上命令用来创建一个bare仓库，创建成功后，通过下面命令提交了
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add XXX 192.168.0.XX:path/to/xxx.git
-git push XXX master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+好了，gitment使用介绍到这里，大家若遇到什么问题尽管在下面留言，或者在我的个人博客 &lt;a href=&quot;https://jacobpan3g.github.io/cn/2017/07/17/gitment-in-jekyll&quot; title=&quot;我的博文&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;留言，上面使用的评论系统就是gitment，我会抽空 一一作出回答。
 
 &lt;blockquote&gt;
   Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Tue, 26 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/26/git-in-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/26/git-in-linux/</guid>
+        <pubDate>Mon, 17 Jul 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/07/17/gitment-in-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/17/gitment-in-jekyll/</guid>
         
-        <category>git</category>
+        <category>jekyll</category>
         
-        
-        <category>cmd</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows8.1下&quot;缺失api-ms-win-crt-heap-l1-1-0.dll&quot;问题的解决方法</title>
-        <description>
-Windows 8.1下有一个小缺陷，当安装一些软件时，会提示&lt;code class=&quot;highlighter-rouge&quot;&gt;缺失api-ms-win-crt-heap-l1-1-0.dll&lt;/code&gt;的问题时，是因为Windows 8.1缺了一个补丁。
-
-&lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Fri, 22 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/22/an-error-in-windows-8.1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/22/an-error-in-windows-8.1/</guid>
-        
-        <category>solution</category>
+        <category>gitment</category>
         
         
-        <category>windows</category>
+        <category>blog</category>
         
       </item>
     
