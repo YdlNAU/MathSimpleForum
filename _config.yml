@@ -34,10 +34,9 @@ email: yudalang2017@sibs.ac.cn
 #disqus_shortname: gaohaoyang
 
 #gitment
-comment_gitment_repo: jacobpan3g.github.io
-comment_gitment_clientId: 8a1e6ff22f37f6808c22
-comment_gitment_clientSecret: 377eee8fe03e02a91d8ff2a63d6420ba705470bb
-
+comment_gitment_repo: MathSimpleForum
+comment_gitment_clientId: b68c3af4470cd0543e8e
+comment_gitment_clientSecret: 1da2b0f277a2672c67037db98586d11dbfbd93f2
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
