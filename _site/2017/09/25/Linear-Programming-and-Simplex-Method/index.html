@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>线性规划与单纯形法</title>
+    <meta name="description" content="  1. 理解线性  2. 贯穿第二章的例1          那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的？为什么产品1每件可获利2元？为什么可以简单地用4kg /件的原材料A来制作产品1？我引用一下我们授课教师的话：        3.求解这个问题          化标准形     ...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/09/25/Linear-Programming-and-Simplex-Method/">
+    <link rel="alternate" type="application/rss+xml" title="The Simple forum" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">The Simple forum</a>
+        <small>Learn something deep, than you can see somethinf different!</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>线性规划与单纯形法</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-09-25
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>Yu dalang
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#courseReaction" title="Category: courseReaction" rel="category">courseReaction</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#notes" title="Tag: notes" rel="tag">notes</a-->
+        <a href="/tag/#notes" title="Tag: notes" rel="tag">notes</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#1-理解线性" id="markdown-toc-1-理解线性">1. 理解线性</a></li>
+  <li><a href="#2-贯穿第二章的例1" id="markdown-toc-2-贯穿第二章的例1">2. 贯穿第二章的例1</a>    <ul>
+      <li><a href="#那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的为什么产品1每件可获利2元为什么可以简单地用4kg-件的原材料a来制作产品1我引用一下我们授课教师的话" id="markdown-toc-那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的为什么产品1每件可获利2元为什么可以简单地用4kg-件的原材料a来制作产品1我引用一下我们授课教师的话">那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的？为什么产品1每件可获利2元？为什么可以简单地用4kg /件的原材料A来制作产品1？我引用一下我们授课教师的话：</a></li>
+    </ul>
+  </li>
+  <li><a href="#3求解这个问题" id="markdown-toc-3求解这个问题">3.求解这个问题</a>    <ul>
+      <li><a href="#化标准形" id="markdown-toc-化标准形">化标准形</a></li>
+      <li><a href="#线性规划解的特点" id="markdown-toc-线性规划解的特点">线性规划解的特点</a></li>
+      <li><a href="#单纯形法表上作业" id="markdown-toc-单纯形法表上作业">单纯形法表上作业</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-编程" id="markdown-toc-4-编程">4. 编程</a>    <ul>
+      <li><a href="#41-安装" id="markdown-toc-41-安装">4.1 安装：</a></li>
+      <li><a href="#42-编程" id="markdown-toc-42-编程">4.2 编程</a>        <ul>
+          <li><a href="#编写单纯形法我总结了有两种思路" id="markdown-toc-编写单纯形法我总结了有两种思路">编写单纯形法我总结了有两种思路：</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#5-对偶问题" id="markdown-toc-5-对偶问题">5. 对偶问题</a></li>
+  <li><a href="#6-灵敏度分析" id="markdown-toc-6-灵敏度分析">6. 灵敏度分析</a></li>
+</ul>
+
+<blockquote>
+  <p>现实的世界已经很复杂了，模型就是这个世界的简单刻画，没有必要再将模型建的很复杂！
+ —— 某一《数值分析》授课老师</p>
+</blockquote>
+
+<p>这篇博客的主要作用是记录一些理解线性规划与单纯型法的一些<strong>关键的点</strong>！</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/3909752-bf4c0f659a7bfa3b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="规划" /></p>
+
+<p>线性地理解世界我想是最简单的方式，我们把人分成好人与坏人、把食物分成好吃的和难吃的、把工具分成耐用的和不经用的。如果某人做了一件好事，那么他就离好人更近一步；如果他做了一件坏事，那么他就变得更坏。如果做了三件好事，那么这个人肯定比做了一件好事的人为人更好。</p>
+
+<h2 id="1-理解线性">1. 理解线性</h2>
+
+<p>好在我们不是数学系的学生，我觉得用自然语言直观理解即可。</p>
+
+<p>我们知道对于一元函数，形如<code class="highlighter-rouge">y = kx + b</code>，他是一条直线；对于二元函数，形如<code class="highlighter-rouge">z = ax + by + c</code> 他是一个面。所以在若干个自变量的表达式中，不会形成一个“弯曲”结构时，它就是一个线性的结构。那么怎么样才不会形成一个弯曲结构呢？一般在表达式中只有乘法和加法，而不出现三角函数，对数函数，指数函数，幂函数时则会形成一种线性结构，如<code class="highlighter-rouge">y = x^2</code>或者<code class="highlighter-rouge">y=2^x</code>，此时就不是线性。所以如果你有n个自变量那么形如，下面这种形式就是一种线性结构：</p>
+
+<p>y = k<sub>1</sub> x<sub>1</sub> + k<sub>2</sub> x<sub>2</sub> +k<sub>3</sub> x<sub>3</sub> + … + k<sub>n</sub> x<sub>1</sub> + b</p>
+
+<p>其中 k<sub>i</sub> i = 1,2,3 … n 和b 是常数</p>
+
+<h2 id="2-贯穿第二章的例1">2. 贯穿第二章的例1</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">资源\产品</th>
+      <th style="text-align: center">产品1(每件获利2元)</th>
+      <th style="text-align: center">产品2每件获利(3元)</th>
+      <th style="text-align: center">现有条件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">设备</td>
+      <td style="text-align: center">(需消耗)1 台时/件</td>
+      <td style="text-align: center">2 台时/件</td>
+      <td style="text-align: center">8 台时</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">原材料A</td>
+      <td style="text-align: center">(需消耗) 4 kg/件</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">16 kg</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">原材料B</td>
+      <td style="text-align: center">(需消耗) 0</td>
+      <td style="text-align: center">4 kg/件</td>
+      <td style="text-align: center">12kg</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>设备的台时是个什么概念？ 我们可以理解为可供调度的机器人的工作量，比如现有的条件是8台时，就是说工厂有八个机器人可用，每个机器人可以用一个小时。或者你也可以理解为有一个机器人，他可以工作八个小时。这个实际的应用场景我们是很容易写成这个线性规划的目标函数和约束条件的，也就是很容易把这个现实的问题转化为一个数学上的问题。我们学习《运筹学》主要注重的是如何求解的过程。</p>
+
+<h4 id="那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的为什么产品1每件可获利2元为什么可以简单地用4kg-件的原材料a来制作产品1我引用一下我们授课教师的话">那么我们不禁要问用来转化这个实际问题到数学问题的那个表格是如何得到的？为什么产品1每件可获利2元？为什么可以简单地用4kg /件的原材料A来制作产品1？我引用一下我们授课教师的话：</h4>
+
+<blockquote>
+  <p>那是一个数学建模的过程，我们现在学的不是数学建模，而是如何去求解数学问题。这个数学问题是来自课本中已经把实际问题转化为数学问题之后的问题。</p>
+</blockquote>
+
+<h2 id="3求解这个问题">3.求解这个问题</h2>
+
+<p>那么我们现在来求解这个问题吧！当自变量个数小于等于2时，我们可以用图解法来求解。但实际的问题肯定不会这么简单。为了求解这个问题，用一种很成熟的方法：<strong>单纯形法</strong>。</p>
+
+<h3 id="化标准形">化标准形</h3>
+
+<p>在应用这个方法时，我们要将这个问题中的目标函数、约束条件和自变量的约束转化成标准形式。这个标准形式就是目标函数一定是要取最大值，约束条件一定要取等号，决策变量一定要非负。标准型是你运用的前提条件。那为什么要转化成一个标准型呢？这里我讲一个笑话：数学家当消防员</p>
+
+<blockquote>
+  <p>一天,数学家觉得自己已受够了数学,于是他跑到消防队去宣布他想当消防员.消防队长说：“您看上去不错,可是我得先给您一个测试.”
+　　消防队长带数学家到消防队后院小巷,巷子里有一个货栈,一只消防栓和一卷软管.消防队长问：“假设货栈起火,您怎么办?”数学家回答：“我把消防栓接到软管上,打开水龙,把火浇灭.”
+　　消防队长说：“完全正确!最后一个问题：假设您走进小巷,而货栈没有起火,您怎么办?”数学家疑惑地思索了半天,终于答道：“我就把货栈点着.”消防队长大叫起来：“什么?太可怕了!您为什么要把货栈点着?”数学家回答：“这样我就把问题化简为一个我已经解决过的问题了.”</p>
+</blockquote>
+
+<p><strong>化标准型就能转化为已经解决过得问题了。</strong></p>
+
+<h3 id="线性规划解的特点">线性规划解的特点</h3>
+
+<p>下面罗列线性规划的一些结论，毕竟我们不是数学系的学生：</p>
+
+<ol>
+  <li>化为标准型后，基可行解和可行域的顶点是一一对应的。</li>
+  <li>如果一个线性规划问题存在最优解，则其最优解必然可在可行域的顶点处达到，也就是必然在基可行解处达到</li>
+</ol>
+
+<p>单纯形法利用了上面的这些特点，被开发了出来，我们直接学习这个成熟的模型即可。</p>
+
+<hr />
+
+<p>那么如何手工来求解这些模型，我们利用单纯形表进行表上作业。</p>
+
+<h3 id="单纯形法表上作业">单纯形法表上作业</h3>
+
+<p>课本P39给出了计算的一个详细的例子。</p>
+
+<p>相信写完这个例子之后，不知大家有没有这样一种感觉：<strong>这些步骤都好机械啊，我完全可以写一个程序叫计算机帮我算算就行了。</strong> 下面我们就来写一下程序！</p>
+
+<hr />
+
+<h2 id="4-编程">4. 编程</h2>
+
+<p>在写程序之前首先我们要选择利用哪种程序设计语言，我推荐用Matlab，当然你可以用python，R。他们都可以进行矩阵操作。不过这里还有一个更好的选择，就是Matlab的开源替代品Octave。它至少有三大令你不能不用的理由：</p>
+
+<ol>
+  <li>开源，你可以在发表文献的时候声明一下即可。有些文章就是因为一些软件的版权问题而被撤稿。</li>
+  <li>安装包小，而且安装简单。Matlab的话，安装包太大了，而且找个破解版也比较头疼。</li>
+  <li>绝大部分Matlab命令它是兼容的。</li>
+</ol>
+
+<h3 id="41-安装">4.1 安装：</h3>
+
+<p>下面我们来安装Octave来进行编程。进入其<a href="https://www.gnu.org/software/octave/">官网</a> ，点击下载我是MAC操作系统，需要点击Octave wiki 然后Installing a Mac OS X Bundle 即可。Windos 操作系统的话就更加方便了。直接下载.exe文件。</p>
+
+<p>之后一步一步根据提示点击即可。</p>
+
+<h3 id="42-编程">4.2 编程</h3>
+
+<p>将Octave打开，相信大家不陌生吧，它的GUI界面和Matlab还有Rstudio非常的像。我们新建一个脚本，调整一下字体大小。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/3909752-86beff28c437c39d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800" alt="Octave基本界面" /></p>
+
+<h4 id="编写单纯形法我总结了有两种思路">编写单纯形法我总结了有两种思路：</h4>
+
+<ol>
+  <li>因为表上作业的一些步骤相对比较机械，所以我们可以根据单纯性表法进行编程。</li>
+  <li>利用单纯形法的矩阵描述。其中需要指出的是，课本P63页有些问题在原文“x1的系数向量P1=（）”处少了一些东西。如下图所示，注意：如果改正的话，程序的迭代会出错。</li>
+</ol>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/3909752-f28c302cfa7e7c00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800" alt="注意" /></p>
+
+<hr />
+
+<p>下面我们来看一下代码：</p>
+
+<p>不过在编写之前我们得先浏览一下最基本的用法：<a href="https://segmentfault.com/a/1190000004204177">这个网站</a>总结的不错。</p>
+
+<p><strong>代码被放置与<a href="https://github.com/YdlNAU/programing_of_courses/tree/master/optional_research">github</a>之上，欢迎阅读与测试！</strong></p>
+
+<p>代码主要包含三大部分内容：</p>
+
+<ol>
+  <li>
+    <p>内置函数、化标准型与图解法</p>
+
+    <p>位于<code class="highlighter-rouge">Main.m</code>文件：练习使用GLPK开源包，直接计算还有编写化标准型的代码：</p>
+  </li>
+  <li>
+    <p>根据单纯形表法表上作业，将机械的求解用程序解决，位于<code class="highlighter-rouge">simplex_method1.m</code>文件中。</p>
+  </li>
+  <li>
+    <p>利用矩阵的描述，也就是改进的单纯形法来编写的子程序，位于<code class="highlighter-rouge">simplex_method.m</code>文件中。</p>
+  </li>
+</ol>
+
+<h2 id="5-对偶问题">5. 对偶问题</h2>
+
+<p>在对偶问题的提出上，课本P64页的说明不如上课老师讲的根据有实际意义：</p>
+
+<p>我们来重新根据老师的讲解来复习一遍：假设有一天作为厂长的你不准备自己生产了，而是准备将厂内的设备租赁出去，将原材料A和B卖出去。问：如何进行定价才能更好！我们不妨设价格为 y1, y2 ,y3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">资源\产品</th>
+      <th style="text-align: center">产品1(每件获利2元)</th>
+      <th style="text-align: center">产品2每件获利(3元)</th>
+      <th style="text-align: center">现有条件</th>
+      <th style="text-align: center">价格</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">设备</td>
+      <td style="text-align: center">(需消耗)1 台时/件</td>
+      <td style="text-align: center">2 台时/件</td>
+      <td style="text-align: center">8 台时</td>
+      <td style="text-align: center">y<sub>1</sub> 台时/元</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">原材料A</td>
+      <td style="text-align: center">(需消耗) 4 kg/件</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">16 kg</td>
+      <td style="text-align: center">y<sub>2</sub> kg/元</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">原材料B</td>
+      <td style="text-align: center">(需消耗) 0</td>
+      <td style="text-align: center">4 kg/件</td>
+      <td style="text-align: center">12kg</td>
+      <td style="text-align: center">y<sub>3</sub> kg/元</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>
+    <p>那首先对你自己来说，你租出去，卖出去的价格一定要比自己生产时高。这样你才能有利可图，否则还不如自己生产。
+于是就有：
+y<sub>1</sub> + 4y<sub>2</sub> &gt;=2 ; 2y<sub>1</sub> + 4 y<sub>3</sub> &gt;=3</p>
+  </li>
+  <li>
+    <p>其次，你不能漫天要价，你要让对方觉得你的定价是你在现有条件下以所定价格全部卖出后总的价格尽可能的低。
+于是就有：
+min w = 8y<sub>1</sub>+16y<sub>1</sub>+12y<sub>1</sub></p>
+  </li>
+</ol>
+
+<p>毕竟买卖得让双方都感觉很公平才行。</p>
+
+<h2 id="6-灵敏度分析">6. 灵敏度分析</h2>
+
+<p>对于任何数学建模之后得到的模型，灵敏度都是一个很重要的指标，也很有现实的意义。</p>
+
+<p>比如产品1每件获利2元，我们现在不是一般在谈论“实体经济不景气”，这个价格会在一定范围内波动。在这种情况下，我们该如何重新规划我们的生产。</p>
+
+<hr />
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2017/10/13/bioinformatics-article1/">生物信息与算法1
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2017/09/24/first-acquaintance-with-operational-research/">初识运筹学</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/2017/09/30/Extra-Learn-from-assignment/">番外篇,从线性规划作业说起</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: 'ydlNAU',
+        repo: 'MathSimpleForum',
+        oauth: {
+            client_id: 'b68c3af4470cd0543e8e',
+            client_secret: '1da2b0f277a2672c67037db98586d11dbfbd93f2',
+        },
+    });
+    gitment.render('gitmentContainer')
+</script>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Let's work together 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/ydlNAU" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:yudalang2017@sibs.ac.cn" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <!--
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+            <span>
+                Blogs written by <a href="https://jacobpan3g.github.io">Jacob Pan</a>.
+            </span>
+        </p>
+    </div>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?75177901590fba02b71851d2acaee595";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</footer>
+<!--
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+-->
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/js/main.js" charset="utf-8"></script>
+    <script src="/js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+  </body>
+
+</html>

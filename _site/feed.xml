@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jan 2018 09:00:03 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Jan 2018 09:00:03 -0500</lastBuildDate>
+    <pubDate>Thu, 18 Jan 2018 09:19:13 -0500</pubDate>
+    <lastBuildDate>Thu, 18 Jan 2018 09:19:13 -0500</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
     
       <item>
@@ -82,49 +82,38 @@
       </item>
     
       <item>
-        <title>jekyll基本</title>
+        <title>如何成为一个科学家</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#get-started&quot; id=&quot;markdown-toc-get-started&quot;&gt;get started&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#为文章添加图片&quot; id=&quot;markdown-toc-为文章添加图片&quot;&gt;为文章添加图片&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#局域网访问&quot; id=&quot;markdown-toc-局域网访问&quot;&gt;局域网访问&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#如何成为一个科学家&quot; id=&quot;markdown-toc-如何成为一个科学家&quot;&gt;如何成为一个科学家&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#资料&quot; id=&quot;markdown-toc-资料&quot;&gt;资料：&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;get-started&quot;&gt;get started&lt;/h2&gt;
-
-使用jekyll创建blog，建议在ubuntu下面搭建，因为十分方便，直接使用
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt-get install jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-就可以安装好了，而不用想在其他平台下，先安装ruby，然后才能安装jekyll这么繁琐。
-
-然后直接在github上或者jekyll官网上下载一个自己喜欢的blog模块，在根目录执行
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-就可以在浏览器通过&lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.1:4000&lt;/code&gt;访问本地的blog了
-
-&lt;h2 id=&quot;为文章添加图片&quot;&gt;为文章添加图片&lt;/h2&gt;
-
-可以在blog根目录下创建一个img文件，把图片放在里面，然后在文章中使用路径&lt;code class=&quot;highlighter-rouge&quot;&gt;/img/xxx.png&lt;/code&gt;就可以访问到该图片的。
-
-&lt;h2 id=&quot;局域网访问&quot;&gt;局域网访问&lt;/h2&gt;
-
-若使用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;启动，只能在本机浏览器访问blog，而局域网内其他PC访问不了
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve -H 0.0.0.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-通过上述命令启动，就可以在局域网内其他PC通过当前IP地址来访问访问blog了；若需要改变端口，可使用-P选项。
-
 &lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
+  多数人二三十岁已经死了，他们变成了自己的影子，不断重复以前的自己！
+————罗曼罗兰
 &lt;/blockquote&gt;
 
+&lt;h2 id=&quot;如何成为一个科学家&quot;&gt;如何成为一个科学家&lt;/h2&gt;
+
+既然来中科院读博士了,不过内心如何纠结，怎么样也应该朝着科学家的目标去行动一下！
+这里记录一些看到的比较好的&lt;strong&gt;关于PHD之路&lt;/strong&gt;的文献!
+
+如果大家也有类似的资料欢迎分享！
+
+&lt;h2 id=&quot;资料&quot;&gt;资料：&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;2012年《Molecular cell》有一篇&lt;a href=&quot;http://www.cell.com/molecular-cell/fulltext/S1097-2765(12)00386-3&quot;&gt;Skill Development in Graduate Education&lt;/a&gt;非常好。&lt;/li&gt;
+&lt;/ol&gt;
+
+它讲述了PHD之路所需要的技能（PS,大部分都是一年级奠定好的！,值得重视）；如何读文献；如何形成新的假说（用我们的话来说就是“如何提出新的有价值的生物学问题！”）以及具体的技能与如何得到这些技能！
+
 </description>
-        <pubDate>Sun, 10 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/12/10/jekyll-basic/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/10/jekyll-basic/</guid>
+        <pubDate>Mon, 08 Jan 2018 02:31:01 -0500</pubDate>
+        <link>http://localhost:4000/2018/01/08/How-to-be-scientist/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/08/How-to-be-scientist/</guid>
         
-        <category>jekyll</category>
+        <category>RoadToPHD</category>
         
         
         <category>blog</category>
@@ -132,125 +121,1469 @@
       </item>
     
       <item>
-        <title>在Jekyll博客添加评论系统：gitment篇</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-申请一个github-oauth-application&quot; id=&quot;markdown-toc-1-申请一个github-oauth-application&quot;&gt;1. 申请一个Github OAuth Application&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-在jekyll博客调用gitment&quot; id=&quot;markdown-toc-2-在jekyll博客调用gitment&quot;&gt;2. 在jekyll博客调用gitment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-为每篇博文初始化评论系统&quot; id=&quot;markdown-toc-3-为每篇博文初始化评论系统&quot;&gt;3. 为每篇博文初始化评论系统&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-一些问题&quot; id=&quot;markdown-toc-4-一些问题&quot;&gt;4. 一些问题&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-最近在Github Pages上使用Jekyll搭建了个人博客&lt;a href=&quot;https://jacobpan3g.github.io/cn&quot; title=&quot;我的博客主页&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;,当需要添加评论系统时，找了一下国内的几个第三方评论系统，如“多说”，“畅言”，“友言”，“新浪云跟贴”：
-
-&lt;ol&gt;
-  &lt;li&gt;多说，曾经较火的评论系统，网上介绍文章比较多，但已关闭，无法再用了&lt;/li&gt;
-  &lt;li&gt;畅言，sohu旗下的，但是需要个人博客备案后才能使用，但github pages个人博客感觉备案比较难&lt;/li&gt;
-  &lt;li&gt;友言，jiaThis旗下的，由于时http请求，github pages现在都是https了， 在https站点无法调用http请求，故也无法使用&lt;/li&gt;
-  &lt;li&gt;网易云跟贴，曾被当作“多说”的替代品，可惜官方通报说也将在2017.08.01关闭了&lt;/li&gt;
-&lt;/ol&gt;
-
-再看看disqus，国外比较火的评论系统，但在国内墙了，故也不考虑。
-
-综上，国内几个比较主流的评论系统目前都无法在Github Pages上的个人博客使用， 后面我发现了gitment，一款由国内大神imsun开发的基于github issues的评论系统, 具体介绍请看项目主页&lt;a href=&quot;https://github.com/imsun/gitment&quot;&gt;( github.com/imsun/gitment )&lt;/a&gt;。
-
-目前我已经成功把gitment应用到了自己的Github pages个人博客里，过程中碰了一些壁, 同时发现网上关于gitment的介绍并不多，故写一篇总结，希望可以帮助到大家。
-
-&lt;h2 id=&quot;1-申请一个github-oauth-application&quot;&gt;1. 申请一个Github OAuth Application&lt;/h2&gt;
-
-Github头像下拉菜单 &amp;gt; Settings &amp;gt; 左边Developer settings下的OAuth Application &amp;gt; Register a new application，填写相关信息：
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Application name&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Homepage URL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Application description&lt;/code&gt; 都可以随意填写&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authorization callback URL&lt;/code&gt; 一定要写自己Github Pages的URL
-(ps: 之前我自己就是在这里碰壁了，调试半天才发现)&lt;/li&gt;
-  &lt;li&gt;填写完上述信息后按&lt;code class=&quot;highlighter-rouge&quot;&gt;Register application&lt;/code&gt;按钮，得到&lt;code class=&quot;highlighter-rouge&quot;&gt;Client ID&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Client Secret&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;2-在jekyll博客调用gitment&quot;&gt;2. 在jekyll博客调用gitment&lt;/h2&gt;
-
-如gitment项目页Readme所示，在你需要添加评论系统的地方，一般是&lt;code class=&quot;highlighter-rouge&quot;&gt;_layout/&lt;/code&gt;目录下的 &lt;code class=&quot;highlighter-rouge&quot;&gt;post.html&lt;/code&gt;, 添加一下代码
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gitmentContainer&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://imsun.github.io/gitment/style/default.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gitment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Gitment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;owner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your GitHub username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'The repo to store comments'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;oauth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;client_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your client ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;client_secret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Your client secret'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gitment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gitmentContainer'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-需要修改的有4个地方
-
-&lt;ol&gt;
-  &lt;li&gt;Your GitHub username：填写你的Github Pages博客所在的github账户名&lt;/li&gt;
-  &lt;li&gt;The repo to store comments：填写用来存放评论的github仓库，由于评论是 通过issues来存放的，个人建议这里可以直接填Github Pages个人博客所在的仓库&lt;/li&gt;
-  &lt;li&gt;Your client ID：第1步所申请到的应用的Client ID&lt;/li&gt;
-  &lt;li&gt;Your client secret：第1步所申请到的应用的Client Secret&lt;/li&gt;
-&lt;/ol&gt;
-
-填写完这4项把代码保存上传到github就可以了。
-
-&lt;h2 id=&quot;3-为每篇博文初始化评论系统&quot;&gt;3. 为每篇博文初始化评论系统&lt;/h2&gt;
-
-由于gitment的原理是为每一遍博文以其URL作为标识创建一个github issue， 对该篇博客的评论就是对这个issue的评论。因此，我们需要为每篇博文初始化一下评论系统， 初始化后，你可以在你的github上会创建相对应的issue。
-
-接下来，介绍一下如何初始化评论系统
-
-&lt;ol&gt;
-  &lt;li&gt;
-    上面第2步代码添加成功并上传后，你就可以在你的博文页下面看到一个评论框，还 有看到以下错误&lt;code class=&quot;highlighter-rouge&quot;&gt;Error: Comments Not Initialized&lt;/code&gt;，提示该篇博文的评论系统还没初始化
-  &lt;/li&gt;
-  &lt;li&gt;
-    点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Login with GitHub&lt;/code&gt;后，使用自己的github账号登录后，就可以在上面错误信息 处看到一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize Comments&lt;/code&gt;的按钮
-(ps: 由于要求回调URL和当前地址一样，故第2步不能在本地调试， 需把代码先上传再调试)
-  &lt;/li&gt;
-  &lt;li&gt;
-    点击&lt;code class=&quot;highlighter-rouge&quot;&gt;Initialize Comments&lt;/code&gt;按钮后，就可以开始对该篇博文开始评论了， 同时也可以在对应的github仓库看到相应的issue
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;img src=&quot;https://jacobpan3g.github.io/img/gitment-in-jekyll.png&quot; alt=&quot;InitBtn&quot; /&gt;
-
-&lt;h2 id=&quot;4-一些问题&quot;&gt;4. 一些问题&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;安全问题&lt;/li&gt;
-&lt;/ul&gt;
-
-有些读者担心github oauth application的client secret这样明文写在页面上会不会有安全 隐患，我也考虑到这个问题，目前我能想到比较好的解决方法是：注册一个github小号， 在小号里注册oauth application，使用小号app的client secret
-
-&lt;ul&gt;
-  &lt;li&gt;回调URL&lt;/li&gt;
-&lt;/ul&gt;
-
-有些读者反映登录不成功，请大家一定要确认&lt;strong&gt;github oauth application里的回调URL一定要 填写要使用gitment的博客的URL&lt;/strong&gt;，这一点十分重要
-
-&lt;hr /&gt;
-
-好了，gitment使用介绍到这里，大家若遇到什么问题尽管在下面留言，或者在我的个人博客 &lt;a href=&quot;https://jacobpan3g.github.io/cn/2017/07/17/gitment-in-jekyll&quot; title=&quot;我的博文&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;留言，上面使用的评论系统就是gitment，我会抽空 一一作出回答。
-
+        <title>思维导图-序列比对</title>
+        <description>&lt;html&gt;
+&lt;head&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta content=&quot;text/css&quot; http-equiv=&quot;Content-Style-Type&quot;&gt;
+&lt;title&gt;Stefan-sequence alignment&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 align=&quot;center&quot; class=&quot;root&quot;&gt;
+&lt;a name=&quot;2ks1a6da3rqi49r0um5u11ap84&quot;&gt;Stefan-sequence alignment&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align=&quot;center&quot; class=&quot;globalOverview&quot;&gt;
+&lt;img src=&quot;Stefan-sequence alignment_files/images/Stefan-sequence alignment.jpg&quot;&gt;&lt;/div&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3ilogcosqqfodf8lgvt7vem5mm&quot;&gt;global alignment&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6bg9nvjd8ks6gcol15brcjpedl&quot;&gt;&amp;nbsp;Needleman-Wunsch&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;58tvb9cnk86ht1dp2lohsiv8b4&quot;&gt;&amp;nbsp;&amp;nbsp;computing alignment | D(i,j)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7rq2dvc3tvji0bgl0oqbfg37o1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Naive &quot;top down&quot; recursion&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2bslq8li7aig2uaidld137rf3f&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;太慢&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;37c9a1939aghq5pma5j91bf5lo&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Iterative&amp;ldquo;bottom up&amp;rdquo; &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;76gl73iknobo329pipihfa9g3t&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;先算小的，再算大的 | dynamic programming&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2t4bcm1k7ceuiqmn1pq07j3i9m&quot;&gt;&amp;nbsp;&amp;nbsp;backtracing&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;02tjcd5ep1ntikge2f0sh15tlh&quot;&gt;Semi-global alignment&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;17uuu6ugvcidpgafvackrfv9j4&quot;&gt;&amp;nbsp;典型应用： whole-genome gene finding &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1v334em9agpqfmtbrd03cukobb&quot;&gt;&amp;nbsp;特征:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;53msuap71s7r8psf662ot2iamf&quot;&gt;&amp;nbsp;&amp;nbsp;search query sequence (q) in genome (&quot;database&quot;) sequence D&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3kvnbas7duqe6989rftpbu383d&quot;&gt;&amp;nbsp;&amp;nbsp;允许insertions, deletion, substitution&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2fv4k0og4uunoboql6ml2au5lk&quot;&gt;&amp;nbsp;&amp;nbsp;find high-scoring matches&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;49qp718tulb5uraqsed7tahm5e&quot;&gt;&amp;nbsp;weighted alignments&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7nhbqtj6enfu1fih7o8i545jn6&quot;&gt;&amp;nbsp;&amp;nbsp;公式：slide18&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7564ag2bt9t3v8v5uvauv24l2i&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;σ(x,y) | 氨基酸x和y的相似度&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2rbk2vvtlv60q7rrk9jlui9rda&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;some aa substitution  &quot;preferred&quot;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7ju04iajle3ps0l37bcmtj13eu&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Cinsert， Cdeletion&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3k2jmic7jaoq9s5nhv1pqt3252&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;insertion and deletion: &quot;score penalty&quot; 而不是简单的给个零&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4fvco0ieplfi4tu14iu189v3fn&quot;&gt;&amp;nbsp;&amp;nbsp;affine gap score&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4im27mvqe0f1vftho9ghumu8oc&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Problem: Deletions preferred over accepting a few mismatches within a long run of matches&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6e3uqdkoj16oitci8k5s9sip8a&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;分散的会得到更高分数，但是实际情况更倾向于不分散的（less fragmented）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5eccihp4juudmveacpa6c79k8i&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Solution:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6qda63uttv56p8l1okk7dj4lm4&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;g(open)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;42kssvg3gvapga83mmcd5mn46q&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;gap open penalty| make initial deletion expensive&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6e6vosjn7j90934umcrm87inf0&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;g(extension)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3vdctqe9f520fejofji61sskf5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;gap extension penalty| deletions following a previous deletions are cheap&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4s438iqklscsb1801mchnm6971&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;naive公式： slide21&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;30h00djmkpi1cp0alghsnavhn5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;太慢！&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5h7vrm2rgbau7khimmj93a41am&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Gotoh Algorithm&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1oea5puqme98ug7ovjpne05qo4&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;引入Pi,j  Qi,j&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4cvbrno7194smc11mare62sb81&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide22-23&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;39f5c1gdalqemk9k4mb77hmn58&quot;&gt;&amp;nbsp;scoring alignments&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4vob4k4fojntoel0uq3090jugj&quot;&gt;&amp;nbsp;&amp;nbsp;&quot;Henn&quot;-egg problem&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;075iqesvrj9b6jti3diog7cguv&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;用亲缘关系近的物种，计算氨基酸i被j替代的频率f(i,j)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3gs3cu9kfbne74knm14vi721rr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;relative substitution rate g(i,j) = f(i,j)/f(i)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1ld95ovv7j352d7alh0mnou2nl&quot;&gt;&amp;nbsp;&amp;nbsp;PAM matrices&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6jadkk0ckdeav3uo44221572va&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;PAM 1 matrix: P1(i,j) = g(i,j) / f(j)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4h8igntu9mb58fmfhgcd4q9nb7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pk = P1 ^ k&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;64copsr48lmkie9i2hpfikc3b7&quot;&gt;&amp;nbsp;Hieshberg&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2chcb772dgblv4bqq9lti5o3n0&quot;&gt;&amp;nbsp;&amp;nbsp;解决O(mn)计算空间过大的问题： 线性空间就足够了！&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;51k5ue757l4a5mps6hjsvhi2fl&quot;&gt;&amp;nbsp;&amp;nbsp;只关注LCS | longest common subsequence&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1vsvmf2k381qqmlc4smhd6bc9n&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;lcs(x,y) = lcs(xR , y R)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1iseeh56lgebqaln9lu2e6rfck&quot;&gt;&amp;nbsp;&amp;nbsp;(k*, n/2)处交汇&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;008rcg96j4q1f8rk5cobba8iaq&quot;&gt;&amp;nbsp;&amp;nbsp;公式与算法 slide31&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;65fsup1ktgtupv6i5r0qh41gc8&quot;&gt;Local alignment&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7u0bll4qvfh4ju6dh4jfifk629&quot;&gt;&amp;nbsp;Smith-Waterman&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5ndirfhmpnq2p0g01rshovp5nh&quot;&gt;&amp;nbsp;&amp;nbsp;slide 33&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5pq4h9lo5enu2mnat3pc38hf5r&quot;&gt;&amp;nbsp;&amp;nbsp;对角线方向逐一计算。traceback: 从最大的开始，到0为止结束。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3dsar5uql3lektk7c8hq72sok7&quot;&gt;&amp;nbsp;motif finding&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;77qof8nc0rqndqakb2b94ehkrq&quot;&gt;&amp;nbsp;&amp;nbsp;k个序列x1, x2, xk (长度均为n)   | y1,y2,yk 长度均为λ   &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3ofjpudsjnku9unuvqsogt8e34&quot;&gt;&amp;nbsp;&amp;nbsp;scoring function&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;32h5dq68umpjrmpgr0j88043hg&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MP(s) | consensus score &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;08q2a1g6ha3fmgl0qa0jvc5hkt&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide38&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7mvq8vao1sh3j0pvbkgpamocih&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;让MP(s)最大的（s1,s2,...,sk）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6blfu4q4pht08rl3n2h6htmt4o&quot;&gt;&amp;nbsp;&amp;nbsp;algorithm&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4tiqo1e15j0bg6k191v0m138mc&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;naive: (n-λ)^k 种可能性&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7abg3ve1q2evk359o1b24ifsap&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;branch-and-bound strategy&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;11mk90iv0aqclculkg3n6mnvkp&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;枚举，去掉不好的branch (cannot improve best solution ), 用partial scoring function&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;69bms05qskbg6nrhviq90mbbe9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;preorder enumeration &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1as23iac0u6h1g5ldnj2dt1r0u&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;cut branches&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;40vn7g7hbhsvue136sldsftmua&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;前i列的partial score +后L-i列upper bound（maximal improvement） 如果比现在的最佳值小，把这个branch剪掉！&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2jg9dpojdhjrravpuevi9gchno&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bypass vertices&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Thu, 26 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/26/Stefan-sequence-alignment/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/26/Stefan-sequence-alignment/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>思维导图-进化树</title>
+        <description>&lt;html&gt;
+&lt;head&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta content=&quot;text/css&quot; http-equiv=&quot;Content-Style-Type&quot;&gt;
+&lt;title&gt;Stefan-Phylogenetics&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 align=&quot;center&quot; class=&quot;root&quot;&gt;
+&lt;a name=&quot;2se9dt2h3pab3h2fnecm7rjbfk&quot;&gt;Stefan-Phylogenetics&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align=&quot;center&quot; class=&quot;globalOverview&quot;&gt;
+&lt;img src=&quot;Stefan-Phylogenetics_files/images/Stefan-Phylogenetics 2.jpg&quot;&gt;&lt;/div&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2v3h0ahfmqhld1q18tr3ss546s&quot;&gt;phylogenetic tree&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;71badu5jh3f9t1kp593s80flh5&quot;&gt;&amp;nbsp;基本概念&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;58p68lushhv1ee7r76e1vc460g&quot;&gt;&amp;nbsp;&amp;nbsp;T is a graph G=(V,E) without vertices of degree 2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2vehoge6818kb1qm3vv3sdvt6k&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;如果所有interior vertices的度都为3，则T为binary&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;174k5iu8rhqsfdmhvfugutlq66&quot;&gt;&amp;nbsp;&amp;nbsp;taxa : 叶片&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7mg0fs79fv2n5dp1n4ovcn74ra&quot;&gt;&amp;nbsp;&amp;nbsp;split : 移除一个egde，成为两个独立的部分&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;11faebvmboio4ou8u83cvan85q&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;display&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1c5m181bib74onvpogcjl42gk6&quot;&gt;&amp;nbsp;&amp;nbsp;DT(x,y) 两个端点之间的egde数 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3q68urk8uei2nfii9h7bc4363f&quot;&gt;&amp;nbsp;&amp;nbsp;quartet ： binary phylogenetic tree with 4 taxa&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0q6n6f9ihd2kiavc92gqpmg8qr&quot;&gt;&amp;nbsp;&amp;nbsp;root&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;24avnbhhhi4iltq3n2pm2au4ff&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 16-19&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;18p9bhk5kuv5t247t8oc3kths1&quot;&gt;&amp;nbsp;&amp;nbsp;egde length &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1nj066s0prmr781su2lrmcl2jr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;genetic difference &amp;nbsp;差异越大，egde越长&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3f9jj1pento127g0feokcncrf5&quot;&gt;&amp;nbsp;&amp;nbsp;confidence value&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;46ipf5rqgv3jm37tlqek264fs0&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;正确的可能性 如 bootstrap&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4uuft2f5u3ctinje3quaj0eujs&quot;&gt;&amp;nbsp;有n个texa的binary tree有2n-3个edge&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0a8r4thee436kfuepsgskmnpmd&quot;&gt;&amp;nbsp;&amp;nbsp;slide22&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7a3bh3iag32g2flv8ho4ru1f61&quot;&gt;&amp;nbsp;n个texa 有3&amp;middot;5&amp;middot;...&amp;middot;(2n-5)种可能的binary tree&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7u2t63dnbmka5arudqstb1cetb&quot;&gt;&amp;nbsp;&amp;nbsp;slide23&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4gd9i993v9hpificnnau2augqb&quot;&gt;&amp;nbsp;4-point condition&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;77gct4uk5ju4q1o5u5of0vvk67&quot;&gt;&amp;nbsp;&amp;nbsp;slide27&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2erccmulvkokou9mfn49kirvo0&quot;&gt;&amp;nbsp;split compatibility&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0jsmj4cv0qmguefvn7gps6ucdf&quot;&gt;&amp;nbsp;&amp;nbsp;slide33-35&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;10it110eiao127ucv2m6jv21qg&quot;&gt;tree reconstructing&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7tgm9lct02gbrcq8ill1imkhl2&quot;&gt;&amp;nbsp;character  based method&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0ikpiu3dp30a2ab5qm68ilehqu&quot;&gt;&amp;nbsp;&amp;nbsp;maximum parsimony&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0ond93f94kv695mulc3lbp7ojt&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; tree length（l）= minimum number of subsititutions |替换次数最小的tree。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5mo511g2vmqmjrgntn2pfjlfsn&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 5 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1hfmrcs2u013g3i0jvjvi502g5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Fitch algorithm&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;251kusodk8vggq9c9hia9m3fkf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;texa, tree topology i, alighment j&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;74anogvo8pogc7h5ico390rg1j&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;time complexity O(n)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;77ufl6b1m056folld3pojuttt3&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;步骤&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;511k52qcq7orltu7irs231qi25&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;add  a root node to any edge&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6krr5ec1258jfagsrkr8uk489e&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bottom-up -pass&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;552m75eh325avn2eqcj6cncohj&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;top-down-pass&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3rsaifv76sgat1cq6lptv6rjro&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Sankoff algorithm&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;03qdcrlkttc35ugaou68uhaarq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dynamic programming&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3jidhrhqk8mr1b9kb9r6kdauhr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;步骤&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0fi008u4k86dlaarhqhkdujsil&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;l(Leaf)=0&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1hl4o9h6emd9lk9bup2v09jnth&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;λ(v)  l(v)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;11p7cfc4ki5dmojo4c4e2as0qs&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Branch and bound | 分支定界 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;50iiql5bjnhan4nu2lhetpho21&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;适用于taxa较多20+的情况，找到最好的tree&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1e7bcb8hdnnf2afugm21f7lijr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;silde 14-15&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3s066f69k4lsnj6u122mbqcrp2&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;miscellaneous | 多种方法&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4mod8i2pl2qqm0lr2736u1q9lb&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;heuristic searches&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;426dt56p9csefg2rs2tub9c18o&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quartet puzzling&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0lec68j5sjaks1rke05kj8f2t3&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;需要用不同的起点重复几遍&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3rq66okho5ens2kbd3aa75s86b&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;weighted parsimony= the cost (parsimony score) of transition&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;711f09lk19h1sprjf58dqvom7t&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;parsimony只适用于紧密相关的序列，一个位点不能有多种变化方式&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6eo8devs7o9t536uk9l9hdfeom&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;inconsistency | maxium parsimony的错误率 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7aobmp9eq7h3eoi2mbi482g8kv&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;long branch attraction | MP is inconsistant&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4qol9rnihup3avq2hd4tldp3h9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Felsenstein zone&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5q47am8gftnbaesjkep9ajp5nk&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Non&amp;ndash;parametric Bootstrapping&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;628vjip6gov87ge369p1p8gnhh&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;uncertainty of tree construction&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3cut7taeg7hcprrffbian9pj93&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;方法： 随即打乱原序列， 错误的tree会有高的bootstrapping value越高&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1h2epq39pbqp5iu8gtjklsmk9l&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Bootstrapping does not provide information about the adequacy of the method !&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;66ghitf2va04mshnj07j1ml0au&quot;&gt;&amp;nbsp;&amp;nbsp;maximum likelihood&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1jpj180es9lctu2mrk2h27oukk&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;evolutionary distance&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4mavn55mv3bm3ug4nli7k3gejo&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;pairwise evolutionary distance D(u,n)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;05u0rfkej82oo9jbgf505bkcnr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;进化中最可能发生替换的（每100个site）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5nrec6itnelfcmuj0blk682h18&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Markov model of evolutionary chain&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;401rmoebip0chn5qvsfum6pmdm&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Markov chain (time discrete)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0gk539734ilvr2s3sgbm9b9jtr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 30&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3q1qrt2ui2qml0mu9u98at823m&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;time continuous model&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;63gqrqqlta8ch4tlo3tb9qf56v&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;markov process  X(t)~ (A, ρ0, Q)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;43p47m7j0r14khct7gs7jrd77e&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;A = {1, ..., n}&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;35c8holmhu2ui9p9c61k1omf1p&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ρ0 initial probability distribution&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4u5lmeka91pms0svp9i37aa868&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Q rate matrix&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;48ssj8bphs60o6838dl2jibefk&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;exponential&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2tuqn7g57pk5t8hspttufdviv0&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;momery-less &amp;amp; homogeneity&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3scbt482r4r819nd8lf619jbm3&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;transition property Pij(t)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5l7qhkn751bb319ce38bqp28h7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jukes-Cantor-Model&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4vevd0jacg5csuhhafo0g584dl&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Chapman-Kolmogorov equation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3mk5u7ks7e9tci3u3f82u6dda4&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;stationary distribution π&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1u7inp78lvg642c3qnhv27guiq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;拓展: evolutionary Markov process &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1ou3k35iig2m3l8f8iivh14sg6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide57-59&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0iu7sgbvah51jcghn06geht3e0&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;log L(t) = log Pr(D|t, M)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0h0e5l3lnq1qv92pgdom70cngc&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;L(p) = Pr(data|p)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;76h1jo8111lhdkomrtlfb7fogo&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;P(head) = L assume its maximum&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2r3ttl2fnn64c5okkfgitq465u&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;evolutionary distance t 由Pr()，即likelihood function, 达到最大值时估算出来&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;19mem38scsg5hg8qd1g8q78qvi&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;rate matrix &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6jrqbqr2kcffjblt9gscpgt951&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; for very small h we have P (h) &amp;asymp; I + hQ.&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4mkgmuom21bfvjn0v62i5d60te&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; πQ = 0&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3t0a97so4763u7qm1vpnsh0dnr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;model parameters hold substitution rate&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3jnju0b39e3dh9h92hmdd0d9rg&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;rates hold the information how many substitutions per time unit one expects.&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;049bferqn0nkae3veffa7a7rg2&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; PAM (percent accepted mutations&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6qtk3rkgm8ghi8ukm19hh37go4&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;公式 slide45&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6riflqsbq92bkvhbkloabsin12&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Jukes-Candor correction  48-49&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0jcid7lqf0hidlv13q39dkm7b9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide50-54 计算Maximum likelihood tree &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5tgv9d6t0od1p964j03ikvivvb&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;完全没看懂。没有被划入重点，这一部分选择性掠过。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5fqfmgvpm7n6c9tge046ihnegm&quot;&gt;&amp;nbsp;&amp;nbsp;ML与MP的异同&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0qsv05d0916n5nup74te3cep5u&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide62&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0cf6hvul1i1ee5osn9qkcr3sl2&quot;&gt;&amp;nbsp;distance based method&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6mugrttptnrosvp34prv1i59gj&quot;&gt;&amp;nbsp;&amp;nbsp;Neighbour joining&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7onj2ajqffl302cano948n7isq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;neighbour | 与同一个interior vertx相邻的两个taxa&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5fcn8nmk3g5dmb9jnca160t107&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;什么是NJ | 选择一对neighbour x,y ，用pseudo-taxon Z替代，重复这一过程，直到只有三个taxa&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4bhj6cgo3j78nm3lfhsicvb87v&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;应该选择哪一对？&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5kl86cdg0p3dimv3oprt2eocmv&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很自然的想到，选距离最近的taxa，即UPGMA&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2lko9a4cshi5sc407sa0pvmpdq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 7&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;04s2g0hpi6ca01rk9lkblo3brh&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;但是，我们不仅应该考虑两者的距离，也应该考虑他们离其他taxa的距离&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;46irkmg4fbiq7nv868i4thm2a6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;算法	&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6b2bgk0g06q3287thu0dj8s8a7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;selection step | Q-criterion&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;550no3kbasosr384nlc9skh6jh&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|X|&amp;gt;3   选择让Q(x,y)最小的x,y&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4f6r8fpsmqg9smcneicjfmr0je&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;reduction step&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6islili2iua96mnkmtclogimmm&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;pseudo-taxon v 替代 x,y &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;154gba85orcbfisv2favam3q7f&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;d(v,z)= 1/2 (d(x,z)+d(y,z)- d(x,y))&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2a73nas8qss19evmbjduo4865q&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;reverse&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2aa646lgcnvq5v2madq6ghbvab&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;length of edge from x to v&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;542vhsr9hvehh6funt9s3kalsq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;length of edge from y to v&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;27oltnubr51b32kdard2h14udb&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;consistency | 一致性&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7e2vkhvk165oenn49e3dbl7mml&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;If the Neighbor Joining Algorithm is applied to the tree distance that is defined by a phylogenetic X-tree T, then it outputs T .&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4gpsvqdsa87aqmmaf33ieh589b&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;proof&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6t6khlr3icag8fu8tv296ptq6t&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 13-17&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1imq8m741drskogf3e26bqbm1l&quot;&gt;&amp;nbsp;&amp;nbsp;least squares (Fitch-Margoliash)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5nl9anae01ftt45fm2et8nm69g&quot;&gt;&amp;nbsp;&amp;nbsp;minimum evolution&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;19uordbkec0r94mpp4k44phv2s&quot;&gt;phylogenetic networks&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4ebtl929j77d09ub8k41afr8t6&quot;&gt;&amp;nbsp;compatible split systems&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;51ud47vclv9f9d899unmsh98i1&quot;&gt;&amp;nbsp;&amp;nbsp;slide 8&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;18k4dba25fmas6191q1ooa97i9&quot;&gt;&amp;nbsp;&amp;nbsp;两种split&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6rgsj1sgv3ql75mpi7shareepa&quot;&gt;&amp;nbsp;weakly compatible split systems&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3pttqpqpunt9hsl3nnqtdhicap&quot;&gt;&amp;nbsp;&amp;nbsp;slide 9-11&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;76lg8e1ogg5q7v36r8fa68tcvu&quot;&gt;&amp;nbsp;&amp;nbsp;三种split&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;54b86igl8ra4uj5kuo4ln9c7ps&quot;&gt;&amp;nbsp;Split decomposition&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6ob0me28jkle67nnlpftd98gob&quot;&gt;&amp;nbsp;&amp;nbsp;用于计算weakly compatible split from distance&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;27nc9jpa05kv7ur03rnoqq4l42&quot;&gt;&amp;nbsp;&amp;nbsp;related terms&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1685geld160fc8sovhhtpbo591&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;4 point condition&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;416jknjlp7cdn3pgg94uc11ql6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide14-15&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;75oongl23s6u1n4dpejhfvkkei&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;isolation index （α）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;25v4jss5ho3ukd58m6jruspq5e&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;the weight of the split S&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6q005oi457aehbctqf645mlpet&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 16&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;582f5q3ppnffapgqginoavjggs&quot;&gt;&amp;nbsp;&amp;nbsp;computation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;71fd0olrgnj1bh0ru22omu42ld&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 17&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5su96eki934ta3apbfepusqlnr&quot;&gt;&amp;nbsp;&amp;nbsp;property&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2avp1jm31i1035cu7rqep8ssmn&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide 18&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3946bnmf85rij7f5fqdj71ufut&quot;&gt;&amp;nbsp;NeighborNet&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7rcd1pt2h2qo7sa0b8n7c8aha4&quot;&gt;&amp;nbsp;&amp;nbsp;construct weighted circular split system&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7p4fhgnap49g0k4ngmm9fl8jh7&quot;&gt;&amp;nbsp;&amp;nbsp;circular split systems&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2c9agphrqsgkuseh0rqrtpir8l&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Weighted split systems that correspond to phylogenetic trees are circular.&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0ombvo4a4n4veen6o3i8hj0gra&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide19-20&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1siga4pqtemmk12f1bh27tf3gs&quot;&gt;&amp;nbsp;&amp;nbsp;slide 21-26&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Wed, 25 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/25/Stefan-Phylogenetics/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/25/Stefan-Phylogenetics/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>思维导图-统计组学3</title>
+        <description>&lt;html&gt;
+&lt;head&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta content=&quot;text/css&quot; http-equiv=&quot;Content-Style-Type&quot;&gt;
+&lt;title&gt;multivariate
+ supervised analysis&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 align=&quot;center&quot; class=&quot;root&quot;&gt;
+&lt;a name=&quot;3ng1c2ci4fsqc7214f4stmgmpd&quot;&gt;multivariate
+ supervised analysis&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align=&quot;center&quot; class=&quot;globalOverview&quot;&gt;
+&lt;img src=&quot;Andrew-3_files/images/multivariate  supervised analysis 2.jpg&quot;&gt;&lt;/div&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0be3riak89qu3l0okemnrrh1rn&quot;&gt;classification&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;56rq7k42b5vaonfmj7ecv687jg&quot;&gt;&amp;nbsp;概念&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6v7146no9er73ksm9evpenevc7&quot;&gt;&amp;nbsp;&amp;nbsp;已经分类好，把sample放进去
+given a sample, to predict its class given a set of a-priori classes&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4gqneau00dappa7s4ehh1hq1v5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;与clustering完全是两码事啦&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0dg45n4iaq0iu7g1ivdc5ppmng&quot;&gt;&amp;nbsp;&amp;nbsp;decision boundaries 可以是线性也可是非线性的。 decision boundaries需要训练!!!&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;51cqhsnn8rn73g3flg92o2pldd&quot;&gt;&amp;nbsp;参数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0a4bk28hbd1ikseao32lnsh58r&quot;&gt;&amp;nbsp;&amp;nbsp;input vector: x.&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1qcjh3d4e4vpvofc3qa2ftkphh&quot;&gt;&amp;nbsp;&amp;nbsp;放进k个class C1,C2,...,Ck&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;14vnb0fra4031iel7bs4dpo1rn&quot;&gt;&amp;nbsp;&amp;nbsp;learning/ training set (LS)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;338tstb6v5fjobaqpv09c3to5e&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;L = (x1, Y1), ..., (xn, Yn)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5aj2fghlpjg6nf4tngfdmf71v9&quot;&gt;&amp;nbsp;Bayes theorem&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2q5rmhhom9hmuv5mcr6lsgn0i7&quot;&gt;&amp;nbsp;&amp;nbsp;估计p (Ck | x)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4gc1o4sail5d78o37dprfrc72q&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;input是x的sample属于class k的概率&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4eur1lanjk3p5ooqged8vjd1fi&quot;&gt;&amp;nbsp;&amp;nbsp;公式 slide7&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2r3q6r0e4r0bol7rf0i6nshp92&quot;&gt;&amp;nbsp;decision theory&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5p59c98msaa2cscrg9assr1pj6&quot;&gt;&amp;nbsp;&amp;nbsp;原则：选择使p(Ck|x)最大的k&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5ab3l65boldrptkkapa33rl0ut&quot;&gt;&amp;nbsp;&amp;nbsp;p(x,C1)=p(x,C2)，error最小。（在K=2， input一维时，slide 8的graph很好理解）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;73ajd1nik8vnd7mlmoih3v2cnr&quot;&gt;&amp;nbsp;model and parameter selection&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;69100clccjf34mfc76hpojsaud&quot;&gt;&amp;nbsp;&amp;nbsp;分割为单位格，要求数据量足够大。维度越高，需要的数据越多&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2a072vbbnbhdc9dcvvjp0rf3tk&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;curse of dimensionality&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3lr7h27a8d1l0cnaobl3m2294a&quot;&gt;&amp;nbsp;&amp;nbsp;n个data，D=n-1个维度，总能找到D-1种分割成两类的方法&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7tqfdp1co2pl9nf3k5p8rab9vg&quot;&gt;&amp;nbsp;&amp;nbsp;Model参数越多(# parameters)，复杂度(complexity)越高&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;78jcmh218d51tgm26h2pndc4cp&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Ex: polynomial curve fitting&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4gcmpmr85q250nt0hdovv04ue0&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;衡量over-fitting： RMS(Root-Mean-Square) Error     slide17&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6q5fftc2msp08d7hfrjbmjpop7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Complexity parameter   slide20&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;29b5k60mlse419v6u3np9t1t92&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;penalty-term   slide 20&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6h7n03j0skbqlgj0grku80hnk2&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;λ控制了模型的复杂度&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4i5susr1opjqua30gthndgfgob&quot;&gt;&amp;nbsp;cross-validation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2ge9ul39oo9lo9oooud3iqh0op&quot;&gt;&amp;nbsp;&amp;nbsp;目的：在样本量不太大的情况下，避免overfitting&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7f9ughbfmrfgsp8lmhr6p1o0u5&quot;&gt;&amp;nbsp;&amp;nbsp;所有的样本都会被用于training和testing&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;19aropnajv66q4drmon8ssqdrj&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;slide22 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;30858gmo84t6farat88dhvo8ee&quot;&gt;shrunken centroids classifier&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;43a87jen7pnbneh2tj4qu0ak1o&quot;&gt;&amp;nbsp;naive centroid&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3kkfjheahrp8b2ph55vj2dgih0&quot;&gt;&amp;nbsp;&amp;nbsp;centroid = 一个class中所有sample的均值 &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6fch0r57b221i8sqv74d0qv50e&quot;&gt;&amp;nbsp;&amp;nbsp;选择使|y-Ck|^2 最小的k&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5jrmcnlo37rbqqipmbr82nb0jb&quot;&gt;&amp;nbsp;&amp;nbsp;存在问题: 容易overfitting，因为很多noise&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0hfnhcjqig3qubjhsa3bjn47td&quot;&gt;&amp;nbsp;&amp;nbsp;解决方法： shrink 即只有最相关的基因才会被纳入模型，如slide25中的红色基因&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;67aafs6s7vho434qn71l8svnf8&quot;&gt;&amp;nbsp;公式 slide26&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5pm10gl9u60qck7af8dvonnt3v&quot;&gt;&amp;nbsp;&amp;nbsp;定义△&amp;gt;=dgk时。d'gk=0，则c&amp;lsquo;gk=&amp;lt;xg&amp;gt;， 这样的基因不重要&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4isl1qvljecpa541bsgs0793og&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;△：shrinkage parameter&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4r5m6pbfjgv9kerpgqp3ih9937&quot;&gt;&amp;nbsp;&amp;nbsp;基因越重要，dgk越大&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3ajqbli298o5r9513bojdguou1&quot;&gt;&amp;nbsp;&amp;nbsp;可以把dgk理解为regularized t statistic&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1e5dvp71nif4g38sj15vrflb3s&quot;&gt;&amp;nbsp;&amp;nbsp;选择△的方法&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;10qd3drgk6oqvdgrihh7cpuc3o&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;使CV error最小，同时基因数最少（最简单）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;537g0aa6labma7b038q2cig5l1&quot;&gt;&amp;nbsp;class membership&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;100o1ngim9jsa7gm2aruum66qn&quot;&gt;&amp;nbsp;&amp;nbsp;公式 slide30&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;29um3pb93u6ejvg578bfdino5j&quot;&gt;&amp;nbsp;&amp;nbsp;把样本分到某一class的概率&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;77hh21ll047mihasdnqi23ug9m&quot;&gt;semi-supervised PCA/SVD&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;53lujgt4e3ilji4q2bq2fkljbh&quot;&gt;&amp;nbsp;保证SVD中的基因 与我们感兴趣的基因相关&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4nsm97pkmjmc9d3s9i1ujbs6m5&quot;&gt;&amp;nbsp;训练集X，先选中POI相关的基因，再对这些选出的基因（m个）做SVD&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;05mhp7bhtfkccbhqr2ud6s6iif&quot;&gt;&amp;nbsp;&amp;nbsp;实际上，就是只对挑选出的top-PC做SVD&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;42t6b0dtk9492g3sopgg6sc39k&quot;&gt;&amp;nbsp;&amp;nbsp;m = complexity parameter ,可用CV优化此参数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;63s9ik4v1e6gt46bho2db4d3a8&quot;&gt;&amp;nbsp;&amp;nbsp;流程示意图 slide35-36&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Tue, 24 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/24/StatisticalAnalysisofOmicData3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/24/StatisticalAnalysisofOmicData3/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>思维导图-统计组学2</title>
+        <description>&lt;html&gt;
+&lt;head&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta content=&quot;text/css&quot; http-equiv=&quot;Content-Style-Type&quot;&gt;
+&lt;title&gt;Andrew-2
+unsupervised analysis&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 align=&quot;center&quot; class=&quot;root&quot;&gt;
+&lt;a name=&quot;06onb446a8l2ablu7ikfcp0n76&quot;&gt;Andrew-2
+unsupervised analysis&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align=&quot;center&quot; class=&quot;globalOverview&quot;&gt;
+&lt;img src=&quot;Andrew-2_files/images/Andrew-2 unsupervised analysis.jpg&quot;&gt;&lt;/div&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7f8sat7got4h0mrb4d8db6uh5s&quot;&gt;dimensional reduction&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0tkojqj7v505m510p3k80o4fos&quot;&gt;&amp;nbsp;variance filtering &amp;amp; clustering&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3n19vmtkqiit7tl81jgc577nqi&quot;&gt;&amp;nbsp;&amp;nbsp;variance filtering &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1rg6ltp0fo2reajlucr3v2itto&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;将variance排序，选方差最大的top25%，再去做clustering&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6p4nlu69na8t7icnqdekl51qt7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;存在问题：受偏差的影响太大。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2hq8a58sg85hf4nfqdh48osmb6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;改进：MAD 与中位数只差的中位数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7ue6dq0v1hn4n1778v9k4b00s9&quot;&gt;&amp;nbsp;&amp;nbsp;clustering&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;26u85173ar2ut1ejh5sefaa1u9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;distance matrix&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;13p2u6so3o2tdrg0h0um4aldfs&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;pearson correlation cofficient（不受scale translation&amp;amp;rotation的影响,所以比欧氏距离好）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1qvjh8rel86a3g73e5kl9jr8h1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;聚类方法&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2aof588e1nhr4p9qgv42l6qqtm&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;z-score 均一化&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;34ro3hffpogelddkmgp4g0d56m&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;但是做PCA/SVD（比较变异度的时候）不推荐&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7dlorsju2mkatcvtq473lmll14&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hierarchical clustering&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4oco0d5ud6l2h8c2hc2pdfhm9o&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;取平均数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6i2jja4v3kv76h45aq6s28thgv&quot;&gt;&amp;nbsp;SVD 奇异值分解&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6fura4rm5svkjbcop2imjaba3l&quot;&gt;&amp;nbsp;&amp;nbsp;原理&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6ovbt25fm5u418aknqnp4n4dp8&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;找一个向量，让所有data投影到它上面的差异度最大&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6mvvnn33r09p906o7su6ma6rt9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;在垂直于此向量的空间上重复投射&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3p46p52d4ji3opq93rsgp19vh5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;不停地迭代这一过程&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0daa9reqq8agg2tus80qknehth&quot;&gt;&amp;nbsp;&amp;nbsp;X= U D V&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1cqthst58vfaacqtm5jp2f61b5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;U [p*K]&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;40sdhlohctk4uesne50rbjrqo1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;D [K*K]&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;504tr77rer5ofmh9a2q71jjap6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;V [K*n]&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5ih83pmmmimdnp8itfb9f1ku9g&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;K就是significant component #&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;42v820essmh85d77k1s3piag8i&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;permutation得到random X(p)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2r4g1bufumshknimfuqi78skb6&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SVD of X(p)     D(P)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0hhoapvn9abfm13tq0p2390qpb&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;d(p)j &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3in2i02167otmmo0db8iepmu6g&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;K=min{ j:dj &amp;lt; d(p)j }&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6pgsk1p7jciog5m8nh4k8diato&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;不需要做太多次，一般只要5次就足够了。1次就能得到合理的结果。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;70fuc3khgf5us4iuir0nkf2hdk&quot;&gt;&amp;nbsp;&amp;nbsp;overfit&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2phvnlrsne8f6h3hp4el1ikfqo&quot;&gt;&amp;nbsp;&amp;nbsp;与PCA的关系		&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4pei0q7o98e993plj6klhr0hno&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;是PCA的一般形式&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0mit1jilojcj74na03bdvr81oq&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;比PCA更稳定，尤其是feature&amp;gt;&amp;gt;samples&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;04c1u8c2v093b8mjf0r8ch7c3i&quot;&gt;&amp;nbsp;&amp;nbsp;好处&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2idf694h7hqcvt9v3012ttpas3&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;比variance filtering降维更彻底，~10-20&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1dk72figjjc44d6nc1vavv3u84&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;避免了多重检验&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;647s2sb8655ucbah3shrsh4e9t&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;减少了可能的冗杂&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7tljsb0vuklnelbu5rj77u5hjp&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;许多feature是高度相关的，他们会被归到同一个元素&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5au9oi1adifg1oiapl5btobrf2&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;robust feature selection&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7q94t9vu1htpcbjdr7em7goh1v&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;假阳性更少&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1hd8jvhu0t59lb1r0nr8suffcs&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;一个Feature可以在多个元素中起作用。这与生物学现象一致。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3i86tcvc55tc3bsiq015vcltl3&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;quantify 定量&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2pt5favsk4cjvuqp8m8okdbk44&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;the amount of variation in each component&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7df5ngf5fka8flfvhhv3afjdsb&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SNR&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4v2b49oldbpgq8jlcur29sd247&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;biological and technical (unwanted factors)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;074sptjb07oau52vmaokmtnjo0&quot;&gt;Multivariante regression and partial correlations&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0oosqf83ci339qc1c7dsaumdqr&quot;&gt;&amp;nbsp;多元线性回归 
+multivariate linear regression&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;17849jvm61oganl10art57o1uv&quot;&gt;&amp;nbsp;&amp;nbsp;data ~ Model (w) + Error&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;090hp2u8cp3ogjct95fblonh65&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;好的model让residual variance最小&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1i8j4rmm33cdo96iel9g3nr26e&quot;&gt;&amp;nbsp;&amp;nbsp;R^2衡量一个model的好坏 = 1- residual variance/ total variation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7l4uajm9jsknk42qbfnljgbbh5&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;线性模型的R^2=ρ^2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6pl8sagvsregc2v3gh5uskvqbv&quot;&gt;&amp;nbsp;&amp;nbsp;形象的理解多元线性回归：把y投射到x所在的平面上，基向量可以随便选择&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4om0t2ci5erpe89v7qptl910of&quot;&gt;&amp;nbsp;&amp;nbsp;第36张slide的推导：多元线性回归中,β1和β2相互独立，彼此无关&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;082fkddcg0a20e22p5849qf72g&quot;&gt;&amp;nbsp;Frish-Waugh-Lovell Theorem&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;03no835nda9a0vl1iu3da8dero&quot;&gt;&amp;nbsp;&amp;nbsp;偏导数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0scgo5au3cohdqt9ee9jgpkb8f&quot;&gt;&amp;nbsp;partial correlation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0qt2li4liorfg1nsq5mtbf285r&quot;&gt;&amp;nbsp;&amp;nbsp;residual correlation    Data[Residual[y|Z]] = Model[Residual[x|Z]] =e  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5kl8ju7debmmnioh25s2sfh4js&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;理解：x和y在垂直于Z的平面上的投影的夹角cos，消除了其他元素的影响。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5hcu8f3mr2uccs12i6t3g7qnm3&quot;&gt;&amp;nbsp;&amp;nbsp;第39slide  correlation的公式&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5mrp80bda8d1d11s97tfu9qn07&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;一元回归的时候就是pearson correlation coefficient&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;77q2a25rs3g1k1ro3rqhdphcaf&quot;&gt;partial correlation as network deconvolution
+去卷积&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6kpck5o7vdl9lf8u6oqpjurtu4&quot;&gt;&amp;nbsp;通过correlation推导的network存在问题&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;33m2hduaourfsmk758h7p0otmj&quot;&gt;&amp;nbsp;&amp;nbsp;不能区分indirect 和 direct&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;01junr7fc8f6p2ud2tdf8m3p12&quot;&gt;&amp;nbsp;&amp;nbsp;默认双向，不能区分单向 &amp;rarr;因果性&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6ggjgvsf9v2tivu4b472r5rdis&quot;&gt;&amp;nbsp;公式在slide41-43&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1rm3c9dshe4uunaupb13qi4nek&quot;&gt;&amp;nbsp;n&amp;gt;p 否则协方差矩阵不正定。&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;495f3sncthscim6fmmf4o6no13&quot;&gt;&amp;nbsp;应用：histone modification&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Mon, 23 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/23/StatisticalAnalysisofOmicData2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/23/StatisticalAnalysisofOmicData2/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>思维导图-统计组学1</title>
+        <description>&lt;html&gt;
+&lt;head&gt;
+&lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta content=&quot;text/css&quot; http-equiv=&quot;Content-Style-Type&quot;&gt;
+&lt;title&gt;Statistical Analysis
+of Omic Data&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 align=&quot;center&quot; class=&quot;root&quot;&gt;
+&lt;a name=&quot;11o02kiu985ss87go3ao4a4udu&quot;&gt;Statistical Analysis
+of Omic Data&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div align=&quot;center&quot; class=&quot;globalOverview&quot;&gt;
+&lt;img src=&quot;Andrew-1_files/images/Statistical Analysis of Omic Data.jpg&quot;&gt;&lt;/div&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7mg5qii9dhki7idvdcaojicuvh&quot;&gt;Motivation&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2a6gicmuj4rq64np0po9oo7hle&quot;&gt;&amp;nbsp;Experimental Design&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;26kutgvhqdgh5vuk78r8i808ph&quot;&gt;&amp;nbsp;&amp;nbsp;大样本量的研究需要谨慎的设计，避免混杂因素confounding factors&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6ki93s3286rv6971b517rbnm48&quot;&gt;&amp;nbsp;&amp;nbsp;最小化样本量：power calculation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4lcpcem3776sg07307b3o81jbu&quot;&gt;&amp;nbsp;normalization | 原始数据的均一化&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5hk5uubaf4vr29t1lh1fqt926f&quot;&gt;&amp;nbsp;&amp;nbsp;intra and inter sample normalisation&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0inqd171h4e5fc01ofpfuo0l41&quot;&gt;&amp;nbsp;Feature selection&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5ntcekt3lueodi0ibpiok4stnd&quot;&gt;&amp;nbsp;&amp;nbsp;Ex. 选择正常和癌症细胞的mRNA表达量&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;01rnl1ol43465e9cd90ucbsvg5&quot;&gt;&amp;nbsp;prediction | 是否能预测？&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;18t1jv6ce2o6sghe3208dcsr3i&quot;&gt;&amp;nbsp;data integration&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;42mi5sln92pv029c8cs1t3ql72&quot;&gt;choose Statistical test&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;431ekaudnth7dand65fjusi163&quot;&gt;&amp;nbsp;parametric testing&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6hq1cgd5l3eehvvap0egi5kvuk&quot;&gt;&amp;nbsp;&amp;nbsp;定义：预先设定model，检验方法：通过参数估计&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;68ttcuaav4o7kgt7dp0b7v7sll&quot;&gt;&amp;nbsp;&amp;nbsp;例子：Student's t (unpaired) test&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2o3a4dcmt73vc55ga7le6l9j5n&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;T statistic &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3b7j6r39krvnaarnv1a7i2l19b&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;T~t(0,v) | 0=mean, v=df&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;342l28mf9svpkl2hjl4r78hlhu&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;当数据接近正态分布时，仍可以用t-test；当df较大（4）时，t分布接近正态分布&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2ql7lc5apo9v1miudl79761sei&quot;&gt;&amp;nbsp;non-parametric testing&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5q7ci204ccu0pevv2iea6742pa&quot;&gt;&amp;nbsp;&amp;nbsp;定义：无model无参数估计&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2vttuh4oqudtgdm6kmgnuj64ec&quot;&gt;&amp;nbsp;&amp;nbsp;例子：Wilcoxon rank sum test(unpaired)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0ouq0rq10tnc4ge4l22eofqt65&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;distribution free：数据与正态假设差距较大&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7h7n7olh5pcc7mth71u4pq6po9&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;方法：&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;05atqobgabp6uppi9rltf10lpm&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;排序：n=n1+n2,两种表型混在一起由大到小排序&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1pa9vf4sf7noqe1v83rcrtsvi7&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Sum一种表型的序号：R1，R2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7nkmukckeoqcjjp6h5n3ho05t2&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;R1+R2=n(n+1)/2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3e4rn2uimk2rmt4vkrfi6ev57l&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;统计数：W1=R1-n1(n1+1)/2
+               W2=R2-n2(n2+1)/2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1ng6lqfgs20a21809e0f44hcml&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;W1+W2= n1n2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2sljd2sgke8dh6q61rcmgus6fs&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;AUC= max（|W1/n1n2|,|W2/n1n2|）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3om6jnng6k4r1g2jai25ve7mpk&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;sensitivity of power: 敏感性，被认为是P的TP比例&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;386mf427n5j1t86iqjan3dqdrp&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;specificity= 1-FPR：特异性，FPR是被错认为是P的TN比例&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;59haf07m0c6a1vlivg3t9saqit&quot;&gt;&amp;nbsp;两种方法的比较
+drawbacks of non-parametric &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7jm66oibgp9lsstkr4g3maoq0h&quot;&gt;&amp;nbsp;&amp;nbsp;给定样本量，p值总有一个能达到的最小量（样本量小的时候不够powerful）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4uv104b534e7m9vjrtv11hoqej&quot;&gt;&amp;nbsp;&amp;nbsp;不同方差的样本计算结果相同&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4t6b6mmucup3ga8sh11sqqktvl&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;例子：mRNA&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7aej00sdorbooku7kli5fsbrir&quot;&gt;Univariate linear regression. 
+Analytical and empirical nulls.&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;10ueaqh0to359hjt4mkq966t0c&quot;&gt;&amp;nbsp;测试连续变量的方法：&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6c4n9c4r9f52u36r42tj9fo1pj&quot;&gt;&amp;nbsp;&amp;nbsp;最小二乘法 Least Squares estimator&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1e9falqn5nadr3uheueb91d3v4&quot;&gt;&amp;nbsp;&amp;nbsp;regression coefficient | β相关系数&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;43nmrhn23sj77migut8uvpkreg&quot;&gt;&amp;nbsp;注意区分regression coefficient &amp;amp; regression statistic &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7ogl7hmbdve9rnqu6vhv38ui9d&quot;&gt;&amp;nbsp;empirical null&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6mj3nq9senn0bkcrctfebptplt&quot;&gt;&amp;nbsp;&amp;nbsp;一个跳跃函数，跳跃点是观察值，n越大，经验函数与总体函数最吻合&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1h30ad429jj9du2a9v1deievcp&quot;&gt;multiple-testing in genomics
+FDR&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4ecbhkaq3gma2e6mggqdncp6ru&quot;&gt;&amp;nbsp;Bonferroni correction&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3a9f4lhfg8sdeofsiqrnan96se&quot;&gt;&amp;nbsp;&amp;nbsp;GWAS&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1jvhpbghiedgsc0l087c9n73ue&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;没有显著Bonferroni的SNP一般在转录因子的binding site上，即open chromatin region,可以用DHS assay 找到（DNase hypersensitive sites）&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2lcsp3740q02j3jo3u9navaaqm&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Family-Wise Error Rate (FWER)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1akqjkljs3eiho28bm49kqhdp3&quot;&gt;&amp;nbsp;&amp;nbsp;为了控制假阳性（FWER），但是会让假阴性变多&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;49ed2r5l6c4s3pe9m8strhgfv4&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;0.05/m m是null test的数量&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;6g3ol8lcu2blpm7bukt7mq2ogu&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;但是太过严格了&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;72nd7u6rmiu7ukal4ftj9jeu8d&quot;&gt;&amp;nbsp;FDR | False discovery rate&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5hjcj7cp78sokin2k75nkd2rn8&quot;&gt;&amp;nbsp;&amp;nbsp;找到true positive&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3u0a7ihtnkkl9o063a1asps3eu&quot;&gt;&amp;nbsp;&amp;nbsp;FDR(t) = E[FP(t)/P(t)]&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7rs0hlh81nip0lvt3e2kg1hb3s&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;如何估计FDR？&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0pq66cmiaguiph52jm9ra2vs6v&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;p value histogram&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0k8ao0o4bvft5a79dllj0kjn66&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;uniform distribution 构造（L,1）w就是横着的那条线&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0ivvldqne5m39bnqb01ph2hg29&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;选一个最好的参数L，使得（L,1）之间是平的&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7iccn4q9m035ot1j3fhq2qovms&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;估计q value&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7gjk2q12hf2p0hlo0n787bfs55&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;即True null&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;299b8natltoahqatsr9cl62k8e&quot;&gt;&amp;nbsp;FNR&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4v0bgh4bq5is86e3u68h06t3up&quot;&gt;&amp;nbsp;&amp;nbsp;如果太大，会miss掉太多结果&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;66vnfdvqo53eqpc93kcvgaao9f&quot;&gt;&amp;nbsp;SE | sensitivity&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3ofh13vfdjact826poaflj7kmm&quot;&gt;&amp;nbsp;SP | specificity&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;1m0dk79cit36faodjt6eltaj8q&quot;&gt;Power Calculations in genomics&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;232v7nemtcdlln66o552ap6vcn&quot;&gt;&amp;nbsp;Power=TP+假阳性&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;209jnjel8cbfoggaehmo86qagu&quot;&gt;&amp;nbsp;计算达到最佳效果的最小样本量&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;5ete8vvthlhbfsfmtubem53v0u&quot;&gt;&amp;nbsp;步骤&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;52si97meqsofhsmmbkn4f4s8h4&quot;&gt;&amp;nbsp;&amp;nbsp;summarize features (去冗余，数据库)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0cvtsagd921588g44t7pqmchuk&quot;&gt;&amp;nbsp;&amp;nbsp;Subtopic 2&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;4bcf8ss31l8cu894p23nja0roe&quot;&gt;&amp;nbsp;&amp;nbsp;Subtopic 3&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h2 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;7arii8sr9mb46bqgtk6556shkg&quot;&gt;GSEA&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;0hic7l4rm9l9alhcq1qliqjo08&quot;&gt;&amp;nbsp;gene按与phenotype的correlation排序，T检验，p值&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;2innja2mmi5jmv2njkvret80qi&quot;&gt;&amp;nbsp;leading edge subset&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 class=&quot;topic&quot;&gt;
+&lt;a name=&quot;3f88t30c8t9ve6q6ef7od2e59c&quot;&gt;&amp;nbsp;maximum enrichment score(ES)&lt;/a&gt;
+&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Sun, 22 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/22/StatisticalAnalysisofOmicData1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/22/StatisticalAnalysisofOmicData1/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>一些序列比对的资料</title>
+        <description>
 &lt;blockquote&gt;
-  Jacob Pan &lt;a href=&quot;http://jacobpan3g.github.io/cn&quot;&gt;( jacobpan3g.github.io/cn )&lt;/a&gt;
+  这也是一份期末复习资料,请点击下面的链接！
 &lt;/blockquote&gt;
 
 </description>
-        <pubDate>Mon, 17 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2017/07/17/gitment-in-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/17/gitment-in-jekyll/</guid>
+        <pubDate>Fri, 20 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/20/review-zhongFeiSheng/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/20/review-zhongFeiSheng/</guid>
         
-        <category>jekyll</category>
-        
-        <category>gitment</category>
+        <category>review</category>
         
         
-        <category>blog</category>
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>一些序列比对程序</title>
+        <description>
+&lt;blockquote&gt;
+  这也是一份期末复习资料,它是用juypter写的python程序,请点击下面的链接！
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sun, 15 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/15/Stephan_ByChenhaojie/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/15/Stephan_ByChenhaojie/</guid>
+        
+        <category>review</category>
+        
+        
+        <category>courseReaction</category>
+        
+      </item>
+    
+      <item>
+        <title>生物信息与算法1</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-生物序列比较&quot; id=&quot;markdown-toc-1-生物序列比较&quot;&gt;1. 生物序列比较&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#我们下面要讲的就是如何制定评判标准使产生的分值更具生物学意义如何设计算法去计算这个分值使其具有尽量低的时间复杂度和空间复杂度&quot; id=&quot;markdown-toc-我们下面要讲的就是如何制定评判标准使产生的分值更具生物学意义如何设计算法去计算这个分值使其具有尽量低的时间复杂度和空间复杂度&quot;&gt;我们下面要讲的就是如何制定评判标准使产生的分值更具生物学意义？如何设计算法去计算这个分值，使其具有尽量低的时间复杂度和空间复杂度？&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+://thestack.com/wp-content/uploads/2015/09/big-data-explosion-832x333.jpg)
+
+做过生信方面的毕业实习，接触过生物信息学的同学都知道。在序列的比对中，两两比较(pair wise compare)可以用blast，多个序列一起比较(多重比对 multiple sequence alignment) 可以用cluster等软件。现在多重比对的工具又发生很大的变化，不过MAFFT还算是 比较好用的！大家可以看&lt;a href=&quot;https://attractivechaos.wordpress.com/2008/08/21/the-best-multialignment-program/&quot;&gt;一个博客&lt;/a&gt;和&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4015676/&quot;&gt;一篇文章&lt;/a&gt;。
+
+而现在，通过stenfen 老师的讲解，我们有机会可以深入理解软件背后的原理，而不是像黑箱一样地使用他们。正如《易经》中所说的，我们要追求道，而不是简单地运用术。
+
+&lt;h2 id=&quot;1-生物序列比较&quot;&gt;1. 生物序列比较&lt;/h2&gt;
+
+在比较生物序列的时候，我们一般通过比对的方法来进行比较。
+这句话什么意思呢？
+假设我现在有三个蛋白质的序列：
+&lt;blockquote&gt;
+  蛋白质A：DFSLRVALCLSMLALCLAI
+蛋白质B：DFSLRMLALCLAIVALCLSVALCLS
+蛋白质C：DFSCLSMLALCLAILRVALLRVAL
+&lt;/blockquote&gt;
+
+问：&lt;strong&gt;通过比较这三条序列，请你告诉我蛋白质A和其它两条中的哪一条相似度更高？&lt;/strong&gt;
+
+显然可以两两比对，得出一个总体的分值高低然后按照分值的高低来决定相似度。
+一句话：&lt;strong&gt;要比较，用比对。&lt;/strong&gt;
+
+&lt;h4 id=&quot;我们下面要讲的就是如何制定评判标准使产生的分值更具生物学意义如何设计算法去计算这个分值使其具有尽量低的时间复杂度和空间复杂度&quot;&gt;我们下面要讲的就是如何制定评判标准使产生的分值更具生物学意义？如何设计算法去计算这个分值，使其具有尽量低的时间复杂度和空间复杂度？&lt;/h4&gt;
+
+在这里，要注意一些中英文的翻译：compare是“比较”，mapping和alignment现在我们一般都翻译成“比对”。我在一本《生物信息学札记》上看到作者把alignment翻译成了“联配”，mapping 就用“比对”。而在本文中统一用“比对一词”。mapping一词的场合一般用在大量的序列回帖基因组当中。mapping需要利用alignment。
+
+在一开始没有计算机的时代，序列的比较是通过人工绘制点图(dot plot)来进行的。一般有三种序列比对方式：
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;比对方式&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;生物学意义&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;适用场景的例子&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Global alignment (全局比对)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A a homolog of B&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;比较两条蛋白质序列，看他们是否同源&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Semi-global alignment (半全局比对)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Homology search&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;看某一蛋白质的编码序列是否出现在基因组上&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Local alignment（局部比对）&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Motif ﬁnding&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;在两条序列中寻找基序 (motif)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+为了对两条序列进行比对我们引入二维坐标系，两条序列正好成了两条坐标轴。每个碱基/氨基酸对应一个序号。&lt;strong&gt;那么比对之后的直观的情况就是这个坐标系中的一条线！&lt;/strong&gt;如下图中的一个例子。
+
+&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/3909752-a849efb0482c4ea8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800&quot; alt=&quot;比对类型与点图转化为比对图&quot; /&gt;
+
+</description>
+        <pubDate>Fri, 13 Oct 2017 03:31:01 -0400</pubDate>
+        <link>http://localhost:4000/2017/10/13/bioinformatics-article1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/13/bioinformatics-article1/</guid>
+        
+        <category>notes</category>
+        
+        
+        <category>courseReaction</category>
         
       </item>
     

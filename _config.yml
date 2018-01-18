@@ -48,9 +48,17 @@ comment_gitment_clientSecret: 1da2b0f277a2672c67037db98586d11dbfbd93f2
 # Build settings
 markdown: kramdown
 
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: rouge
+## From http://blog.javachen.com/2015/06/30/jekyll-kramdown-config.html
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
 
 # port
 # port: 1234

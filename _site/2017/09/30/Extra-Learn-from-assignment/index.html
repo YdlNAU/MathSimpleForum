@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>番外篇,从线性规划作业说起</title>
+    <meta name="description" content="  导言：国庆期间老师布置了十道线性规划的大题，题目要求是利用软件来求解这些问题。  1. 题目：  2. 解题思路：  3.针对题目的总结  4.针对实验内容的总结  5.实验结果：  实践是检验真理的唯一标准导言：国庆期间老师布置了十道线性规划的大题，题目要求是利用软件来求解这些问题。不得不说老师的这种安排，...">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/09/30/Extra-Learn-from-assignment/">
+    <link rel="alternate" type="application/rss+xml" title="The Simple forum" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">The Simple forum</a>
+        <small>Learn something deep, than you can see somethinf different!</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>番外篇,从线性规划作业说起</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-09-30
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>Yu dalang
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#courseReaction" title="Category: courseReaction" rel="category">courseReaction</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#notes" title="Tag: notes" rel="tag">notes</a-->
+        <a href="/tag/#notes" title="Tag: notes" rel="tag">notes</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#导言国庆期间老师布置了十道线性规划的大题题目要求是利用软件来求解这些问题" id="markdown-toc-导言国庆期间老师布置了十道线性规划的大题题目要求是利用软件来求解这些问题">导言：国庆期间老师布置了十道线性规划的大题，题目要求是利用软件来求解这些问题。</a></li>
+  <li><a href="#1-题目" id="markdown-toc-1-题目">1. 题目：</a></li>
+  <li><a href="#2-解题思路" id="markdown-toc-2-解题思路">2. 解题思路：</a></li>
+  <li><a href="#3针对题目的总结" id="markdown-toc-3针对题目的总结">3.针对题目的总结</a></li>
+  <li><a href="#4针对实验内容的总结" id="markdown-toc-4针对实验内容的总结">4.针对实验内容的总结</a></li>
+  <li><a href="#5实验结果" id="markdown-toc-5实验结果">5.实验结果：</a></li>
+</ul>
+
+<blockquote>
+  <p>实践是检验真理的唯一标准</p>
+</blockquote>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/3909752-d63e59eeb6d8f375?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="植树实践" /></p>
+<h4 id="导言国庆期间老师布置了十道线性规划的大题题目要求是利用软件来求解这些问题">导言：国庆期间老师布置了十道线性规划的大题，题目要求是利用软件来求解这些问题。</h4>
+
+<p>不得不说老师的这种安排，非常的具有开拓性。一般而言，日后如果我们碰到线性规划的问题，肯定不会再拿一张纸然后手工计算半天，毕竟现在是在信息时代。况且我们已经读研究生了，我觉得也没有必要遵循守旧的照着课本来。之前用Octave写过的程序完全可以在此次实践中查漏补缺，使程序更加完善。<strong>注意本次实验是利用了改进单纯形法（即单纯型法的矩阵描述）</strong></p>
+
+<p>而确实实际的情况是通过这次作业，之前的代码更改了很多，程序变得更加稳健！</p>
+
+<h2 id="1-题目">1. 题目：</h2>
+
+<p>《运筹学》课本：
+p55 2.1 1-4 2.2 1 2.3 1-2 p56 2.6 1-2 p87 3.1 1-2 p88 3.3 1-2 p90 3.9 1-2 3.10 p113-114 4.3 4.4</p>
+
+<h2 id="2-解题思路">2. 解题思路：</h2>
+
+<ol>
+  <li>首先利用Octave(GLPK) 求解了线性规划的相关习题。</li>
+  <li>之后利用《运筹学》中单纯型法的矩阵描述（改进单纯型法），自编函数实现在单纯型法的的求解运算，同时还编写了化标准型，图解法等子程序。将该算法用解释型程序设计语言Octave 进行了具体的实现。</li>
+  <li>将自带函数运行结果，自编函数运行结果与手算结果进行比较。</li>
+</ol>
+
+<p>程序主体见<a href="https://github.com/YdlNAU/programing_of_courses/tree/master/optional_research">github网站</a></p>
+
+<h2 id="3针对题目的总结">3.针对题目的总结</h2>
+
+<p>通过Octave开源软件便捷地计算了各个题目的解，同时自编函数实现了矩阵描述的单纯形法子程序及其它的一些配套子程序（关于程序的编写思路请看个人的一个博客http://www.jianshu.com/p/9965e111537e）。同时为了使本报告不至于太臃肿，现将大段的代码放于github。在求解题目的过程中我有如下的感受：</p>
+<ol>
+  <li>通过求解P56:2.6-(2)等有无穷多解的题目，我发现一般而言程序时无法告知你题目有无穷多解的。因为一般而言计算机求解多用不断迭代的算法，寻找到一个最优解后便会停止迭代。但是通过自编子程序，借助于《运筹学》课本上的判断条件，可以报告出有无穷多解的信息。</li>
+  <li>已有的线性规划求解软件一般比较成熟，会比自己编写的子程序稳健很多。自我编写的程序在出现“无界解”的情况时还会进入死循环；同时对于不易寻找初始解的标准型，还需要人工对增广矩阵进行初等行变换以符合求解条件。</li>
+  <li>开源软件或许有自己的不足之处。题目P55:2.3-(1)形式如同P55:2.3-(2)但是经过多次的尝试，发现软件一直说无最优解。但是运行自编程序却存在最优解。</li>
+  <li>对于p113-114 4.4这里的灵敏性分析问题，在技术上可以将要查看灵敏度变化的值作为自变量，将输出的解作为因变量。然后利用一个for循环，改变自变量的值之后查看因变量是否会变化。从而找到题目的解。当然也可以在理论上，借助于检验数计算。</li>
+</ol>
+
+<h2 id="4针对实验内容的总结">4.针对实验内容的总结</h2>
+
+<p>使用软件的一个最主要的优点是：你可以完全不知道自己的原理，只要会使用就行。本实验主要的难点在于看懂课本上的单纯形法的矩阵描述，然后自编函数实现这个过程。因为数学其实是一门语言，尽管可以费时间看懂这整个过程，但是将整个矩阵表述编写为程序还是有些困难。但是经过不断地尝试还是可以写出一个稳健度不高的程序出来。
+本次报告利用了开源版的Matlab替代软件Octave，因为Matlab需要购买版权才能使用。通过这次尝试，可以证明处理这些问题，开源软件完全可以胜任。
+实践出真知：只有将自己写的程序真正做过题目你才知道自己的程序是不是够稳健！同时写过程序你才知道课本中很多话的真正含义，比如课本P45页无可行解的判定条件，我以为是x的最终的解不为0，原来是sigma不为零。</p>
+
+<h2 id="5实验结果">5.实验结果：</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">题目</th>
+      <th style="text-align: center">Octave(glpk) 程序运行情况</th>
+      <th style="text-align: center">Octave自己编程运行情况</th>
+      <th style="text-align: center">手算</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">P55:2.1-(1)</td>
+      <td style="text-align: center">有最优解(2 4)’</td>
+      <td style="text-align: center">有最优解(2 4)’</td>
+      <td style="text-align: center">同前</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.1-(2)</td>
+      <td style="text-align: center">有最优解(3/2 1/2)’</td>
+      <td style="text-align: center">有最优解(3/2 1/2)’</td>
+      <td style="text-align: center">同前</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.1-(3)</td>
+      <td style="text-align: center">No dual feasible solution.</td>
+      <td style="text-align: center">程序显示出“无界解”</td>
+      <td style="text-align: center">无界解</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.1-(4)</td>
+      <td style="text-align: center">No primal feasible solution.</td>
+      <td style="text-align: center">无解</td>
+      <td style="text-align: center">无解</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.2-(1)</td>
+      <td style="text-align: center">有最优解(0 8 0 -6)’</td>
+      <td style="text-align: center">在不引入人工变量M 的情况下，先将原等 式用化标准型子程序 化为标准型。再人工 对增广矩阵进行初等 行变换，使其符合函 数输入要求 。 新问题转化后计算得 无穷多解，将解人工转化后同前</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.3-(1)</td>
+      <td style="text-align: center">运行出错:No dual feasible solution. 很奇 怪，开源软件有其不 足之处。</td>
+      <td style="text-align: center">经人工转换得初始 解，在带入自编函数。 求得最优解(6.8 0 0 1.4)</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P55:2.3-(1)</td>
+      <td style="text-align: center">求得最优解(0.4 0 2.2 0)’</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P56:2.6-(1)</td>
+      <td style="text-align: center">得最优解(6.43,0.57,0)’</td>
+      <td style="text-align: center">需要手工进行初始行 变换得最优解。</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P56:2.6-(2)</td>
+      <td style="text-align: center">得最优解 (0.8,1.8,0)’但 是不能得出无穷多解</td>
+      <td style="text-align: center">程序结果不符合，不 能直接用单纯形法</td>
+      <td style="text-align: center">存在无穷多解</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p87:3.1-(1)</td>
+      <td style="text-align: center">得最优解 (4 6 0)’</td>
+      <td style="text-align: center">得到最优解</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p87:3.1-(1)</td>
+      <td style="text-align: center">得最优解(0.6 1.2)’</td>
+      <td style="text-align: center">需要手工进行初始行 变换得最优解。</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p88:3.3-(1)</td>
+      <td style="text-align: center">得最优解(0 2/3 0)’</td>
+      <td style="text-align: center">程序结果不符合，不 能直接用单纯形法</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p88:3.3-(2)</td>
+      <td style="text-align: center">No dual feasible solution</td>
+      <td style="text-align: center">进入死循环</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p90:3.9-(1)</td>
+      <td style="text-align: center">得最优解(1.61538 0.76923)’</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">p90:3.9-(2)</td>
+      <td style="text-align: center">得最优解(3 0 0 0)’</td>
+      <td style="text-align: center">程序结果不符合，不 能直接用单纯形法</td>
+      <td style="text-align: center">-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>__ 题目:p113-114 4.4(1) __
+计算最优解同上。对于第一小题c22的单位运价的范围，本文采用一个for循环，将每次 计算所得的值与原题的最优解比较。逐步变更范围，从而确定最终答案。 因为运价肯定大于0，所以先设定单位运价的范围为0~15，此时发现运价从10开始最优 解的发生变化，故确定范围为0&lt;=c22&lt;10,当c22等于10时，将新解与原解比较，发现 问题有多解，故确定范围为0&lt;=c22&lt;=10，经手工计算c22应大于等于3，但是当 0&lt;=c22&lt;=3时，用闭合回路进行调整时，发现闭合回路中含有0，故还是原来解最优。</p>
+
+<p>__ 题目:p113-114 4.4(2)  __
+同样采用for循环，c24为非基变量，当c24下降当一定程度时必引起检验数小于零，使 解发生变化。当其不断上升时，检验数增大解不再发生变化，中间有一个点是两者的分 界线，故通过for循环来查找这个点。突变点在c24是17的位置。故当其为17使得到无 穷多最优方案。</p>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2017/10/13/bioinformatics-article1/">生物信息与算法1
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2017/09/25/Linear-Programming-and-Simplex-Method/">线性规划与单纯形法</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/2017/10/13/bioinformatics-article1/">生物信息与算法1</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: 'ydlNAU',
+        repo: 'MathSimpleForum',
+        oauth: {
+            client_id: 'b68c3af4470cd0543e8e',
+            client_secret: '1da2b0f277a2672c67037db98586d11dbfbd93f2',
+        },
+    });
+    gitment.render('gitmentContainer')
+</script>
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Let's work together 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/ydlNAU" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:yudalang2017@sibs.ac.cn" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <!--
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        -->
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+            <span>
+                Blogs written by <a href="https://jacobpan3g.github.io">Jacob Pan</a>.
+            </span>
+        </p>
+    </div>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?75177901590fba02b71851d2acaee595";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</footer>
+<!--
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+-->
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src="/js/main.js" charset="utf-8"></script>
+    <script src="/js/smooth-scroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+  </body>
+
+</html>
