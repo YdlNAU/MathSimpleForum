@@ -1,0 +1,177 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>multivariate
+ supervised analysis</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="14dh1uhk7eeriugl3oun1antbr">multivariate
+ supervised analysis</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="multivariate  supervised analysis_files/images/multivariate  supervised analysis.jpg"></div>
+<h2 class="topic">
+<a name="4r404iukitvq4lbj8ll9edddk6">classification</a>
+</h2>
+<h3 class="topic">
+<a name="6ddoj05n2o8jreld05ur86loq0">&nbsp;概念</a>
+</h3>
+<h3 class="topic">
+<a name="7bn3vrgihg5cpkveb376jt6fc6">&nbsp;&nbsp;已经分类好，把sample放进去
+given a sample, to predict its class given a set of a-priori classes</a>
+</h3>
+<h3 class="topic">
+<a name="7c9gmtif40k7fsu3v50o103lla">&nbsp;&nbsp;&nbsp;与clustering完全是两码事啦</a>
+</h3>
+<h3 class="topic">
+<a name="6ne1i9k1k4i413k9b9oaki9muq">&nbsp;&nbsp;decision boundaries 可以是线性也可是非线性的。 decision boundaries需要训练!!!</a>
+</h3>
+<h3 class="topic">
+<a name="22dsndpqo1o0g0pq0a25hpnh7b">&nbsp;参数</a>
+</h3>
+<h3 class="topic">
+<a name="0ld1iuf2q664nss47q5q3pe3sl">&nbsp;&nbsp;input vector: x.</a>
+</h3>
+<h3 class="topic">
+<a name="4jt6j9d6f33l4ro37m6796155k">&nbsp;&nbsp;放进k个class C1,C2,...,Ck</a>
+</h3>
+<h3 class="topic">
+<a name="4rilkbbk15t05aerlqk1tjqjvv">&nbsp;&nbsp;learning/ training set (LS)</a>
+</h3>
+<h3 class="topic">
+<a name="1aatdvq9rm3piho2i74a2lh9l8">&nbsp;&nbsp;&nbsp;L = (x1, Y1), ..., (xn, Yn)</a>
+</h3>
+<h3 class="topic">
+<a name="13ti6kiggqkphcc77c959jjtog">&nbsp;Bayes theorem</a>
+</h3>
+<h3 class="topic">
+<a name="2iou3pcb08tkn10al5820q1ipl">&nbsp;&nbsp;估计p (Ck | x)</a>
+</h3>
+<h3 class="topic">
+<a name="5ehqgr4gu1n05gsrejmvodrfi3">&nbsp;&nbsp;&nbsp;input是x的sample属于class k的概率</a>
+</h3>
+<h3 class="topic">
+<a name="6un5o1ksr82dqpq10joshf86bp">&nbsp;&nbsp;公式 slide7</a>
+</h3>
+<h3 class="topic">
+<a name="525djj2upodolmr80kied84mle">&nbsp;decision theory</a>
+</h3>
+<h3 class="topic">
+<a name="0qs2nccdd4r91hv8l9ltik8oub">&nbsp;&nbsp;原则：选择使p(Ck|x)最大的k</a>
+</h3>
+<h3 class="topic">
+<a name="7nma8s9t8ed734s8q9qdl1a3f5">&nbsp;&nbsp;p(x,C1)=p(x,C2)，error最小。（在K=2， input一维时，slide 8的graph很好理解）</a>
+</h3>
+<h3 class="topic">
+<a name="6efrl0ab72orcqa6mqbvi0tsg5">&nbsp;model and parameter selection</a>
+</h3>
+<h3 class="topic">
+<a name="1rlg6euijalj9r64iqrvl8cear">&nbsp;&nbsp;分割为单位格，要求数据量足够大。维度越高，需要的数据越多</a>
+</h3>
+<h3 class="topic">
+<a name="1848ms3epr31tsqnea7hrg0pgs">&nbsp;&nbsp;&nbsp;curse of dimensionality</a>
+</h3>
+<h3 class="topic">
+<a name="7s457kf1q46n2mtc2gebi1bklt">&nbsp;&nbsp;n个data，D=n-1个维度，总能找到D-1种分割成两类的方法</a>
+</h3>
+<h3 class="topic">
+<a name="0nnsi117sejt9077hdn9vrkp3h">&nbsp;&nbsp;Model参数越多(# parameters)，复杂度(complexity)越高</a>
+</h3>
+<h3 class="topic">
+<a name="31i4hv6ab46l74djnat81s75sd">&nbsp;&nbsp;&nbsp;Ex: polynomial curve fitting</a>
+</h3>
+<h3 class="topic">
+<a name="1isfpb3bf0seu7aojou91k23ob">&nbsp;&nbsp;&nbsp;&nbsp;衡量over-fitting： RMS(Root-Mean-Square) Error     slide17</a>
+</h3>
+<h3 class="topic">
+<a name="3f98sitfn1c6brvqbst6j8fm96">&nbsp;&nbsp;&nbsp;&nbsp;Complexity parameter   slide20</a>
+</h3>
+<h3 class="topic">
+<a name="2t0hqatskppevd2nt2q6rj2nam">&nbsp;&nbsp;&nbsp;&nbsp;penalty-term   slide 20</a>
+</h3>
+<h3 class="topic">
+<a name="5s6jn0kb1rb6togdv2o7loba1m">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;λ控制了模型的复杂度</a>
+</h3>
+<h3 class="topic">
+<a name="05o3b7rfqvm2ut1oag8hi0kapb">&nbsp;cross-validation</a>
+</h3>
+<h3 class="topic">
+<a name="4p9v9uis72uiurq1o8olbl3s5b">&nbsp;&nbsp;目的：在样本量不太大的情况下，避免overfitting</a>
+</h3>
+<h3 class="topic">
+<a name="5mui0ufbqtai2jqsvv1se4k6ud">&nbsp;&nbsp;所有的样本都会被用于training和testing</a>
+</h3>
+<h3 class="topic">
+<a name="19nf6fluni8atij03lknhhoq35">&nbsp;&nbsp;&nbsp;slide22 </a>
+</h3>
+<h2 class="topic">
+<a name="2se4686dnguhfe2k2unl3d73vf">shrunken centroids classifier</a>
+</h2>
+<h3 class="topic">
+<a name="2n469fqj27jgn02gtt9p2jdrg8">&nbsp;naive centroid</a>
+</h3>
+<h3 class="topic">
+<a name="38o4djmncr7o6s07ioi7selqde">&nbsp;&nbsp;centroid = 一个class中所有sample的均值 </a>
+</h3>
+<h3 class="topic">
+<a name="6mn25te2fggip330al3h51nnf7">&nbsp;&nbsp;选择使|y-Ck|^2 最小的k</a>
+</h3>
+<h3 class="topic">
+<a name="2anqse8718bnn0d0m2mk459ka9">&nbsp;&nbsp;存在问题: 容易overfitting，因为很多noise</a>
+</h3>
+<h3 class="topic">
+<a name="6o04if4hs1v773a5re5eq4j7ju">&nbsp;&nbsp;解决方法： shrink 即只有最相关的基因才会被纳入模型，如slide25中的红色基因</a>
+</h3>
+<h3 class="topic">
+<a name="20edcjs4knjvidh3l4fuc9crul">&nbsp;公式 slide26</a>
+</h3>
+<h3 class="topic">
+<a name="2c50ovmlf05s4brrc2kde43q36">&nbsp;&nbsp;定义△&gt;=dgk时。d'gk=0，则c&lsquo;gk=&lt;xg&gt;， 这样的基因不重要</a>
+</h3>
+<h3 class="topic">
+<a name="5i3nolm9bglka7iemlj3qv1ija">&nbsp;&nbsp;&nbsp;△：shrinkage parameter</a>
+</h3>
+<h3 class="topic">
+<a name="5omrkmfrndsooi515gm8gag4ps">&nbsp;&nbsp;基因越重要，dgk越大</a>
+</h3>
+<h3 class="topic">
+<a name="1nmipb8ttcpm3b3m6s8s0qr74g">&nbsp;&nbsp;可以把dgk理解为regularized t statistic</a>
+</h3>
+<h3 class="topic">
+<a name="4dtm17gm36mkuthb6r6kvv4og0">&nbsp;&nbsp;选择△的方法</a>
+</h3>
+<h3 class="topic">
+<a name="4tpjrrbb53bsmqto8hubbdbas0">&nbsp;&nbsp;&nbsp;使CV error最小，同时基因数最少（最简单）</a>
+</h3>
+<h3 class="topic">
+<a name="0q0o55g1a7ddq9206qf4m7jhvb">&nbsp;class membership</a>
+</h3>
+<h3 class="topic">
+<a name="0529fib83lvfb4fk939th0c64j">&nbsp;&nbsp;公式 slide30</a>
+</h3>
+<h3 class="topic">
+<a name="4jop7lfo16vs2fceretpiav6k1">&nbsp;&nbsp;把样本分到某一class的概率</a>
+</h3>
+<h2 class="topic">
+<a name="7fvtf05b9ovt1l8p1nv6d09ak7">semi-supervised PCA/SVD</a>
+</h2>
+<h3 class="topic">
+<a name="7i3tmeqc83bc3lhfrtffnnqd5q">&nbsp;保证SVD中的基因 与我们感兴趣的基因相关</a>
+</h3>
+<h3 class="topic">
+<a name="5abtrdtje5ikirlhs3tbhmh97v">&nbsp;训练集X，先选中POI相关的基因，再对这些选出的基因（m个）做SVD</a>
+</h3>
+<h3 class="topic">
+<a name="6dmd14i1ugisvr30gicvlh3c8a">&nbsp;&nbsp;实际上，就是只对挑选出的top-PC做SVD</a>
+</h3>
+<h3 class="topic">
+<a name="01us2s6usopf8dovbbfm4bdci4">&nbsp;&nbsp;m = complexity parameter ,可用CV优化此参数</a>
+</h3>
+<h3 class="topic">
+<a name="2nug8bc3ufg1l6ahu2a2a08urb">&nbsp;&nbsp;流程示意图 slide35-36</a>
+</h3>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Andrew-2
+unsupervised analysis</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="4cij1olrkhh6fbbv3s158rl9m7">Andrew-2
+unsupervised analysis</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Andrew-2 unsupervised analysis_files/images/Andrew-2 unsupervised analysis.jpg"></div>
+<h2 class="topic">
+<a name="3lr2k341f3tu83mb20sgolf8an">dimensional reduction</a>
+</h2>
+<h3 class="topic">
+<a name="7642q9a2d6f153f7qi2f2j932a">&nbsp;variance filtering &amp; clustering</a>
+</h3>
+<h3 class="topic">
+<a name="3uipse1p7d2ngaddpfaqsa7uaq">&nbsp;&nbsp;variance filtering </a>
+</h3>
+<h3 class="topic">
+<a name="0dmr51927v52csogc0u38umgvo">&nbsp;&nbsp;&nbsp;将variance排序，选方差最大的top25%，再去做clustering</a>
+</h3>
+<h3 class="topic">
+<a name="2nfcf44q4vmrn9r9n59u5ph1sp">&nbsp;&nbsp;&nbsp;存在问题：受偏差的影响太大。</a>
+</h3>
+<h3 class="topic">
+<a name="0nuhbamaa2hoh5uo2rjfi7k78o">&nbsp;&nbsp;&nbsp;改进：MAD 与中位数只差的中位数</a>
+</h3>
+<h3 class="topic">
+<a name="26fv6n368ksvf8p598ldqn9kmk">&nbsp;&nbsp;clustering</a>
+</h3>
+<h3 class="topic">
+<a name="4s7jrhpnoem7fvpvclof15uq0o">&nbsp;&nbsp;&nbsp;distance matrix</a>
+</h3>
+<h3 class="topic">
+<a name="2ne1poft460v046thqj79qjj2c">&nbsp;&nbsp;&nbsp;&nbsp;pearson correlation cofficient（不受scale translation&amp;rotation的影响,所以比欧氏距离好）</a>
+</h3>
+<h3 class="topic">
+<a name="1qruqjakfm2ktlhpfiqk1n29hu">&nbsp;&nbsp;&nbsp;聚类方法</a>
+</h3>
+<h3 class="topic">
+<a name="6ocomfpqn6io3ncm60jsbjr9s2">&nbsp;&nbsp;&nbsp;&nbsp;z-score 均一化</a>
+</h3>
+<h3 class="topic">
+<a name="0iarns4mhr42lkcu8ho68q89m3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是做PCA/SVD（比较变异度的时候）不推荐</a>
+</h3>
+<h3 class="topic">
+<a name="6t9408gnq6ttijrglak9376gm6">&nbsp;&nbsp;&nbsp;&nbsp;hierarchical clustering</a>
+</h3>
+<h3 class="topic">
+<a name="28i89uf1r53a6465djhgn2cgk9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;取平均数</a>
+</h3>
+<h3 class="topic">
+<a name="5tcce16aoj6kepb650ohtt1596">&nbsp;SVD 奇异值分解</a>
+</h3>
+<h3 class="topic">
+<a name="46b2a85753potenv8rcfmbrdf6">&nbsp;&nbsp;原理</a>
+</h3>
+<h3 class="topic">
+<a name="4j0rtof7110f0dp5teqlh6daae">&nbsp;&nbsp;&nbsp;找一个向量，让所有data投影到它上面的差异度最大</a>
+</h3>
+<h3 class="topic">
+<a name="5u80lt1sk6jmi5in1tfqun5ulh">&nbsp;&nbsp;&nbsp;在垂直于此向量的空间上重复投射</a>
+</h3>
+<h3 class="topic">
+<a name="31k6l0joi3mlkb5ukfabhkqp9c">&nbsp;&nbsp;&nbsp;不停地迭代这一过程</a>
+</h3>
+<h3 class="topic">
+<a name="731g1gu55v0qcn6a2dg4uajrn2">&nbsp;&nbsp;X= U D V</a>
+</h3>
+<h3 class="topic">
+<a name="0hjbqp6jdij6f8jdpjfcraf6pk">&nbsp;&nbsp;&nbsp;U [p*K]</a>
+</h3>
+<h3 class="topic">
+<a name="3hk6fc198fbnnott6krn31q1m4">&nbsp;&nbsp;&nbsp;D [K*K]</a>
+</h3>
+<h3 class="topic">
+<a name="3clp708qps4jsbp9ut2guirqq9">&nbsp;&nbsp;&nbsp;V [K*n]</a>
+</h3>
+<h3 class="topic">
+<a name="3nlc1hl9gnoigdc3r5jm9gk73v">&nbsp;&nbsp;&nbsp;K就是significant component #</a>
+</h3>
+<h3 class="topic">
+<a name="4pbpfu2hcmihh487334mvhggcb">&nbsp;&nbsp;&nbsp;&nbsp;permutation得到random X(p)</a>
+</h3>
+<h3 class="topic">
+<a name="1blbl036jeufi859ad7h4s791c">&nbsp;&nbsp;&nbsp;&nbsp;SVD of X(p)     D(P)</a>
+</h3>
+<h3 class="topic">
+<a name="6uil2va2c7g51rmht6i8eese01">&nbsp;&nbsp;&nbsp;&nbsp;d(p)j </a>
+</h3>
+<h3 class="topic">
+<a name="02chgf1v0r7grr3gtokqg0top8">&nbsp;&nbsp;&nbsp;&nbsp;K=min{ j:dj &lt; d(p)j }</a>
+</h3>
+<h3 class="topic">
+<a name="056vdd46eh5kcdu2b4go444i75">&nbsp;&nbsp;&nbsp;&nbsp;不需要做太多次，一般只要5次就足够了。1次就能得到合理的结果。</a>
+</h3>
+<h3 class="topic">
+<a name="1p1djfldp1gf8e0ku6trkf84ul">&nbsp;&nbsp;overfit</a>
+</h3>
+<h3 class="topic">
+<a name="6p13fst3f4i3b13s263k4v0i5l">&nbsp;&nbsp;与PCA的关系		</a>
+</h3>
+<h3 class="topic">
+<a name="2deb0otb6m2a0nb8vuhu0dtl8b">&nbsp;&nbsp;&nbsp;是PCA的一般形式</a>
+</h3>
+<h3 class="topic">
+<a name="5dm96l7br1qchdjh99b3ua18vg">&nbsp;&nbsp;&nbsp;比PCA更稳定，尤其是feature&gt;&gt;samples</a>
+</h3>
+<h3 class="topic">
+<a name="43a3nj6c0h9lg3gv2tfpg05p8m">&nbsp;&nbsp;好处</a>
+</h3>
+<h3 class="topic">
+<a name="6kp3cqivbbt7im1dfbtu8q3l6k">&nbsp;&nbsp;&nbsp;比variance filtering降维更彻底，~10-20</a>
+</h3>
+<h3 class="topic">
+<a name="31ipku72p1h2vt9j3n0m8291ut">&nbsp;&nbsp;&nbsp;避免了多重检验</a>
+</h3>
+<h3 class="topic">
+<a name="1at7rikama6juv9trnir50ghdc">&nbsp;&nbsp;&nbsp;减少了可能的冗杂</a>
+</h3>
+<h3 class="topic">
+<a name="1jqapj4uksk1m5nobtpana8g6k">&nbsp;&nbsp;&nbsp;&nbsp;许多feature是高度相关的，他们会被归到同一个元素</a>
+</h3>
+<h3 class="topic">
+<a name="49svtld7etb078g5n34602tcn7">&nbsp;&nbsp;&nbsp;robust feature selection</a>
+</h3>
+<h3 class="topic">
+<a name="47kjfldbfl16cbuaos39mtpb7f">&nbsp;&nbsp;&nbsp;&nbsp;假阳性更少</a>
+</h3>
+<h3 class="topic">
+<a name="2l18gbvs2vl82j3elv33f737a7">&nbsp;&nbsp;&nbsp;一个Feature可以在多个元素中起作用。这与生物学现象一致。</a>
+</h3>
+<h3 class="topic">
+<a name="5h8htj6inacugll73s148ct4rt">&nbsp;&nbsp;&nbsp;quantify 定量</a>
+</h3>
+<h3 class="topic">
+<a name="7haq3spsnnshkak30d37i4uvmg">&nbsp;&nbsp;&nbsp;&nbsp;the amount of variation in each component</a>
+</h3>
+<h3 class="topic">
+<a name="282ke14q5rvai6f2naqvpi55qg">&nbsp;&nbsp;&nbsp;&nbsp;SNR</a>
+</h3>
+<h3 class="topic">
+<a name="28tq6679kr21pt3a30jnisjc11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;biological and technical (unwanted factors)</a>
+</h3>
+<h2 class="topic">
+<a name="5793rl759od3hocb6rdg1nk40s">Multivariante regression and partial correlations</a>
+</h2>
+<h3 class="topic">
+<a name="25f7p1jgm2o3gig6pemo4homgc">&nbsp;多元线性回归 
+multivariate linear regression</a>
+</h3>
+<h3 class="topic">
+<a name="3dikt6mkcqlc23p8asoh00dupm">&nbsp;&nbsp;data ~ Model (w) + Error</a>
+</h3>
+<h3 class="topic">
+<a name="2qkmvjccb92trl9sidcv6c7ffk">&nbsp;&nbsp;&nbsp;好的model让residual variance最小</a>
+</h3>
+<h3 class="topic">
+<a name="7tv8bat41c6r3711pdj917q0hu">&nbsp;&nbsp;R^2衡量一个model的好坏 = 1- residual variance/ total variation</a>
+</h3>
+<h3 class="topic">
+<a name="7tm3ifl4f16lrq4np6fhutdf4t">&nbsp;&nbsp;&nbsp;线性模型的R^2=ρ^2</a>
+</h3>
+<h3 class="topic">
+<a name="7vimni2f69hbdv09nvl6ola49m">&nbsp;&nbsp;形象的理解多元线性回归：把y投射到x所在的平面上，基向量可以随便选择</a>
+</h3>
+<h3 class="topic">
+<a name="1713pc3djn0n9nqponpv0aeubr">&nbsp;&nbsp;第36张slide的推导：多元线性回归中,β1和β2相互独立，彼此无关</a>
+</h3>
+<h3 class="topic">
+<a name="6tghf2vc92rqjuka54d765bu71">&nbsp;Frish-Waugh-Lovell Theorem</a>
+</h3>
+<h3 class="topic">
+<a name="6ju1r649f3g52vj88c6c6s0mcf">&nbsp;&nbsp;偏导数</a>
+</h3>
+<h3 class="topic">
+<a name="27rg0l6g6ugnv77o1d73hn22fn">&nbsp;partial correlation</a>
+</h3>
+<h3 class="topic">
+<a name="458vctb6k9tthkp2qmd0n27o0s">&nbsp;&nbsp;residual correlation    Data[Residual[y|Z]] = Model[Residual[x|Z]] =e  </a>
+</h3>
+<h3 class="topic">
+<a name="5fld13bb3u813g88pqjfevlftt">&nbsp;&nbsp;&nbsp;理解：x和y在垂直于Z的平面上的投影的夹角cos，消除了其他元素的影响。</a>
+</h3>
+<h3 class="topic">
+<a name="609es9f0khku24up1dp32uc69s">&nbsp;&nbsp;第39slide  correlation的公式</a>
+</h3>
+<h3 class="topic">
+<a name="4ffgm5r0m4cdlg38rvjj21h5rb">&nbsp;&nbsp;&nbsp;一元回归的时候就是pearson correlation coefficient</a>
+</h3>
+<h2 class="topic">
+<a name="0tc643etnr47l0sbk7efpqodru">partial correlation as network deconvolution
+去卷积</a>
+</h2>
+<h3 class="topic">
+<a name="7tghrbpri16jeg9svddfpfaae9">&nbsp;通过correlation推导的network存在问题</a>
+</h3>
+<h3 class="topic">
+<a name="2tailc48efnjnera8eskv4iann">&nbsp;&nbsp;不能区分indirect 和 direct</a>
+</h3>
+<h3 class="topic">
+<a name="4t73nhqkg1h6chthgmrhmn1pk5">&nbsp;&nbsp;默认双向，不能区分单向 &rarr;因果性</a>
+</h3>
+<h3 class="topic">
+<a name="0gaek0ihfrttjpne1le75cbsms">&nbsp;公式在slide41-43</a>
+</h3>
+<h3 class="topic">
+<a name="7tokjrgqc3jnm0a6oo8bgem8qa">&nbsp;n&gt;p 否则协方差矩阵不正定。</a>
+</h3>
+<h3 class="topic">
+<a name="282m0a4c8sm8em9ri8otbuegt3">&nbsp;应用：histone modification</a>
+</h3>
+</body>
+</html>

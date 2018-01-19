@@ -1,0 +1,435 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Stefan-Phylogenetics</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="7s3qdcsk9fb69npahfli2mr9l1">Stefan-Phylogenetics</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Stefan-Phylogenetics_files/images/Stefan-Phylogenetics.jpg"></div>
+<h2 class="topic">
+<a name="6n3c3jv4uabnd0toskpk7p25o9">phylogenetic tree</a>
+</h2>
+<h3 class="topic">
+<a name="7dr5r4m4gesd4h645cehnepv7c">&nbsp;基本概念</a>
+</h3>
+<h3 class="topic">
+<a name="5g0d0kaqscm7445qd3qrkb7rf9">&nbsp;&nbsp;T is a graph G=(V,E) without vertices of degree 2</a>
+</h3>
+<h3 class="topic">
+<a name="6d3bv58v3qas5nsb5kf9b2sr0f">&nbsp;&nbsp;&nbsp;如果所有interior vertices的度都为3，则T为binary</a>
+</h3>
+<h3 class="topic">
+<a name="4ch5ccgamm3u7hdkaau31v5a4d">&nbsp;&nbsp;taxa : 叶片</a>
+</h3>
+<h3 class="topic">
+<a name="6bao8q5u3pppiafkehsc5ktfbu">&nbsp;&nbsp;split : 移除一个egde，成为两个独立的部分</a>
+</h3>
+<h3 class="topic">
+<a name="01uevu5fvv5fqc2qms4in4cph5">&nbsp;&nbsp;&nbsp;display</a>
+</h3>
+<h3 class="topic">
+<a name="3va59q77kqc22ck7snr7joiiti">&nbsp;&nbsp;DT(x,y) 两个端点之间的egde数 </a>
+</h3>
+<h3 class="topic">
+<a name="7nq6qb6bgsprh25aho9rupa7tr">&nbsp;&nbsp;quartet ： binary phylogenetic tree with 4 taxa</a>
+</h3>
+<h3 class="topic">
+<a name="22nrohdukod1o8edjgfbcbbpr5">&nbsp;&nbsp;root</a>
+</h3>
+<h3 class="topic">
+<a name="2tc1c62bj0i0crn55fpvba33o8">&nbsp;&nbsp;&nbsp;slide 16-19</a>
+</h3>
+<h3 class="topic">
+<a name="5kuh0mh39qcvmm6ffmrvftjldq">&nbsp;&nbsp;egde length </a>
+</h3>
+<h3 class="topic">
+<a name="53vg91va14oo534klcour0pms3">&nbsp;&nbsp;&nbsp;genetic difference &nbsp;差异越大，egde越长</a>
+</h3>
+<h3 class="topic">
+<a name="1pmm7uqj7oiuskdv3a7i920s36">&nbsp;&nbsp;confidence value</a>
+</h3>
+<h3 class="topic">
+<a name="1umot4ietpm35d3j41j3mb1orc">&nbsp;&nbsp;&nbsp;正确的可能性 如 bootstrap</a>
+</h3>
+<h3 class="topic">
+<a name="3nvl7j47rpg2qvo0uvumd1biev">&nbsp;有n个texa的binary tree有2n-3个edge</a>
+</h3>
+<h3 class="topic">
+<a name="17t973beo6fi6gfonqagekeg28">&nbsp;&nbsp;slide22</a>
+</h3>
+<h3 class="topic">
+<a name="6ptgkl0ous0hob8pm46cr39pse">&nbsp;n个texa 有3&middot;5&middot;...&middot;(2n-5)种可能的binary tree</a>
+</h3>
+<h3 class="topic">
+<a name="2tttd2tbg17n5ea8kgpuv5o4gq">&nbsp;&nbsp;slide23</a>
+</h3>
+<h3 class="topic">
+<a name="0fn63naqekp89o807gd6rsasvp">&nbsp;4-point condition</a>
+</h3>
+<h3 class="topic">
+<a name="2uqd8rbjncbf9q49358mepkd00">&nbsp;&nbsp;slide27</a>
+</h3>
+<h3 class="topic">
+<a name="4cmaghptcgunhe4jqb18111tu9">&nbsp;split compatibility</a>
+</h3>
+<h3 class="topic">
+<a name="07b4qi5frpgh2ipnlolg8t9uqn">&nbsp;&nbsp;slide33-35</a>
+</h3>
+<h2 class="topic">
+<a name="47ilvo7gtej806tibk07grpj1b">tree reconstructing</a>
+</h2>
+<h3 class="topic">
+<a name="0dhceob6kukvkg6llc3d1tngf2">&nbsp;character  based method</a>
+</h3>
+<h3 class="topic">
+<a name="3ns5sg29l4povu7o52l0pnipcp">&nbsp;&nbsp;maximum parsimony</a>
+</h3>
+<h3 class="topic">
+<a name="3lge1951re6ncmvaq21sf7mj1v">&nbsp;&nbsp;&nbsp; tree length（l）= minimum number of subsititutions |替换次数最小的tree。</a>
+</h3>
+<h3 class="topic">
+<a name="759o78tc8u0st9rp8n9rkue6kq">&nbsp;&nbsp;&nbsp;&nbsp;slide 5 </a>
+</h3>
+<h3 class="topic">
+<a name="057tas7p7f72tj1v1ifkvdbk99">&nbsp;&nbsp;&nbsp;Fitch algorithm</a>
+</h3>
+<h3 class="topic">
+<a name="0fb12afv7jsmnqi8gfovkcodp3">&nbsp;&nbsp;&nbsp;&nbsp;texa, tree topology i, alighment j</a>
+</h3>
+<h3 class="topic">
+<a name="0et0e6eq8m6bjeai8s2s7n50v1">&nbsp;&nbsp;&nbsp;&nbsp;time complexity O(n)</a>
+</h3>
+<h3 class="topic">
+<a name="7r228ssd049jbts405b0gu5i8t">&nbsp;&nbsp;&nbsp;&nbsp;步骤</a>
+</h3>
+<h3 class="topic">
+<a name="0tg8aouces9cjdt8ff19j92tqc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add  a root node to any edge</a>
+</h3>
+<h3 class="topic">
+<a name="1vhu4r7fh4jeg3gghae4eu9c63">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bottom-up -pass</a>
+</h3>
+<h3 class="topic">
+<a name="18qdnsdrjunslnp0ojtb2racd6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top-down-pass</a>
+</h3>
+<h3 class="topic">
+<a name="3b2sht8c3ou19jqetpc9igqgt1">&nbsp;&nbsp;&nbsp;Sankoff algorithm</a>
+</h3>
+<h3 class="topic">
+<a name="2vdakem4utdvakdj486rjcrt35">&nbsp;&nbsp;&nbsp;&nbsp;dynamic programming</a>
+</h3>
+<h3 class="topic">
+<a name="3m1rbk41usqhrt3kj9ik08bel3">&nbsp;&nbsp;&nbsp;&nbsp;步骤</a>
+</h3>
+<h3 class="topic">
+<a name="29b21ei56004aegj085vtlsniq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l(Leaf)=0</a>
+</h3>
+<h3 class="topic">
+<a name="6nd0hhh55mhj380cc6humg7qkm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;λ(v)  l(v)</a>
+</h3>
+<h3 class="topic">
+<a name="44icklftcfh0fvqj6g44j3t7l8">&nbsp;&nbsp;&nbsp;Branch and bound | 分支定界 </a>
+</h3>
+<h3 class="topic">
+<a name="0cf1fnfm4ncuet153jbel1bmq7">&nbsp;&nbsp;&nbsp;&nbsp;适用于taxa较多20+的情况，找到最好的tree</a>
+</h3>
+<h3 class="topic">
+<a name="3vvromgc2ogd1l9kge8ibc95ou">&nbsp;&nbsp;&nbsp;&nbsp;silde 14-15</a>
+</h3>
+<h3 class="topic">
+<a name="489rmcbkujkfvb7chb4pjmm076">&nbsp;&nbsp;&nbsp;miscellaneous | 多种方法</a>
+</h3>
+<h3 class="topic">
+<a name="4or7s3t9n4nhlq37oa3a6dk1tm">&nbsp;&nbsp;&nbsp;&nbsp;heuristic searches</a>
+</h3>
+<h3 class="topic">
+<a name="2ug5kukqf9k58qt3ojn7if1dk9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quartet puzzling</a>
+</h3>
+<h3 class="topic">
+<a name="4gecgqkb3gnaoqbkem8p6gqrt3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要用不同的起点重复几遍</a>
+</h3>
+<h3 class="topic">
+<a name="7afld9k0ck68jjbam44pt8bq9e">&nbsp;&nbsp;&nbsp;&nbsp;weighted parsimony= the cost (parsimony score) of transition</a>
+</h3>
+<h3 class="topic">
+<a name="3m3qev7sg1svpd79oe4k4jddu8">&nbsp;&nbsp;&nbsp;&nbsp;parsimony只适用于紧密相关的序列，一个位点不能有多种变化方式</a>
+</h3>
+<h3 class="topic">
+<a name="0eqjp82depqugttk7faba7v873">&nbsp;&nbsp;&nbsp;inconsistency | maxium parsimony的错误率 </a>
+</h3>
+<h3 class="topic">
+<a name="0vef76r7eqtho064673a34cttp">&nbsp;&nbsp;&nbsp;&nbsp;long branch attraction | MP is inconsistant</a>
+</h3>
+<h3 class="topic">
+<a name="5fgaf7gl4rh37e50i1g5os9se3">&nbsp;&nbsp;&nbsp;&nbsp;Felsenstein zone</a>
+</h3>
+<h3 class="topic">
+<a name="1laibnpofrccta1o211cj2orai">&nbsp;&nbsp;&nbsp;Non&ndash;parametric Bootstrapping</a>
+</h3>
+<h3 class="topic">
+<a name="6ld528iulhkf7rte3do70afjvh">&nbsp;&nbsp;&nbsp;&nbsp;uncertainty of tree construction</a>
+</h3>
+<h3 class="topic">
+<a name="0f9ccs84cefpihmb0i5ed3kfs2">&nbsp;&nbsp;&nbsp;&nbsp;方法： 随即打乱原序列， 错误的tree会有高的bootstrapping value越高</a>
+</h3>
+<h3 class="topic">
+<a name="6u4vpejebedemmqeb8g9mdian1">&nbsp;&nbsp;&nbsp;&nbsp;Bootstrapping does not provide information about the adequacy of the method !</a>
+</h3>
+<h3 class="topic">
+<a name="1okam3l7ukratfh2cj6v6ncd8s">&nbsp;&nbsp;maximum likelihood</a>
+</h3>
+<h3 class="topic">
+<a name="4e2r5c9b5s90ci4u3norkirmln">&nbsp;&nbsp;&nbsp;evolutionary distance</a>
+</h3>
+<h3 class="topic">
+<a name="4ttgt2p2j0kc0culaculksself">&nbsp;&nbsp;&nbsp;&nbsp;pairwise evolutionary distance D(u,n)</a>
+</h3>
+<h3 class="topic">
+<a name="67e39rm80vqqkf5g2i3fqsfabg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进化中最可能发生替换的（每100个site）</a>
+</h3>
+<h3 class="topic">
+<a name="7pcm6hj2ui1jl84sb2f9f3ot5n">&nbsp;&nbsp;&nbsp;Markov model of evolutionary chain</a>
+</h3>
+<h3 class="topic">
+<a name="1hfas32lg4mj5a8aun3fpn10ff">&nbsp;&nbsp;&nbsp;&nbsp;Markov chain (time discrete)</a>
+</h3>
+<h3 class="topic">
+<a name="20vsf37ptgpciggc2oog982ps4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slide 30</a>
+</h3>
+<h3 class="topic">
+<a name="6htercmeqerro95jnruc0id02d">&nbsp;&nbsp;&nbsp;&nbsp;time continuous model</a>
+</h3>
+<h3 class="topic">
+<a name="59d1puhl89qlfjrvpuhjvafoal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;markov process  X(t)~ (A, ρ0, Q)</a>
+</h3>
+<h3 class="topic">
+<a name="1fdp5hjsrhvkd3o9b3vaa4pja0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A = {1, ..., n}</a>
+</h3>
+<h3 class="topic">
+<a name="1f6r71g0vu4co62o2234ntcpfi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ρ0 initial probability distribution</a>
+</h3>
+<h3 class="topic">
+<a name="6qgnj8ol9at96s446defpuh59m">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q rate matrix</a>
+</h3>
+<h3 class="topic">
+<a name="0h2jte040rmobpis393v46gdpm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exponential</a>
+</h3>
+<h3 class="topic">
+<a name="72huh9gqnq0ga6oq4o4msi82ii">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;momery-less &amp; homogeneity</a>
+</h3>
+<h3 class="topic">
+<a name="2i1c9f44s6p1mmq0ehshv666dl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition property Pij(t)</a>
+</h3>
+<h3 class="topic">
+<a name="2spo66hsbv1evi66lm2dbia5di">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jukes-Cantor-Model</a>
+</h3>
+<h3 class="topic">
+<a name="1qqpv2i4vmjub4ggf05kd2u7fi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chapman-Kolmogorov equation</a>
+</h3>
+<h3 class="topic">
+<a name="72gh9g1nklan7vbmlf627j5i8s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stationary distribution π</a>
+</h3>
+<h3 class="topic">
+<a name="6j8id3d33ucnufpspp7vtqe6g2">&nbsp;&nbsp;&nbsp;&nbsp;拓展: evolutionary Markov process </a>
+</h3>
+<h3 class="topic">
+<a name="0g4llqhlq6kirp8pt473t2peik">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slide57-59</a>
+</h3>
+<h3 class="topic">
+<a name="08hfu5ldkftgntgl2rda1l9g79">&nbsp;&nbsp;&nbsp;log L(t) = log Pr(D|t, M)</a>
+</h3>
+<h3 class="topic">
+<a name="0qgkkd89344fb1vrt0v3htngog">&nbsp;&nbsp;&nbsp;&nbsp;L(p) = Pr(data|p)</a>
+</h3>
+<h3 class="topic">
+<a name="7f94nao2niotm3gs6iafl5tnab">&nbsp;&nbsp;&nbsp;&nbsp;P(head) = L assume its maximum</a>
+</h3>
+<h3 class="topic">
+<a name="1iphvm5vpka93q71mgdg578gk3">&nbsp;&nbsp;&nbsp;&nbsp;evolutionary distance t 由Pr()，即likelihood function, 达到最大值时估算出来</a>
+</h3>
+<h3 class="topic">
+<a name="3e12dvr5emeje5bc76e51tsfa4">&nbsp;&nbsp;&nbsp;rate matrix </a>
+</h3>
+<h3 class="topic">
+<a name="1itk317jtvi1un1dfquhqff45t">&nbsp;&nbsp;&nbsp;&nbsp; for very small h we have P (h) &asymp; I + hQ.</a>
+</h3>
+<h3 class="topic">
+<a name="2k07lu3kukklhv1e8unahajd7r">&nbsp;&nbsp;&nbsp;&nbsp; πQ = 0</a>
+</h3>
+<h3 class="topic">
+<a name="3b3ej1koacupvevmdsiqt6gc7i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model parameters hold substitution rate</a>
+</h3>
+<h3 class="topic">
+<a name="70a3ccjg9dgu7aaqgdeol72m7g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rates hold the information how many substitutions per time unit one expects.</a>
+</h3>
+<h3 class="topic">
+<a name="2h7s309b09d6dtpkje1sie1klb">&nbsp;&nbsp;&nbsp;&nbsp; PAM (percent accepted mutations</a>
+</h3>
+<h3 class="topic">
+<a name="6rdvco2gim07ad7q9ehaqv5h8q">&nbsp;&nbsp;&nbsp;公式 slide45</a>
+</h3>
+<h3 class="topic">
+<a name="3gfqbcks9v2br6k636tt133j42">&nbsp;&nbsp;&nbsp;&nbsp;Jukes-Candor correction  48-49</a>
+</h3>
+<h3 class="topic">
+<a name="06g6ve6pck90blr3giuf47vki7">&nbsp;&nbsp;&nbsp;slide50-54 计算Maximum likelihood tree </a>
+</h3>
+<h3 class="topic">
+<a name="6kegt6v5fc3glrk13buj2hr2ot">&nbsp;&nbsp;&nbsp;&nbsp;完全没看懂。没有被划入重点，这一部分选择性掠过。</a>
+</h3>
+<h3 class="topic">
+<a name="3s589rl16t9fjm6qd2kg23nk33">&nbsp;&nbsp;ML与MP的异同</a>
+</h3>
+<h3 class="topic">
+<a name="1gk6sua1jb4j3irimpvlpi8k08">&nbsp;&nbsp;&nbsp;slide62</a>
+</h3>
+<h3 class="topic">
+<a name="468cu8sgqiovokvheg6btv3iup">&nbsp;distance based method</a>
+</h3>
+<h3 class="topic">
+<a name="515qfpuba2o5bepu8pbolh7rk8">&nbsp;&nbsp;Neighbour joining</a>
+</h3>
+<h3 class="topic">
+<a name="7nkmjb648v0v1r9s7gbmvluula">&nbsp;&nbsp;&nbsp;neighbour | 与同一个interior vertx相邻的两个taxa</a>
+</h3>
+<h3 class="topic">
+<a name="5nrfpb8uioa8elmrrtf9vk35ic">&nbsp;&nbsp;&nbsp;什么是NJ | 选择一对neighbour x,y ，用pseudo-taxon Z替代，重复这一过程，直到只有三个taxa</a>
+</h3>
+<h3 class="topic">
+<a name="78l9d9u2mh75q8op80f6gcn1p2">&nbsp;&nbsp;&nbsp;&nbsp;应该选择哪一对？</a>
+</h3>
+<h3 class="topic">
+<a name="13nmab47124qdspnqefe7uevhp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很自然的想到，选距离最近的taxa，即UPGMA</a>
+</h3>
+<h3 class="topic">
+<a name="7m0r9l0ttmh50o6upn99bcuoa0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slide 7</a>
+</h3>
+<h3 class="topic">
+<a name="10vp2gcn5hufumhtm4i7407dih">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是，我们不仅应该考虑两者的距离，也应该考虑他们离其他taxa的距离</a>
+</h3>
+<h3 class="topic">
+<a name="65rmilj97g2lkrqasod8lsoepa">&nbsp;&nbsp;&nbsp;算法	</a>
+</h3>
+<h3 class="topic">
+<a name="5nuohd11tgl52g7urb5hia5an6">&nbsp;&nbsp;&nbsp;&nbsp;selection step | Q-criterion</a>
+</h3>
+<h3 class="topic">
+<a name="45ja2veqdrjphttfpgd3pi3qr1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|X|&gt;3   选择让Q(x,y)最小的x,y</a>
+</h3>
+<h3 class="topic">
+<a name="0bp0c4v6d5fmi1m51fob6vpmdr">&nbsp;&nbsp;&nbsp;&nbsp;reduction step</a>
+</h3>
+<h3 class="topic">
+<a name="44akme1m0omklaorau8koqq0s0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pseudo-taxon v 替代 x,y </a>
+</h3>
+<h3 class="topic">
+<a name="4eu89cldj2qkvp2rrcd2mbjosq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d(v,z)= 1/2 (d(x,z)+d(y,z)- d(x,y))</a>
+</h3>
+<h3 class="topic">
+<a name="7uvj2ddki7b689hnv1ev9phn4j">&nbsp;&nbsp;&nbsp;&nbsp;reverse</a>
+</h3>
+<h3 class="topic">
+<a name="75rof79pdukk4gtpaitvoev23q">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length of edge from x to v</a>
+</h3>
+<h3 class="topic">
+<a name="7m13us81g6v9064n8rcv05n338">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length of edge from y to v</a>
+</h3>
+<h3 class="topic">
+<a name="77a5sb2oht70fi9ouhv7d51sek">&nbsp;&nbsp;&nbsp;consistency | 一致性</a>
+</h3>
+<h3 class="topic">
+<a name="28phla7kgvqc4oi6c3hhe6s5h1">&nbsp;&nbsp;&nbsp;&nbsp;If the Neighbor Joining Algorithm is applied to the tree distance that is defined by a phylogenetic X-tree T, then it outputs T .</a>
+</h3>
+<h3 class="topic">
+<a name="3osvgb63d080gl208sshrfd4jf">&nbsp;&nbsp;&nbsp;&nbsp;proof</a>
+</h3>
+<h3 class="topic">
+<a name="5j03mqoo9v112736qqr8umdus7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slide 13-17</a>
+</h3>
+<h3 class="topic">
+<a name="220vdhulj84nt1e2pf39bhmi8u">&nbsp;&nbsp;least squares (Fitch-Margoliash)</a>
+</h3>
+<h3 class="topic">
+<a name="01lnnfm29kb831u1l4i1od8vl6">&nbsp;&nbsp;minimum evolution</a>
+</h3>
+<h2 class="topic">
+<a name="004nfqhcpjsqil3dcplbb9ivjn">phylogenetic networks</a>
+</h2>
+<h3 class="topic">
+<a name="4tqo05u04fcb0uq4gjatq95fl5">&nbsp;compatible split systems</a>
+</h3>
+<h3 class="topic">
+<a name="1s99r5tt57ke1s998v4vbp7f9i">&nbsp;&nbsp;slide 8</a>
+</h3>
+<h3 class="topic">
+<a name="3g879k16jsar9hq9krnhlbnru7">&nbsp;&nbsp;两种split</a>
+</h3>
+<h3 class="topic">
+<a name="4ricr48t6ko09ocduvdo1722k7">&nbsp;weakly compatible split systems</a>
+</h3>
+<h3 class="topic">
+<a name="3garmq3booa1ofcbm46gp1p39v">&nbsp;&nbsp;slide 9-11</a>
+</h3>
+<h3 class="topic">
+<a name="5jh80it5vr80s335r58bell3ve">&nbsp;&nbsp;三种split</a>
+</h3>
+<h3 class="topic">
+<a name="23a60auj53qnfn05s0lk5oq8vf">&nbsp;Split decomposition</a>
+</h3>
+<h3 class="topic">
+<a name="2qthvs7dibmsok183k200ckdan">&nbsp;&nbsp;用于计算weakly compatible split from distance</a>
+</h3>
+<h3 class="topic">
+<a name="0i26nftdcjfc9qk0in7q595f2a">&nbsp;&nbsp;related terms</a>
+</h3>
+<h3 class="topic">
+<a name="1a9mpld7f92htp6l9cb2dt94a6">&nbsp;&nbsp;&nbsp;4 point condition</a>
+</h3>
+<h3 class="topic">
+<a name="0agl09toeaf01mdjev8ob1980a">&nbsp;&nbsp;&nbsp;&nbsp;slide14-15</a>
+</h3>
+<h3 class="topic">
+<a name="04ppjkg3eb7keevqdqvjmsou3p">&nbsp;&nbsp;&nbsp;isolation index （α）</a>
+</h3>
+<h3 class="topic">
+<a name="6s50p7lucljpqok7ko8plm49j7">&nbsp;&nbsp;&nbsp;&nbsp;the weight of the split S</a>
+</h3>
+<h3 class="topic">
+<a name="49s1rj0er1drbnom6l3r72unbb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slide 16</a>
+</h3>
+<h3 class="topic">
+<a name="1ti4cn9nc0bq4q01ruogc8sl5h">&nbsp;&nbsp;computation</a>
+</h3>
+<h3 class="topic">
+<a name="533ca0ojojnh64b3bqioje7ieq">&nbsp;&nbsp;&nbsp;slide 17</a>
+</h3>
+<h3 class="topic">
+<a name="37135277noot75cd8d8s0gsf8p">&nbsp;&nbsp;property</a>
+</h3>
+<h3 class="topic">
+<a name="7q3u0ghpk87a7bo7e36lps95nh">&nbsp;&nbsp;&nbsp;slide 18</a>
+</h3>
+<h3 class="topic">
+<a name="4m7atom1dukv0vvbs11veranmo">&nbsp;NeighborNet</a>
+</h3>
+<h3 class="topic">
+<a name="40hjuhp4e4huj374dvid3ofc1g">&nbsp;&nbsp;construct weighted circular split system</a>
+</h3>
+<h3 class="topic">
+<a name="4cu84iq2p86euh2b420msvouu3">&nbsp;&nbsp;circular split systems</a>
+</h3>
+<h3 class="topic">
+<a name="760b18kl0e051m6ed77j4e73d0">&nbsp;&nbsp;&nbsp;Weighted split systems that correspond to phylogenetic trees are circular.</a>
+</h3>
+<h3 class="topic">
+<a name="0esohsunpmt7fqbqkj09pp793s">&nbsp;&nbsp;&nbsp;slide19-20</a>
+</h3>
+<h3 class="topic">
+<a name="147h6oc9te884uj6mpp8nhbb0g">&nbsp;&nbsp;slide 21-26</a>
+</h3>
+</body>
+</html>

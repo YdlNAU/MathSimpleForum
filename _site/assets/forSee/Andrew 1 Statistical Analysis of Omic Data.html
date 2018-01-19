@@ -1,0 +1,240 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Statistical Analysis
+of Omic Data</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="04cf55770oan3ska4qfsj2lido">Statistical Analysis
+of Omic Data</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Andrew 1 Statistical Analysis of Omic Data_files/images/Statistical Analysis of Omic Data.jpg"></div>
+<h2 class="topic">
+<a name="5r73fnrjol9kvtbortmraha44s">Motivation</a>
+</h2>
+<h3 class="topic">
+<a name="3igiqs8ii3q9m0tb00jg4uia6n">&nbsp;Experimental Design</a>
+</h3>
+<h3 class="topic">
+<a name="74lvqt857a8n98dtdv68d18eub">&nbsp;&nbsp;大样本量的研究需要谨慎的设计，避免混杂因素confounding factors</a>
+</h3>
+<h3 class="topic">
+<a name="0ijoi2g61tfn1thiiapvacl9av">&nbsp;&nbsp;最小化样本量：power calculation</a>
+</h3>
+<h3 class="topic">
+<a name="1h9kjouo3066bjvk1tlirktqb0">&nbsp;normalization | 原始数据的均一化</a>
+</h3>
+<h3 class="topic">
+<a name="77rica7htuehm93sh67pvnsksu">&nbsp;&nbsp;intra and inter sample normalisation</a>
+</h3>
+<h3 class="topic">
+<a name="1equ8elp3073oddj3jko8avhfm">&nbsp;Feature selection</a>
+</h3>
+<h3 class="topic">
+<a name="2md5plhd6adn4a9akakro50lkk">&nbsp;&nbsp;Ex. 选择正常和癌症细胞的mRNA表达量</a>
+</h3>
+<h3 class="topic">
+<a name="0c5l6rnvhd4va20v30nt446n8h">&nbsp;prediction | 是否能预测？</a>
+</h3>
+<h3 class="topic">
+<a name="4qet1msua4b746d8q3fillf9vt">&nbsp;data integration</a>
+</h3>
+<h2 class="topic">
+<a name="1a6bbv7m1n1lmgtr7g84s1tupf">choose Statistical test</a>
+</h2>
+<h3 class="topic">
+<a name="1lbal21q69o7de4kdonb5dbmrv">&nbsp;parametric testing</a>
+</h3>
+<h3 class="topic">
+<a name="4abr35oeh0s7s6bldb4p1lt3cc">&nbsp;&nbsp;定义：预先设定model，检验方法：通过参数估计</a>
+</h3>
+<h3 class="topic">
+<a name="2vmln4jmbbd62g4f9jfcsbjgvt">&nbsp;&nbsp;例子：Student's t (unpaired) test</a>
+</h3>
+<h3 class="topic">
+<a name="6rfjbac2dk0kfngdp3h69iedd8">&nbsp;&nbsp;&nbsp;T statistic </a>
+</h3>
+<h3 class="topic">
+<a name="40hun65ddh4759m59l4trrjoha">&nbsp;&nbsp;&nbsp;T~t(0,v) | 0=mean, v=df</a>
+</h3>
+<h3 class="topic">
+<a name="34lvo7o37a7gbn7tkd2gujdato">&nbsp;&nbsp;&nbsp;当数据接近正态分布时，仍可以用t-test；当df较大（4）时，t分布接近正态分布</a>
+</h3>
+<h3 class="topic">
+<a name="09qbhf9tq4bth7g4sgr8071dr5">&nbsp;non-parametric testing</a>
+</h3>
+<h3 class="topic">
+<a name="5nnm1aq9rpge1c86i2ltnqe4g2">&nbsp;&nbsp;定义：无model无参数估计</a>
+</h3>
+<h3 class="topic">
+<a name="63cmk9e03dpmfvjbk1frideg81">&nbsp;&nbsp;例子：Wilcoxon rank sum test(unpaired)</a>
+</h3>
+<h3 class="topic">
+<a name="72h317algka5n5gqhogf44viv1">&nbsp;&nbsp;&nbsp;distribution free：数据与正态假设差距较大</a>
+</h3>
+<h3 class="topic">
+<a name="61sn7rchj19gauc8u18lm12eqn">&nbsp;&nbsp;&nbsp;方法：</a>
+</h3>
+<h3 class="topic">
+<a name="6uk10h8s7ljukb12kgttj0joki">&nbsp;&nbsp;&nbsp;&nbsp;排序：n=n1+n2,两种表型混在一起由大到小排序</a>
+</h3>
+<h3 class="topic">
+<a name="471dccnmt9iii112bmal5fjvl5">&nbsp;&nbsp;&nbsp;&nbsp;Sum一种表型的序号：R1，R2</a>
+</h3>
+<h3 class="topic">
+<a name="7gbpfn0f15osuo246ct46dhs6s">&nbsp;&nbsp;&nbsp;&nbsp;R1+R2=n(n+1)/2</a>
+</h3>
+<h3 class="topic">
+<a name="1jtpr7vatviu841hcqevbjt046">&nbsp;&nbsp;&nbsp;&nbsp;统计数：W1=R1-n1(n1+1)/2
+               W2=R2-n2(n2+1)/2</a>
+</h3>
+<h3 class="topic">
+<a name="4oug55l6jd10e30g110ke4v4lf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W1+W2= n1n2</a>
+</h3>
+<h3 class="topic">
+<a name="0pb0bknnjn323o9ej10a531eeu">&nbsp;&nbsp;&nbsp;&nbsp;AUC= max（|W1/n1n2|,|W2/n1n2|）</a>
+</h3>
+<h3 class="topic">
+<a name="2ro353urg1hcquoph3cj4a3umo">&nbsp;&nbsp;&nbsp;sensitivity of power: 敏感性，被认为是P的TP比例</a>
+</h3>
+<h3 class="topic">
+<a name="498hiubcc3c0u36ouq4kvelsim">&nbsp;&nbsp;&nbsp;specificity= 1-FPR：特异性，FPR是被错认为是P的TN比例</a>
+</h3>
+<h3 class="topic">
+<a name="3iqpv8v7i4rmhlqrcthdkbnvln">&nbsp;两种方法的比较
+drawbacks of non-parametric </a>
+</h3>
+<h3 class="topic">
+<a name="2hrbi7tbgj8fmp2neuh39n30kv">&nbsp;&nbsp;给定样本量，p值总有一个能达到的最小量（样本量小的时候不够powerful）</a>
+</h3>
+<h3 class="topic">
+<a name="1et3fnr1n9a1ntorll3t4vq2vu">&nbsp;&nbsp;不同方差的样本计算结果相同</a>
+</h3>
+<h3 class="topic">
+<a name="57a2maaqs7hc79qmvvlljcvlmo">&nbsp;&nbsp;&nbsp;例子：mRNA</a>
+</h3>
+<h2 class="topic">
+<a name="7il5ni5t8p5j0i6n0mipl9v1qc">Univariate linear regression. 
+Analytical and empirical nulls.</a>
+</h2>
+<h3 class="topic">
+<a name="11l65ms0mj961p9qu9357hfg4t">&nbsp;测试连续变量的方法：</a>
+</h3>
+<h3 class="topic">
+<a name="58pdnfbrdelrfh0tojl8fbt5pb">&nbsp;&nbsp;最小二乘法 Least Squares estimator</a>
+</h3>
+<h3 class="topic">
+<a name="0sik3t206p2o61amq42lur625r">&nbsp;&nbsp;regression coefficient | β相关系数</a>
+</h3>
+<h3 class="topic">
+<a name="1tck3to9j3jlvi9kqbma6h0d6s">&nbsp;注意区分regression coefficient &amp; regression statistic </a>
+</h3>
+<h3 class="topic">
+<a name="12eek432ml2240epgd98peu9le">&nbsp;empirical null</a>
+</h3>
+<h3 class="topic">
+<a name="6dcaiardqr6avg5a6pi1fale19">&nbsp;&nbsp;一个跳跃函数，跳跃点是观察值，n越大，经验函数与总体函数最吻合</a>
+</h3>
+<h2 class="topic">
+<a name="4n8onhialojldn9i1p78cti5ku">multiple-testing in genomics
+FDR</a>
+</h2>
+<h3 class="topic">
+<a name="7h4rs77johgvsr1aqp5qpd9jbl">&nbsp;Bonferroni correction</a>
+</h3>
+<h3 class="topic">
+<a name="4f7c96hpmqtr6f60j3etgdasrg">&nbsp;&nbsp;GWAS</a>
+</h3>
+<h3 class="topic">
+<a name="5sl1i2kdjmtc5obj965o7ogsgk">&nbsp;&nbsp;&nbsp;没有显著Bonferroni的SNP一般在转录因子的binding site上，即open chromatin region,可以用DHS assay 找到（DNase hypersensitive sites）</a>
+</h3>
+<h3 class="topic">
+<a name="73abfmad79qpbbbuhfbk4jenvk">&nbsp;&nbsp;&nbsp;Family-Wise Error Rate (FWER)</a>
+</h3>
+<h3 class="topic">
+<a name="6vts4g4iph9vs1c9ek8i0oho0p">&nbsp;&nbsp;为了控制假阳性（FWER），但是会让假阴性变多</a>
+</h3>
+<h3 class="topic">
+<a name="555as00s0a1hgl52lrlmip0lds">&nbsp;&nbsp;&nbsp;0.05/m m是null test的数量</a>
+</h3>
+<h3 class="topic">
+<a name="6de1clajo85pqksvh373p2vgog">&nbsp;&nbsp;&nbsp;&nbsp;但是太过严格了</a>
+</h3>
+<h3 class="topic">
+<a name="2gigsnrhsep64omr1ipr28423h">&nbsp;FDR | False discovery rate</a>
+</h3>
+<h3 class="topic">
+<a name="54l5gtimt3addg9a7qs82tdrae">&nbsp;&nbsp;找到true positive</a>
+</h3>
+<h3 class="topic">
+<a name="62i2n59cebqcjlv9js2p4mh6qd">&nbsp;&nbsp;FDR(t) = E[FP(t)/P(t)]</a>
+</h3>
+<h3 class="topic">
+<a name="1225nh5frsib4s99vjs2gej35a">&nbsp;&nbsp;&nbsp;如何估计FDR？</a>
+</h3>
+<h3 class="topic">
+<a name="7gh4sd5mbnmo16hrdcpst7vq6d">&nbsp;&nbsp;&nbsp;&nbsp;p value histogram</a>
+</h3>
+<h3 class="topic">
+<a name="1lj8cfd0hkjbdnhtqhcd0kc690">&nbsp;&nbsp;&nbsp;&nbsp;uniform distribution 构造（L,1）w就是横着的那条线</a>
+</h3>
+<h3 class="topic">
+<a name="5fh3tr1kjjhnbs54jsdlrh337u">&nbsp;&nbsp;&nbsp;&nbsp;选一个最好的参数L，使得（L,1）之间是平的</a>
+</h3>
+<h3 class="topic">
+<a name="7umrjjc98a90ppo5c7dd3o8rmp">&nbsp;&nbsp;&nbsp;&nbsp;估计q value</a>
+</h3>
+<h3 class="topic">
+<a name="68dlu652e0r7kvvfg8jboqe47m">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;即True null</a>
+</h3>
+<h3 class="topic">
+<a name="3lamh08gkot4580fsm97qdlcnp">&nbsp;FNR</a>
+</h3>
+<h3 class="topic">
+<a name="12bmlrof66hioor3fnjmb6kgj2">&nbsp;&nbsp;如果太大，会miss掉太多结果</a>
+</h3>
+<h3 class="topic">
+<a name="1n5d5kve4pvfskap0tploi94rl">&nbsp;SE | sensitivity</a>
+</h3>
+<h3 class="topic">
+<a name="2bh568cr7ihh48vo6danhmlvrd">&nbsp;SP | specificity</a>
+</h3>
+<h2 class="topic">
+<a name="3rgh96gd1h80bv25panospf63t">Power Calculations in genomics</a>
+</h2>
+<h3 class="topic">
+<a name="5flptg83tatm5gs1iea86akran">&nbsp;Power=TP+假阳性</a>
+</h3>
+<h3 class="topic">
+<a name="0r5k1nbubve8b1agp4kt8jdtle">&nbsp;计算达到最佳效果的最小样本量</a>
+</h3>
+<h3 class="topic">
+<a name="1kg7vk54omg4h63vunggoeah6t">&nbsp;步骤</a>
+</h3>
+<h3 class="topic">
+<a name="7e37iv7r90pc01vaksant1gk1l">&nbsp;&nbsp;summarize features (去冗余，数据库)</a>
+</h3>
+<h3 class="topic">
+<a name="14kf5ri07tmtkoaebnumfmfsup">&nbsp;&nbsp;Subtopic 2</a>
+</h3>
+<h3 class="topic">
+<a name="6imqb0qnsl0an1slffs381j2eu">&nbsp;&nbsp;Subtopic 3</a>
+</h3>
+<h2 class="topic">
+<a name="14jfmeqohs2npnevinqcj6kau5">GSEA</a>
+</h2>
+<h3 class="topic">
+<a name="5vq0ketnigugovitriq7lbc3fe">&nbsp;gene按与phenotype的correlation排序，T检验，p值</a>
+</h3>
+<h3 class="topic">
+<a name="4c879hdrbr11ksoldc7p5ksobi">&nbsp;leading edge subset</a>
+</h3>
+<h3 class="topic">
+<a name="6bds43psuut9vbesu4lgebgopq">&nbsp;maximum enrichment score(ES)</a>
+</h3>
+</body>
+</html>

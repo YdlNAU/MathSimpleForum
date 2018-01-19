@@ -1,0 +1,207 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Stefan-sequence alignment</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="3t94vg08caiunkk2ahamrchk2a">Stefan-sequence alignment</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Stefan-sequence alignment_files/images/Stefan-sequence alignment.jpg"></div>
+<h2 class="topic">
+<a name="5vrrj2od9okfjgco6njnfiflji">global alignment</a>
+</h2>
+<h3 class="topic">
+<a name="7ggfhjjqpg4n21a3eafvvj5n2t">&nbsp;Needleman-Wunsch</a>
+</h3>
+<h3 class="topic">
+<a name="68jmnt5e92usgdo55b9mn4nsjo">&nbsp;&nbsp;computing alignment | D(i,j)</a>
+</h3>
+<h3 class="topic">
+<a name="17mr3mcqclkqo099lgliujinpd">&nbsp;&nbsp;&nbsp;Naive "top down" recursion</a>
+</h3>
+<h3 class="topic">
+<a name="5hacn4kt2745u7496bln5mhbt7">&nbsp;&nbsp;&nbsp;&nbsp;太慢</a>
+</h3>
+<h3 class="topic">
+<a name="788skiuo86ocujc27uu0fuh91m">&nbsp;&nbsp;&nbsp;Iterative&ldquo;bottom up&rdquo; </a>
+</h3>
+<h3 class="topic">
+<a name="6p1ghnprb4ni9mkpc374ld7clo">&nbsp;&nbsp;&nbsp;&nbsp;先算小的，再算大的 | dynamic programming</a>
+</h3>
+<h3 class="topic">
+<a name="52b5e14gcfpm355vnebnd64q2e">&nbsp;&nbsp;backtracing</a>
+</h3>
+<h2 class="topic">
+<a name="2qunm4bukes1rr7lu3no6uoatl">Semi-global alignment</a>
+</h2>
+<h3 class="topic">
+<a name="7q5sbr07bvces4l9kvhta51m7d">&nbsp;典型应用： whole-genome gene finding </a>
+</h3>
+<h3 class="topic">
+<a name="4p6ivkpbkn6n7teq7ml4mstfel">&nbsp;特征:</a>
+</h3>
+<h3 class="topic">
+<a name="14o3molen45pnkqhsob6jlr3di">&nbsp;&nbsp;search query sequence (q) in genome ("database") sequence D</a>
+</h3>
+<h3 class="topic">
+<a name="7c5j48qch1blqe02qg7i0p4298">&nbsp;&nbsp;允许insertions, deletion, substitution</a>
+</h3>
+<h3 class="topic">
+<a name="7iv1n51nvp2faunn76q94pljr5">&nbsp;&nbsp;find high-scoring matches</a>
+</h3>
+<h3 class="topic">
+<a name="34th3kn4obpad16ccfeeioeqdv">&nbsp;weighted alignments</a>
+</h3>
+<h3 class="topic">
+<a name="37kjiup80g1d4aqoe8ono7tqcd">&nbsp;&nbsp;公式：slide18</a>
+</h3>
+<h3 class="topic">
+<a name="6bbn0mo1tddj6fsj20slioi3fs">&nbsp;&nbsp;&nbsp;σ(x,y) | 氨基酸x和y的相似度</a>
+</h3>
+<h3 class="topic">
+<a name="4t5rb985ibpc1sj14vepn70t35">&nbsp;&nbsp;&nbsp;&nbsp;some aa substitution  "preferred"</a>
+</h3>
+<h3 class="topic">
+<a name="19urulj42f89eb1irdqo3kmojc">&nbsp;&nbsp;&nbsp;Cinsert， Cdeletion</a>
+</h3>
+<h3 class="topic">
+<a name="4jd0e9bkav6o10ntuaudnfc9rt">&nbsp;&nbsp;&nbsp;&nbsp;insertion and deletion: "score penalty" 而不是简单的给个零</a>
+</h3>
+<h3 class="topic">
+<a name="6ft1h09b0fuo97d20vvl3se49t">&nbsp;&nbsp;affine gap score</a>
+</h3>
+<h3 class="topic">
+<a name="0s87i317092qjfh0r8a3q0shku">&nbsp;&nbsp;&nbsp;Problem: Deletions preferred over accepting a few mismatches within a long run of matches</a>
+</h3>
+<h3 class="topic">
+<a name="6gru692fg6deq6e1783ol24tlr">&nbsp;&nbsp;&nbsp;&nbsp;分散的会得到更高分数，但是实际情况更倾向于不分散的（less fragmented）</a>
+</h3>
+<h3 class="topic">
+<a name="2rjjdoi0q7cuigmch0q30r900d">&nbsp;&nbsp;&nbsp;Solution:</a>
+</h3>
+<h3 class="topic">
+<a name="4593ppq848p0io4vpkar59tfcf">&nbsp;&nbsp;&nbsp;&nbsp;g(open)</a>
+</h3>
+<h3 class="topic">
+<a name="7qi5eg1iktrrru4k17a7j5t63i">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gap open penalty| make initial deletion expensive</a>
+</h3>
+<h3 class="topic">
+<a name="07v1dmp7pgg8mi8s98nnaur7u0">&nbsp;&nbsp;&nbsp;&nbsp;g(extension)</a>
+</h3>
+<h3 class="topic">
+<a name="56r4lgkpqdargrvuca9h6rf1qt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gap extension penalty| deletions following a previous deletions are cheap</a>
+</h3>
+<h3 class="topic">
+<a name="5nrtn1rutrcorp741vlo6cpvl1">&nbsp;&nbsp;&nbsp;naive公式： slide21</a>
+</h3>
+<h3 class="topic">
+<a name="4g8ssjj12hs23gg80q70oa3vrn">&nbsp;&nbsp;&nbsp;&nbsp;太慢！</a>
+</h3>
+<h3 class="topic">
+<a name="5nq5dirqdhnvk7erfoer3f12u2">&nbsp;&nbsp;&nbsp;Gotoh Algorithm</a>
+</h3>
+<h3 class="topic">
+<a name="7db2blr0hk4pccgcahd2g8vrau">&nbsp;&nbsp;&nbsp;&nbsp;引入Pi,j  Qi,j</a>
+</h3>
+<h3 class="topic">
+<a name="3fan2824f0pc3ln609rtl4pjkl">&nbsp;&nbsp;&nbsp;&nbsp;slide22-23</a>
+</h3>
+<h3 class="topic">
+<a name="08hhdqd3t43qcj2mv3ujs9c819">&nbsp;scoring alignments</a>
+</h3>
+<h3 class="topic">
+<a name="7bc9tri699e450dq7c0i34p3l4">&nbsp;&nbsp;"Henn"-egg problem</a>
+</h3>
+<h3 class="topic">
+<a name="7k4jn74tg8loecm0c04q0it0tb">&nbsp;&nbsp;&nbsp;用亲缘关系近的物种，计算氨基酸i被j替代的频率f(i,j)</a>
+</h3>
+<h3 class="topic">
+<a name="49ecl4itevcotkokjkv703ln3j">&nbsp;&nbsp;&nbsp;relative substitution rate g(i,j) = f(i,j)/f(i)</a>
+</h3>
+<h3 class="topic">
+<a name="34cb23ii5aj61m7cm4pel4amvh">&nbsp;&nbsp;PAM matrices</a>
+</h3>
+<h3 class="topic">
+<a name="4ns3mbgcojv9u9kp3b006kkiu5">&nbsp;&nbsp;&nbsp;PAM 1 matrix: P1(i,j) = g(i,j) / f(j)</a>
+</h3>
+<h3 class="topic">
+<a name="6g5m8civrouj719lnktkn64ub6">&nbsp;&nbsp;&nbsp;Pk = P1 ^ k</a>
+</h3>
+<h3 class="topic">
+<a name="3j7hcg421s3d3ls4fq8lcim08i">&nbsp;Hieshberg</a>
+</h3>
+<h3 class="topic">
+<a name="1btfgdc4n6a7muaedgsm0g3ub8">&nbsp;&nbsp;解决O(mn)计算空间过大的问题： 线性空间就足够了！</a>
+</h3>
+<h3 class="topic">
+<a name="6d8ccnjgvic7hadj42466og339">&nbsp;&nbsp;只关注LCS | longest common subsequence</a>
+</h3>
+<h3 class="topic">
+<a name="6fni47p5f3k0psp2uqm462o84g">&nbsp;&nbsp;&nbsp;lcs(x,y) = lcs(xR , y R)</a>
+</h3>
+<h3 class="topic">
+<a name="0v7rtai17q470r6j1p3n0gu95e">&nbsp;&nbsp;(k*, n/2)处交汇</a>
+</h3>
+<h3 class="topic">
+<a name="10bicg6ffge0t8il4sedotio5c">&nbsp;&nbsp;公式与算法 slide31</a>
+</h3>
+<h2 class="topic">
+<a name="4hatmbhcnr32i38voairfi6upi">Local alignment</a>
+</h2>
+<h3 class="topic">
+<a name="1fblaqsu9b8hj6e2opfijvalm9">&nbsp;Smith-Waterman</a>
+</h3>
+<h3 class="topic">
+<a name="1bjsi5u3m2t39ouod5t5uhji63">&nbsp;&nbsp;slide 33</a>
+</h3>
+<h3 class="topic">
+<a name="1gqki67h8vciaf06f6lnod33tq">&nbsp;&nbsp;对角线方向逐一计算。traceback: 从最大的开始，到0为止结束。</a>
+</h3>
+<h3 class="topic">
+<a name="2gv12tpikc5rapubo7rgpgfp1f">&nbsp;motif finding</a>
+</h3>
+<h3 class="topic">
+<a name="0s7a4b0u9tmm740blmnavmjhhj">&nbsp;&nbsp;k个序列x1, x2, xk (长度均为n)   | y1,y2,yk 长度均为λ   </a>
+</h3>
+<h3 class="topic">
+<a name="47rg9ifbuocnj786ubpce6u677">&nbsp;&nbsp;scoring function</a>
+</h3>
+<h3 class="topic">
+<a name="58tsc2ed2s43gjlt7m9hp8rfiq">&nbsp;&nbsp;&nbsp;MP(s) | consensus score </a>
+</h3>
+<h3 class="topic">
+<a name="5tkv32atakfqo9470ihlfhp0rt">&nbsp;&nbsp;&nbsp;&nbsp;slide38</a>
+</h3>
+<h3 class="topic">
+<a name="3jht9m2tir560m59ff3k5uu1aa">&nbsp;&nbsp;&nbsp;让MP(s)最大的（s1,s2,...,sk）</a>
+</h3>
+<h3 class="topic">
+<a name="333bg1c1gjkq2pr344h5tfmgk5">&nbsp;&nbsp;algorithm</a>
+</h3>
+<h3 class="topic">
+<a name="70be8racoej0mq4ms0lggq62pc">&nbsp;&nbsp;&nbsp;naive: (n-λ)^k 种可能性</a>
+</h3>
+<h3 class="topic">
+<a name="7fsncr402uqo8e3hr62atn0svv">&nbsp;&nbsp;&nbsp;branch-and-bound strategy</a>
+</h3>
+<h3 class="topic">
+<a name="2p95krmdio71dcmnbhev3ftio7">&nbsp;&nbsp;&nbsp;&nbsp;枚举，去掉不好的branch (cannot improve best solution ), 用partial scoring function</a>
+</h3>
+<h3 class="topic">
+<a name="01rc0vqdqadegfi8v8cbt0hj1m">&nbsp;&nbsp;&nbsp;&nbsp;preorder enumeration </a>
+</h3>
+<h3 class="topic">
+<a name="6f4qk2oasp90jla27sn16p7g7q">&nbsp;&nbsp;&nbsp;&nbsp;cut branches</a>
+</h3>
+<h3 class="topic">
+<a name="3lpbi5dthbdhml1dr4ootis8kp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前i列的partial score +后L-i列upper bound（maximal improvement） 如果比现在的最佳值小，把这个branch剪掉！</a>
+</h3>
+<h3 class="topic">
+<a name="65b76f624dul6ll4tfkpoof467">&nbsp;&nbsp;&nbsp;&nbsp;bypass vertices</a>
+</h3>
+</body>
+</html>
