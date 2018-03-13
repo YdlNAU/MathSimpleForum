@@ -4,7 +4,7 @@ title:  期末复习思维导图
 date:   2017-10-26 15:31:01 +0800
 categories: courseReaction
 tags: review
-author: Ge Jishu
+author: Ge Jieyu
 ---
 
 * content
