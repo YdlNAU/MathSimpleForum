@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  新学期关于《生物统计的预览》
-date:   2018-013-13 15:31:01 +0800
+date:   2018-03-13 15:31:01 +0800
 categories: Biostatistics
 tags: Notes
 author: Yu Dalang
